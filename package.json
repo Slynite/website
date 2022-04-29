@@ -1,0 +1,48 @@
+{
+  "name": "slynite.com",
+  "version": "2022.04.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slynite/website/"
+  },
+  "keywords": [
+    "Slynite",
+    "Website",
+    "Nextjs",
+    "Nodejs",
+    "public"
+  ],
+  "author": "Slynite",
+  "license": "EDIT-ME",
+  "bugs": {
+    "url": "https://github.com/slynite/website/issues"
+  },
+  "homepage": "https://slynite.com/",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "next": "12.1.5",
+    "next-seo": "^5.1.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}
