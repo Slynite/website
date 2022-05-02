@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from "next/link";
-import { faGlobe, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
-import { faInstagramSquare, faLinkedin, faTwitterSquare, faXingSquare } from "@fortawesome/free-brands-svg-icons";
 import { socialMediaLink } from '../../lib/models/socialmedia';
+
+//TODO: Add real FontAwesome
 
 export default function SocialMediaButtons({ socialMediaArray }) {
     const links = []
@@ -14,22 +13,22 @@ export default function SocialMediaButtons({ socialMediaArray }) {
 
         switch(link.platform) {
             case "website":
-                link.setIcon(<FontAwesomeIcon icon={faGlobe} />);
+                link.setIcon("faGlobe");
                 break;
             case "linkedin":
-                link.setIcon(<FontAwesomeIcon icon={faLinkedin} />);
+                link.setIcon("faLinkedin");
                 break;
             case "xing":
-                link.setIcon(<FontAwesomeIcon icon={faXingSquare} />);
+                link.setIcon("faXingSquare");
                 break;
             case "instagram":
-                link.setIcon(<FontAwesomeIcon icon={faInstagramSquare} />);
+                link.setIcon("faInstagramSquare");
                 break;
             case "twitter":
-                link.setIcon(<FontAwesomeIcon icon={faTwitterSquare} />);
+                link.setIcon("faTwitterSquare");
                 break;
             default:
-                link.setIcon(<FontAwesomeIcon icon={faQuestionCircle} />);
+                link.setIcon("faQuestionCircle");
                 break;
         }
 
