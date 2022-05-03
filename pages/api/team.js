@@ -1,6 +1,10 @@
 import path from 'path'
 import {getBySlug, getAllByFields} from './_base'
 
+export default function handler(req, res) {
+  res.status(403).send("This function is currently not for public use.")
+}
+
 const dir =  path.join(process.cwd(), 'content/team');
 const fields = [
   'slug',

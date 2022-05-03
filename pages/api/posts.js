@@ -2,6 +2,10 @@ import path from 'path'
 import { getTeamMemberBySlug } from './team';
 import {getBySlug, getAllSortedByDate, replaceWhitespaces} from './_base'
 
+export default function handler(req, res) {
+  res.status(403).send("This function is currently not for public use.")
+}
+
 const dir =  path.join(process.cwd(), 'content/posts');
 const fields = [
     'slug',

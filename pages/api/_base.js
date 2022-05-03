@@ -2,6 +2,10 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
+export default function handler(req, res) {
+  res.status(403).send("This function is currently not for public use.")
+}
+
 export function getSlugs(dir) {
   return fs.readdirSync(dir)
 }
