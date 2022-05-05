@@ -1,8 +1,6 @@
 ---
 name: "Danny Schapeit"
 position: "Founder & CEO"
-description: "Hey my name is Danny, I'm the Founder & CEO of Slynite"
-image: "https://cloud.slynite.com/avatar/danny.schapeit"
 socialmedia:
     - "website": "https://danny.schapeit.com"
     - "cactuscloud": "https://cloud.slynite.com/u/danny.schapeit"

@@ -8,6 +8,7 @@ export default function TeamMember({ member }) {
   return (
     <Page description={member.description} title={member.name} >
         <article>
+          <p>{member.image} Member Avatar from Cactus Cloud</p>
           <p>{member.name}</p>
           <p>{member.position}</p>
           <SocialMediaButtons socialMediaArray={member.socialmedia}/>

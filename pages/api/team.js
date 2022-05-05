@@ -1,4 +1,5 @@
 import path from 'path'
+import { TEAMMEMBER_AVATAR_BASE_URL, TEAMMEMBER_AVATAR_SIZE_IN_PX } from '../../lib/constrants';
 import {getBySlug, getAllByFields} from './_base'
 
 export default function handler(req, res) {
@@ -10,20 +11,28 @@ const fields = [
   'slug',
   'name',
   'position',
-  'desciption',
-  'image',
   'socialmedia',
   'content'
 ]
 
 export function getTeamMemberBySlug(slug) {
   try {
-    return getBySlug(slug, fields, dir);
+    const member =  getBySlug(slug, fields, dir);
+    member.image = getAvatarUrlFromSlug(slug);
+    return member;
   } catch(Error) {
     return '{slug: null}';
   }
 }
 
 export function getAllTeamMembers() {
-  return getAllByFields(fields, dir)
+  const teammember = getAllByFields(fields, dir);
+  teammember.forEach(member => {
+    member.image = getAvatarUrlFromSlug(member.slug);
+  })
+  return teammember;
+}
+
+export function getAvatarUrlFromSlug(slug) {
+  return TEAMMEMBER_AVATAR_BASE_URL + slug + "/";
 }
