@@ -1,47 +1,59 @@
+import { faGithub, faInstagram, faLinkedinIn, faTwitter, faXing} from "@fortawesome/free-brands-svg-icons";
+import { GlobeIcon, ExternalLinkIcon } from '@heroicons/react/outline'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { socialMediaLink } from '../../lib/models/socialmedia';
 
-//TODO: Add real FontAwesome
-
 export default function SocialMediaButtons({ socialMediaArray }) {
-    const links = []
-    socialMediaArray.forEach(platform => {
-        var link = new socialMediaLink();
-
-        link.setPlatform(Object.keys(platform));
-        link.setLink(Object.values(platform));
-
-        switch(link.platform) {
-            case "website":
-                link.setIcon("faGlobe");
-                break;
-            case "linkedin":
-                link.setIcon("faLinkedin");
-                break;
-            case "xing":
-                link.setIcon("faXingSquare");
-                break;
-            case "instagram":
-                link.setIcon("faInstagramSquare");
-                break;
-            case "twitter":
-                link.setIcon("faTwitterSquare");
-                break;
-            default:
-                link.setIcon("faQuestionCircle");
-                break;
-        }
-
-        links.push(link);
-    });
-
-    return(
-        <div>
-            {links.map((link) => (
-                <Link key={link.platform} href={link.link} passHref>
-                    {link.icon}
-                </Link>
-            ))}
-        </div>
-    )
+    if(socialMediaArray != undefined) {
+        const links = [];
+        socialMediaArray.forEach(platform => {
+            var link = new socialMediaLink();
+    
+            //Load strings from array
+            let platformFromObj = Object.keys(platform);
+            link.setPlatform(platformFromObj.pop());
+    
+            let urlFromObj = Object.values(platform);
+            link.setLink(urlFromObj.pop());
+    
+            switch(link.platform) {
+                case "website":
+                    link.setIcon(<GlobeIcon className="h-5 w-5" />);
+                    break;
+                case "linkedin":
+                    link.setIcon(<FontAwesomeIcon icon={faLinkedinIn} width="16" />);
+                    break;
+                case "xing":
+                    link.setIcon(<FontAwesomeIcon icon={faXing} width="16" />);
+                    break;
+                case "instagram":
+                    link.setIcon(<FontAwesomeIcon icon={faInstagram} width="16" />);
+                    break;
+                case "twitter":
+                    link.setIcon(<FontAwesomeIcon icon={faTwitter} width="16" />);
+                    break;
+                case "github":
+                    link.setIcon(<FontAwesomeIcon icon={faGithub} width="16" />);
+                    break;
+                default:
+                    link.setIcon(<ExternalLinkIcon className="h-5 w-5" />);
+                    break;
+            }
+    
+            links.push(link);
+        });
+    
+        return(
+            <div className="flex">
+                {links.map((link) => (
+                    <Link key={link.platform} href={link.link} passHref>
+                        <a className="p-1">{link.icon}</a>
+                    </Link>
+                ))}
+            </div>
+        )
+    } else {
+        return("");
+    }
 }

@@ -42,7 +42,7 @@ export function getAllSortedByDate(fields = [], dir) {
     const slugs = getSlugs(dir)
     const allData = slugs
       .map((slug) => getBySlug(slug, fields, dir))
-      .sort((first, second) => (first.date > second.date ? 1 : -1))
+      .sort((first, second) => (Date.parse(first.date) < Date.parse(second.date) ? 1 : -1))
     return allData
 }
 

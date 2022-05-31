@@ -13,8 +13,7 @@ const fields = [
   'url',
   'logo',
   'image',
-  'excerpt',
-  'content',
+  'description'
 ]
 
 export function getProjectsBySlug(slug) {

@@ -4,7 +4,7 @@ import { getAllTeamMembers } from '../api/team';
 
 export default function Team({ teammember }) {
   return (
-    <Page isBannerVisible={false} description="META HERE" title="Projects">
+    <Page isBannerVisible={false} description="Meet the team behind Slynite" title="Team">
       <TeamList teammember={teammember} />
     </Page>
   )

@@ -6,7 +6,7 @@ import { getAllFiles, getFileBySlug } from '../api/company'
 
 export default function Legal({ page }) {
     return (
-      <Page description={"CHANGE CONTENT"} title={page.name} >
+      <Page description={page.name} title={page.name} >
           <Markdown content={page.content} />
       </Page>
     )

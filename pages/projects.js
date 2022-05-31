@@ -4,7 +4,7 @@ import { getAllProjectsSortedByDate } from './api/projects'
 
 export default function Projects({ projects }) {
   return (
-    <Page isBannerVisible={false} description="META HERE" title="Projects">
+    <Page isBannerVisible={false} description="Learn more about the projects we are working on" title="Projects">
       <ProjectsList projects={projects}/>
     </Page>
   )

@@ -1,18 +1,15 @@
 ---
 name: "Imprint"
-updated: "20.04.2022"
+updated: "01.06.2022"
 ---
 # Imprint
 
-Information according to § 5 TMG
+This service on "Slynite.com" is provided by: 
 
-Company Name
-
-Street & Number
-
-Postcode City
-
-Country
-
-
+Information according to § 5 TMG \
+Danny Schapeit / Slynite \
+Flurstraße 4 \
+63825 Blankenbach \
+Germany \
+\
 E-Mail: [hello@sslnk.com](mailto:hello@sslnk.com)

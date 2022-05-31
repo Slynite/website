@@ -6,7 +6,7 @@ import md2html from '../../lib/md2html'
 
 export default function Post({ post }) {
   return (
-    <Page isBannerVisible={false} meta={post.excerpt} title={post.title} >
+    <Page isBannerVisible={false} description={post.excerpt} title={post.title} >
         <article>
             <PostHeader post={post} />
             <Markdown content={post.content} />

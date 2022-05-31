@@ -6,8 +6,8 @@ import { getAllFiles, getFileBySlug } from '../api/legal'
 
 export default function Legal({ page }) {
     return (
-      <Page description={"CHANGE CONTENT"} title={page.name} >
-          <p>Updated: {page.updated}</p>
+      <Page description={page.name} title={page.name} >
+          <p className="bg-gray-200 text-primary rounded-sm p-1">Last updated: {page.updated}</p>
           <Markdown content={page.content} />
       </Page>
     )

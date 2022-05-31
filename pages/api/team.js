@@ -1,5 +1,5 @@
 import path from 'path'
-import { TEAMMEMBER_AVATAR_BASE_URL, TEAMMEMBER_AVATAR_SIZE_IN_PX } from '../../lib/constrants';
+import { NEXTCLOUD_BASE_URL } from '../../lib/constrants';
 import {getBySlug, getAllByFields} from './_base'
 
 export default function handler(req, res) {
@@ -10,6 +10,7 @@ const dir =  path.join(process.cwd(), 'content/team');
 const fields = [
   'slug',
   'name',
+  'image',
   'position',
   'socialmedia',
   'content'
@@ -18,7 +19,9 @@ const fields = [
 export function getTeamMemberBySlug(slug) {
   try {
     const member =  getBySlug(slug, fields, dir);
-    member.image = getAvatarUrlFromSlug(slug);
+    if (member.image == undefined) {
+      member.image = getAvatarUrlFromSlug(slug);
+    }
     return member;
   } catch(Error) {
     return '{slug: null}';
@@ -28,11 +31,13 @@ export function getTeamMemberBySlug(slug) {
 export function getAllTeamMembers() {
   const teammember = getAllByFields(fields, dir);
   teammember.forEach(member => {
-    member.image = getAvatarUrlFromSlug(member.slug);
+    if (member.image == undefined) {
+      member.image = getAvatarUrlFromSlug(member.slug);
+    }
   })
   return teammember;
 }
 
-export function getAvatarUrlFromSlug(slug) {
-  return TEAMMEMBER_AVATAR_BASE_URL + slug + "/";
+function getAvatarUrlFromSlug(slug) {
+  return NEXTCLOUD_BASE_URL + "avatar/" + slug + "/1080";
 }
