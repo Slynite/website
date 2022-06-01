@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['cloud.slynite.com'],
   },
+  experimental: {
+    outputStandalone: true,
+  },
 }
 
 module.exports = nextConfig;
