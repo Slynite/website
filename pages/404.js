@@ -18,12 +18,12 @@ export default function Custom404 () {
                 </div>
             </div>
             <div className="flex md:ml-24 mt-6 justify-center space-x-4">
-              <div className='flex items-center justify-center px-4 py-2 border border-1 rounded-md border-customGray shadow-sm bg-gradient-to-r from-gradient-primary to-gradient-secondary'>
+              <div className='cursor-pointer flex items-center justify-center px-4 py-2 border border-1 rounded-md border-customGray shadow-sm bg-gradient-to-r from-gradient-primary to-gradient-secondary'>
                 <Link href={'/'} passHref className="text-sm font-mediumtext-white">
                   Back Home
                 </Link>
               </div>
-              <div className='flex items-center justify-center px-4 py-2 border border-1 rounded-md border-customGray shadow-sm bg-neutral-900 hover:bg-gradient-to-r from-gradient-primary to-gradient-secondary'>
+              <div className='cursor-pointer flex items-center justify-center px-4 py-2 border border-1 rounded-md border-customGray shadow-sm bg-neutral-900 hover:bg-gradient-to-r from-gradient-primary to-gradient-secondary'>
                 <Link href={'https://status.slynite.com'} passHref className="text-sm font-mediumtext-white">
                   Status page
                 </Link>

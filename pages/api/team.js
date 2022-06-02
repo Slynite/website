@@ -18,11 +18,7 @@ const fields = [
 
 export function getTeamMemberBySlug(slug) {
   try {
-    const member =  getBySlug(slug, fields, dir);
-    if (member.image == undefined) {
-      member.image = getAvatarUrlFromSlug(slug);
-    }
-    return member;
+    return getBySlug(slug, fields, dir);
   } catch(Error) {
     return '{slug: null}';
   }
@@ -30,14 +26,5 @@ export function getTeamMemberBySlug(slug) {
 
 export function getAllTeamMembers() {
   const teammember = getAllByFields(fields, dir);
-  teammember.forEach(member => {
-    if (member.image == undefined) {
-      member.image = getAvatarUrlFromSlug(member.slug);
-    }
-  })
   return teammember;
-}
-
-function getAvatarUrlFromSlug(slug) {
-  return NEXTCLOUD_BASE_URL + "avatar/" + slug + "/1080";
 }
