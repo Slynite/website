@@ -11,7 +11,7 @@ export default function TeamMember({ member }) {
     <Page description={member.description} title={member.name} >
       <article className='md:grid md:grid-cols-2'>
         <div className='rounded-md bg-neutral-900'>
-          <Image className='rounded-t-md' data-fallback-image="/content/not-found.png" src={member.image} alt={`${member.name}`} layout="responsive" width={25} height={25} />
+          <Image className='rounded-t-md' data-fallback-image="/content/not-found.png" src={member.image} alt={`${member.name}`} layout="responsive" width={25} height={25} placeholder="blur" blurDataURL={member.image} />
           <div className='p-2 text-gray-300'>
             <p className='text-transparent bg-clip-text bg-gradient-to-r from-gradient-primary to-gradient-secondary text-lg xl:text-2xl font-semibold inline-block'>{member.name}</p>
             <p className='xl:text-lg'>{member.position}</p>

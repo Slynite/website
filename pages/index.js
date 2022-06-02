@@ -10,7 +10,7 @@ import { getAllProjectsSortedByDate } from './api/projects'
 export default function Home({projects, posts}) {
   //make banner only visible on Index page
   return (
-    <Page description={"We are focused on privacy, transparency and security and developing open source software."} title="Welcome to Slynite">
+    <Page description={"We are focused on privacy, transparency and security and developing mostly open source software."} title="Welcome to Slynite">
       <Welcome />
       <div className='space-y-10'>
         <div className='text-center'>

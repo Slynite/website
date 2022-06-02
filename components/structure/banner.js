@@ -19,11 +19,11 @@ export default function Banner() {
                   </p>
                 </div>
                 <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
-                  <div className='flex items-center justify-center px-4 py-2 border border-1 rounded-md border-customGray shadow-sm bg-neutral-900 hover:bg-gradient-to-r from-gradient-primary to-gradient-secondary'>
-                    <Link href={'/newsroom/slynite-com-relaunch'} passHref className="text-sm font-mediumtext-white">
-                      Learn more
-                    </Link>
-                  </div>
+                  <Link href={'/newsroom/slynite-com-relaunch'} passHref className="text-sm font-mediumtext-white">
+                    <div className='cursor-pointer flex items-center justify-center px-4 py-2 border border-1 rounded-md border-customGray shadow-sm bg-neutral-900 hover:bg-gradient-to-r from-gradient-primary to-gradient-secondary'>
+                        Learn more
+                    </div>
+                  </Link>
                 </div>
                 <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-3 h-6 w-6 ">
                 </div>

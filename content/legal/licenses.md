@@ -14,5 +14,5 @@ updated: "01.06.2022"
 - [Fontawesome Brands](https://fontawesome.com/license/free)
 - [headlessui](https://github.com/tailwindlabs/headlessui/blob/main/LICENSE)
 - [remark](https://github.com/remarkjs/remark/blob/main/license)
-- [heropaterns](https://heropatterns.com/)
+- [heropatterns](https://heropatterns.com/)
 - [Bebas Neue](https://www.fontsquirrel.com/license/bebas-neue)

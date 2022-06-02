@@ -48,7 +48,7 @@ export default function SocialMediaButtons({ socialMediaArray }) {
             <div className="flex">
                 {links.map((link) => (
                     <Link key={link.platform} href={link.link} passHref>
-                        <a className="p-1">{link.icon}</a>
+                        <a className="p-1 cursor-pointer">{link.icon}</a>
                     </Link>
                 ))}
             </div>

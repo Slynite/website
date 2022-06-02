@@ -27,7 +27,7 @@ export default function Header() {
                 <Link href="/" passHref>
                   <div className="flex-shrink-0 -mt-10 sm:-mt-5 md:-mt-4 items-center">
                     <div className="block h-8 w-auto">
-                      <div className="w-[110px] h-[110px] items-start">
+                      <div className="w-[110px] h-[110px] items-start cursor-pointer">
                         <Image 
                             src="/company/slynite_logo.svg"
                             layout="responsive"
