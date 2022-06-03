@@ -32,6 +32,11 @@ For example the version 2022.04.1 has three parts.
 - 04: Month when the version was released (in this example: April)
 - 1: The number of release in this month and year.
 
+## Contributer
+<a href = "https://github.com/slynite/website/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=slynite/website"/>
+</a>
+
 ## License
 This project is licensed under [MIT](./LICENSE) and proudly created by the [Slynite Team](https://slynite.com/team).
 

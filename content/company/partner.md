@@ -3,8 +3,8 @@ name: "Partner"
 ---
 # Partner
 
-Are you interested to start a partnership to Slynite?
-Then you on the right place! We search for some partner who share our vision about the internet.
+Are you interested to start a partnership with Slynite? Then you're on the right place!
+We search for partners who share our vision about the internet.
 
 Which partnership offers Slynite?
  - Partnership with other Open Source projects
