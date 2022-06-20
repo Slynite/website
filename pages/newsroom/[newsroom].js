@@ -3,6 +3,7 @@ import { getPostBySlug, getAllPostsSortedByDate, getAuthorFromPost } from '../ap
 import Page from '../../components/structure/page'
 import Markdown from '../../components/utils/markdown'
 import md2html from '../../lib/md2html'
+import Share from '../../components/post/share'
 
 export default function Post({ post }) {
   return (
@@ -10,6 +11,7 @@ export default function Post({ post }) {
         <article>
             <PostHeader post={post} />
             <Markdown content={post.content} />
+            <Share posts={post} />
         </article>
     </Page>
   )
