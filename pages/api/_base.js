@@ -3,7 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export default function handler(req, res) {
-  res.status(403).send("This function is currently not for public use.")
+  res.status(501).json({ statuscode: 501, message: "Not Implemented" })
 }
 
 export function getSlugs(dir) {

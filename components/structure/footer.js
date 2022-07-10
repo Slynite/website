@@ -6,7 +6,6 @@ import { SITE_NAME } from '../../lib/constrants';
 
 var packageObj = require('../../package.json');
 
-//TODO: When we implement the styling, then we can also rewrite this component. This is only for a basic functionallity.
 export default function Footer() {
     var year = new Date().getFullYear();
     var versionLink = packageObj.repository.url + "releases/tag/" + packageObj.version

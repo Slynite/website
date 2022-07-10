@@ -3,7 +3,7 @@ import { getTeamMemberBySlug } from './team';
 import {getBySlug, getAllSortedByDate} from './_base'
 
 export default function handler(req, res) {
-  res.status(403).send("This function is currently not for public use.")
+  res.status(501).json({ statuscode: 501, message: "Not Implemented" })
 }
 
 const dir =  path.join(process.cwd(), 'content/posts');
@@ -31,6 +31,6 @@ export function getAllPostsWithAllFields() {
   return getAllPostsSortedByDate(fields);
 }
 
-export function getAuthorFromPost(slug) {
-  return getTeamMemberBySlug(slug);
+export async function getAuthorFromPost(slug) {
+  return await getTeamMemberBySlug(slug);
 }
