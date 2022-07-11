@@ -1,5 +1,4 @@
 import path from 'path'
-import { NEXTCLOUD_BASE_URL } from '../../lib/constrants';
 import {getBySlug, getAllByFields} from './_base'
 
 export default function handler(req, res) {

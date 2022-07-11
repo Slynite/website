@@ -1,12 +1,11 @@
 import { NextSeo } from "next-seo";
-import { SITE_NAME } from "../../lib/constrants";
 import Banner from "./banner";
 import Footer from "./footer";
 import Header from "./header";
 import { useRouter } from 'next/router'
 
 export default function Page({ children, description, title }) {
-    var pageTitle = `${title} | ${SITE_NAME}`
+    var pageTitle = `${title} | ${process.env.NEXT_PUBLIC_SITE_NAME}`
     const router = useRouter();
     var url = "https://slynite.com" + router.asPath;
     return(

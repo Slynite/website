@@ -2,7 +2,6 @@ import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MailIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
-import { SITE_URL } from '../../lib/constrants';
 
 export default function Share({posts}) {
     var url = GetPostUrl()
@@ -22,7 +21,7 @@ export default function Share({posts}) {
 
 function GetPostUrl(){
     const router = useRouter();
-    return SITE_URL + router.asPath;
+    return process.env.NEXT_PUBLIC_SITE_URL + router.asPath;
 }
 
 function GetShareText(post, url) {
@@ -61,7 +60,6 @@ function Twitter({url, text, tags}) {
 }
 
 function Email({text}) {
-    console.log(text)
     var shareUrl = "mailto:?subject=I have found a interesting post on Slynite Newsroom&body=" + text;
     return(
         <a href={shareUrl}>
