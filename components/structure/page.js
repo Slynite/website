@@ -4,6 +4,7 @@ import Banner from "./banner";
 import Footer from "./footer";
 import Header from "./header";
 import { useRouter } from 'next/router'
+import { ScrollToTop } from "./backToTop";
 
 export default function Page({ children, description, title }) {
     var pageTitle = `${title} | ${SITE_NAME}`
@@ -51,6 +52,7 @@ export default function Page({ children, description, title }) {
                 </main>
             </div>
             <Footer />
+            <ScrollToTop />
         </div>
     )
 }
