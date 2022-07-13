@@ -13,6 +13,7 @@ const fields = [
   'image',
   'position',
   'socialmedia',
+  'isVolunteerMember',
   'content'
 ]
 

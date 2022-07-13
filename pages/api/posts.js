@@ -16,6 +16,7 @@ const fields = [
     'image',
     'excerpt',
     'category',
+    'tags',
 ]
 
 export function getPostBySlug(slug) {
