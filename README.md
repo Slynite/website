@@ -32,6 +32,13 @@ For example the version 2022.04.1 has three parts.
 - 04: Month when the version was released (in this example: April)
 - 1: The number of release in this month and year.
 
+## Development diagramm
+
+<details><summary>Click to reveal diagramm</summary>
+  <img src = "./development-circle.drawio.png"/>
+</details>
+
+
 ## Contributer
 <a href = "https://github.com/slynite/website/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=slynite/website"/>
