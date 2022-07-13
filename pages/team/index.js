@@ -11,8 +11,7 @@ export default function Team({ teammember }) {
 }
 
 export async function getStaticProps() {
-  const teammember = getAllTeamMembers();
-
+  const teammember = await getAllTeamMembers();
   return {
     props: { teammember },
   }

@@ -61,7 +61,6 @@ function Twitter({url, text, tags}) {
 }
 
 function Email({text}) {
-    console.log(text)
     var shareUrl = "mailto:?subject=I have found a interesting post on Slynite Newsroom&body=" + text;
     return(
         <a href={shareUrl}>
