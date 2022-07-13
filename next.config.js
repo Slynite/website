@@ -5,7 +5,7 @@ const nextConfig = {
     domains: ['cloud.slynite.com'],
   },
   experimental: {
-    outputStandalone: true,
+    output: 'standalone',
   },
 }
 
