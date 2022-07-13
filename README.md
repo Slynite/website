@@ -47,4 +47,4 @@ For example the version 2022.04.1 has three parts.
 ## License
 This project is licensed under [MIT](./LICENSE) and proudly created by the [Slynite Team](https://slynite.com/team).
 
-The Open soure Licenses we use can be found [here](https://slynite.com/licenses).
+The Open soure Licenses we use can be found [here](https://slynite.com/legal/licenses).
