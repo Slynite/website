@@ -16,17 +16,27 @@
 # [Slynite.com](https://slynite.com)
 In this repository is the source code of the Slynite website. This project is build with [Next.js](https://nextjs.org/).
 
-## Developer Envioment
-Run in terminal `git clone https://github.com/Slynite/website/`
+## Developer Environment
+- Run in terminal `git clone https://github.com/Slynite/website/`
+- Rename `.env.example` to `.env` and change environment variables
+- Run `npm install` in terminal
+- Run `npm run dev` in termianl to start the dev server.
+- Access site on `[IP]:3000`
 
-### Local
-Run in terminal
+## Production
+
+### Using NPM
+- Run `npm install` in terminal
+- Run `npm run build && npm run start` in terminal
+- Access site on `[IP]:3000`
 
 ### Using Docker
 [Install Docker]() on your machine.
 Build your container: `docker build -t slynite-web .`.
 
 Run your container: `docker run -p 3000:3000 slynite-web`.
+
+- Access site on `[IP]:3000`
 
 
 ## Understand Versions

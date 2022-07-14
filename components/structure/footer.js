@@ -2,7 +2,6 @@ import { faGithub, faInstagram, faLinkedin, faOsi } from '@fortawesome/free-bran
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HeartIcon } from '@heroicons/react/outline'
 import Link from 'next/link';
-import { SITE_NAME } from '../../lib/constrants';
 
 var packageObj = require('../../package.json');
 
@@ -25,7 +24,7 @@ export default function Footer() {
             </div>
             <div className='p-1 pl-6'>
                 <div className='sm:flex sm:space-x-2 sm:justify-center'>
-                    <p>© {year} {SITE_NAME} All rights reserved.</p>
+                    <p>© {year} {process.env.NEXT_PUBLIC_SITE_NAME} All rights reserved.</p>
                     <p className='flex'>Build with <HeartIcon className="h-5 w-5 text-red-600 ml-1 mr-1"/> and <Link href="/legal/licenses" passHref><span className='ml-2 mr-2 cursor-pointer'><FontAwesomeIcon icon={faOsi}  width="18" /></span></Link></p>
                 </div>
             </div>
