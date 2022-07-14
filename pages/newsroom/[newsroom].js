@@ -19,7 +19,7 @@ export default function Post({ post }) {
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.newsroom)
   const author = getAuthorFromPost(post.author)
-  const content = page.content
+  const content = post.content
   return {
     props: {
       post: {

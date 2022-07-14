@@ -51,6 +51,8 @@ For example the version 2022.04.1 has three parts.
 
 <details><summary>Click to reveal diagramm</summary>
   <img src = "./development-circle.drawio.png"/>
+
+  If there is a new version of this project, please change the version in `package.json` to the new one (Milestone) before merge.
 </details>
 
 

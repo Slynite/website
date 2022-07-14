@@ -3,10 +3,9 @@ import Page from '../../components/structure/page'
 import SocialMediaButtons from '../../components/team/socialmedia'
 import Markdown from '../../components/utils/markdown'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function TeamMember({ member }) {
-  var volunteerBadge;
+  let volunteerBadge;
   if (member.isVolunteerMember) {
     volunteerBadge = getVolunteerBadge()
   }
@@ -14,7 +13,7 @@ export default function TeamMember({ member }) {
     <Page description={member.description} title={member.name} >
       <article className='md:grid md:grid-cols-2'>
         <div className='rounded-md bg-neutral-900'>
-          <Image className='rounded-t-md' data-fallback-image="/content/not-found.png" src={member.image} alt={`${member.name}`} layout="responsive" width={25} height={25} placeholder="blur" blurDataURL={member.image} />
+          <Image className='rounded-t-md' data-fallback-image="/content/not-found.png" src={member.image} alt={`${member.name}`} layout="responsive" width={1080} height={1080} placeholder="blur" blurDataURL={member.image} />
           <div className='p-2 text-gray-300'>
             <p className='text-transparent bg-clip-text bg-gradient-to-r from-gradient-primary to-gradient-secondary text-lg xl:text-2xl font-semibold inline-block'>{member.name}{volunteerBadge}</p>
             <p className='xl:text-lg'>{member.position}</p>
@@ -37,7 +36,7 @@ function getVolunteerBadge() {
 
 export async function getStaticProps({ params }) {
   const member = getTeamMemberBySlug(params.team)
-  const content = page.content;
+  const content = member.content;
 
   return {
     props: {

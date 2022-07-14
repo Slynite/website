@@ -4,9 +4,9 @@ import { MailIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
 
 export default function Share({posts}) {
-    var url = GetPostUrl()
-    var shareText = GetShareText(posts, url)
-    var tags = GetHashtagStringFromTags(posts.tags)
+    let url = GetPostUrl()
+    let shareText = GetShareText(posts, url)
+    let tags = GetHashtagStringFromTags(posts.tags)
     return(
         <div>
             <p className='text-lg font-semibold mb-2'>Share this post</p>
@@ -32,7 +32,7 @@ function GetShareText(post, url) {
 }
 
 function GetHashtagStringFromTags(tags) {
-    var tagString = "";
+    let tagString = "";
     tags.forEach(tag => {
         tagString = tagString + "#" + tag + " ";
     });
@@ -42,7 +42,7 @@ function GetHashtagStringFromTags(tags) {
 
 //Share Provider
 function LinkedIn({url}) {
-    var shareUrl = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+    let shareUrl = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
     return(
         <a href={shareUrl}>
             <FontAwesomeIcon icon={faLinkedin} width="16" />
@@ -51,7 +51,7 @@ function LinkedIn({url}) {
 }
 
 function Twitter({url, text, tags}) {
-    var shareUrl = "https://twitter.com/intent/tweet?url=" + url + "&text=" + text + "&hashtags=" + tags;
+    let shareUrl = "https://twitter.com/intent/tweet?url=" + url + "&text=" + text + "&hashtags=" + tags;
     return(
         <a href={shareUrl}>
             <FontAwesomeIcon icon={faTwitter} width="16" />
@@ -60,7 +60,7 @@ function Twitter({url, text, tags}) {
 }
 
 function Email({text}) {
-    var shareUrl = "mailto:?subject=I have found a interesting post on Slynite Newsroom&body=" + text;
+    let shareUrl = "mailto:?subject=I have found a interesting post on Slynite Newsroom&body=" + text;
     return(
         <a href={shareUrl}>
             <MailIcon className="h-5 w-5" />
