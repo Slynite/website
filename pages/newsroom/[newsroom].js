@@ -2,7 +2,6 @@ import PostHeader from '../../components/post/header'
 import { getPostBySlug, getAllPostsSortedByDate, getAuthorFromPost } from '../api/posts'
 import Page from '../../components/structure/page'
 import Markdown from '../../components/utils/markdown'
-import md2html from '../../lib/md2html'
 import Share from '../../components/post/share'
 
 export default function Post({ post }) {
@@ -20,7 +19,7 @@ export default function Post({ post }) {
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.newsroom)
   const author = getAuthorFromPost(post.author)
-  const content = await md2html(post.content || '')
+  const content = page.content
   return {
     props: {
       post: {

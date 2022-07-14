@@ -1,5 +1,4 @@
 import { getAllTeamMembers, getTeamMemberBySlug } from '../api/team'
-import md2html from '../../lib/md2html'
 import Page from '../../components/structure/page'
 import SocialMediaButtons from '../../components/team/socialmedia'
 import Markdown from '../../components/utils/markdown'
@@ -38,7 +37,7 @@ function getVolunteerBadge() {
 
 export async function getStaticProps({ params }) {
   const member = getTeamMemberBySlug(params.team)
-  const content = await md2html(member.content || '')
+  const content = page.content;
 
   return {
     props: {

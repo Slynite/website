@@ -1,4 +1,4 @@
-.markdown {
+  .markdown {
     @apply text-lg leading-relaxed;
   }
   
@@ -32,4 +32,21 @@
   .markdown h5 {
     @apply text-xl mt-4 mb-4 leading-snug;
   }
-  
+
+  .markdown table tr th {
+    @apply font-semibold;
+  }
+
+  .markdown table tr td {
+    @apply border-b border-dotted;
+  }
+
+  .markdown li {
+    @apply ml-4;
+    list-style-type: circle;
+  }
+
+  .markdown table tr td, .markdown table tr th {
+    @apply px-2 py-1;
+    word-break: break-word;
+  }
