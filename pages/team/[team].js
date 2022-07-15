@@ -10,7 +10,7 @@ export default function TeamMember({ member }) {
     volunteerBadge = getVolunteerBadge()
   }
   return (
-    <Page description={member.description} title={member.name} >
+    <Page description={member.description} title={member.name + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Team"} overrideTitle={true} >
       <article className='md:grid md:grid-cols-2'>
         <div className='rounded-md bg-neutral-900'>
           <Image className='rounded-t-md' data-fallback-image="/content/not-found.png" src={member.image} alt={`${member.name}`} layout="responsive" width={1080} height={1080} placeholder="blur" blurDataURL={member.image} />

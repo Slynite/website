@@ -6,7 +6,7 @@ import Share from '../../components/post/share'
 
 export default function Post({ post }) {
   return (
-    <Page isBannerVisible={false} description={post.excerpt} title={post.title} >
+    <Page isBannerVisible={false} description={post.excerpt} title={post.title + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Newsroom"} overrideTitle={true} >
         <article>
             <PostHeader post={post} />
             <Markdown content={post.content} />
