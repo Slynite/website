@@ -21,7 +21,7 @@ export default function PostPreview({post}) {
                         className="block font-semibold text-base xl:text-xl text-neutral-200 leading-6 hover:underline">
                         {post.title}
                     </a>
-                    <p className="text-sm xl:text-lg text-neutral-500 leading-6">
+                    <p className="text-xs md:text-base text-neutral-500 leading-6">
                         {post.excerpt}
                     </p>
                 </div>

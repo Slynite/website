@@ -2,14 +2,15 @@ import PostHeader from '../../components/post/header'
 import { getPostBySlug, getAllPostsSortedByDate, getAuthorFromPost } from '../api/posts'
 import Page from '../../components/structure/page'
 import Markdown from '../../components/utils/markdown'
-import md2html from '../../lib/md2html'
+import Share from '../../components/post/share'
 
 export default function Post({ post }) {
   return (
-    <Page isBannerVisible={false} description={post.excerpt} title={post.title} >
+    <Page isBannerVisible={false} description={post.excerpt} title={post.title + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Newsroom"} overrideTitle={true} >
         <article>
             <PostHeader post={post} />
             <Markdown content={post.content} />
+            <Share posts={post} />
         </article>
     </Page>
   )
@@ -18,7 +19,7 @@ export default function Post({ post }) {
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.newsroom)
   const author = getAuthorFromPost(post.author)
-  const content = await md2html(post.content || '')
+  const content = post.content
   return {
     props: {
       post: {

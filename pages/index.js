@@ -10,7 +10,7 @@ import { getAllProjectsSortedByDate } from './api/projects'
 export default function Home({projects, posts}) {
   //make banner only visible on Index page
   return (
-    <Page description={"We are focused on privacy, transparency and security and developing mostly open source software."} title="Welcome to Slynite">
+    <Page description={"We are focused on privacy, transparency and security and developing mostly open source software."} title="Slynite | Company for Privacy, Security and Transparency on the Internet" overrideTitle={true}>
       <Welcome />
       <div className='space-y-10'>
         <div className='text-center'>
@@ -27,7 +27,7 @@ export default function Home({projects, posts}) {
 export async function getStaticProps() {
   const projects = getAllProjectsSortedByDate();
   const postsData = getAllPostsSortedByDate();
-  var posts = postsData.slice(0,4);
+  let posts = postsData.slice(0,4);
 
   return {
     props: { projects, posts },

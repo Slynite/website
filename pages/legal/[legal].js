@@ -1,5 +1,4 @@
 
-import md2html from '../../lib/md2html'
 import Page from '../../components/structure/page'
 import Markdown from '../../components/utils/markdown'
 import { getAllFiles, getFileBySlug } from '../api/legal'
@@ -15,7 +14,7 @@ export default function Legal({ page }) {
 
 export async function getStaticProps({ params }) {
   const page = getFileBySlug(params.legal)
-  const content = await md2html(page.content || '')
+  const content = page.content
 
   return {
     props: {

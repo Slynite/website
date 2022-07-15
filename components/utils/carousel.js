@@ -44,7 +44,7 @@ export default function Carousel({type, items}) {
   const slides = [];
   if (type === "projects") {
       for (let i = 0; i < items.length; i++) {
-        var item = new project(i, items[i].name, items[i].description, items[i].url, items[i].logo, items[i].image);
+        let item = new project(i, items[i].name, items[i].description, items[i].url, items[i].logo, items[i].image);
         slides.push(item);
       }
     }

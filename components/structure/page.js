@@ -1,14 +1,14 @@
 import { NextSeo } from "next-seo";
-import { SITE_NAME } from "../../lib/constrants";
 import Banner from "./banner";
 import Footer from "./footer";
 import Header from "./header";
-import { useRouter } from 'next/router'
+import { ScrollToTop } from "./backToTop";
 
-export default function Page({ children, description, title }) {
-    var pageTitle = `${title} | ${SITE_NAME}`
-    const router = useRouter();
-    var url = "https://slynite.com" + router.asPath;
+export default function Page({ children, description, title, overrideTitle }) {
+    let pageTitle = title;
+    if (overrideTitle === undefined || !overrideTitle) {
+      pageTitle = pageTitle + ` | ${process.env.NEXT_PUBLIC_SITE_NAME}`
+    }
     return(
         <div className="bg-primary text-secondary justify-between flex flex-col min-h-screen">
             <NextSeo
@@ -51,6 +51,7 @@ export default function Page({ children, description, title }) {
                 </main>
             </div>
             <Footer />
+            <ScrollToTop />
         </div>
     )
 }

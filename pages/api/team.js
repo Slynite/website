@@ -1,5 +1,4 @@
 import path from 'path'
-import { NEXTCLOUD_BASE_URL } from '../../lib/constrants';
 import {getBySlug, getAllByFields} from './_base'
 
 export default function handler(req, res) {
@@ -13,6 +12,7 @@ const fields = [
   'image',
   'position',
   'socialmedia',
+  'isVolunteerMember',
   'content'
 ]
 

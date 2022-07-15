@@ -5,7 +5,18 @@
 @font-face {
     font-family: Bebas Neue;
     src: url(/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/Poppins-Light.ttf);
+}
+
+@layer base {
+  html {
+    font-family: Poppins, system-ui, sans-serif;
   }
+}
 
 html {
     background-color: #131313;
