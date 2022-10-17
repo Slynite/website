@@ -1,6 +1,6 @@
 ---
 name: "Imprint"
-updated: "01.06.2022"
+updated: "14.10.2022"
 ---
 # Imprint
 
@@ -13,3 +13,7 @@ Flurstraße 4 \
 Germany \
 \
 E-Mail: [hello@sslnk.com](mailto:hello@sslnk.com)
+
+### Mediacredits
+
+The credits for media we used on Slynite.com can be found  [here](https://slynite.com/legal/licenses).

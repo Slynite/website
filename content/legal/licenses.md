@@ -1,6 +1,6 @@
 ---
 name: "Licenses"
-updated: "15.07.2022"
+updated: "14.10.2022"
 ---
 # Licenses
 ## Thank ❤️
@@ -17,9 +17,19 @@ you to all the creators and contributors of the following projects. Without your
 - [Fontawesome Brands](https://fontawesome.com/license/free)
 - [headlessui](https://github.com/tailwindlabs/headlessui/blob/main/LICENSE)
 - [remark](https://github.com/remarkjs/remark/blob/main/license)
-- [heropaterns](https://heropatterns.com/)
+- [heropatterns](https://heropatterns.com/)
 
 ### Fonts
 
 - [Bebas Neue](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 - [Poppins](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+
+### Mediacredits
+
+The media shown on the website [Slynite.com](https://slynite.com) may be officially and legally shown and used by Slynite.
+
+Media that appear in newsroom articles may also originate from third-party rights holders. In this case, it will be pointed out at the end of each article with the rights holder and the license.
+
+For all other media, the following license applies **© Slynite. Photographer: [Danny-Tobias Schapeit](https://danny.schapeit.com)**
+
+The media may not be used without explicit permission from Slynite.
