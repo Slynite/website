@@ -15,7 +15,7 @@ export default function PostPreview({post}) {
                         blurDataURL={post.image}
                 />
                 <div className="p-5">
-                    <p className="font-medium text-xs xl:text-base text-neutral-700">{new Date(post.date).toLocaleString("de-DE") }</p>
+                    <p className="font-medium text-xs xl:text-base text-neutral-700">{post.date}</p>
                     <a
                         href={`/newsroom/${post.slug}`}
                         className="block font-semibold text-base xl:text-xl text-neutral-200 leading-6 hover:underline">
