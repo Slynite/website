@@ -5,7 +5,7 @@ export default function CarouselSlide(project) {
     return(
         <div className={`keen-slider__slide number-slide${project.project.number} cursor-pointer`}>
             <Link href={project.project.url} passHref norefer>
-                <div className="max-w-md lg:max-w-2xl bg-neutral-900 rounded-md shadow-md min-w-full">
+                <div className="max-w-md lg:max-w-2xl bg-neutral-850 rounded-md shadow-md min-w-full">
                     <div className="flex flex-col">
                         <Image className="rounded-t-lg h-[400px] w-[800px]"
                                 src={project.project.image}
@@ -19,7 +19,7 @@ export default function CarouselSlide(project) {
                         <div className="flex items-center">
                             <div className="w-[45px] h-[45px] md:w-[65px] md:h-[65px] p-1 m-2">
                                 <Image
-                                    className="ml-3 mt-40 rounded-full bg-neutral-900"
+                                    className="ml-3 mt-40 rounded-full bg-neutral-850"
                                     src={project.project.logo}
                                     width={65}
                                     height={65}
