@@ -13,6 +13,10 @@ export default function ImageWithModal(src, alt, width, height) {
     setIsOpen(true)
   }
 
+  if (alt == null) {
+    alt = "Image without alternate text";
+  }
+
   return (
   <>
       <Image
