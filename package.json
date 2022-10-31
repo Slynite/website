@@ -1,6 +1,6 @@
 {
   "name": "slynite.com",
-  "version": "2022.10.1",
+  "version": "2022.11.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
