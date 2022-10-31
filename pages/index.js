@@ -7,7 +7,7 @@ import TextHeader from '../components/utils/text-header'
 import { getAllPostsSortedByDate } from './api/posts'
 import { getAllProjectsSortedByDate } from './api/projects'
 
-export default function Home({projects, posts}) {
+export default function Home({projects, posts, moreThenFourPosts}) {
   //make banner only visible on Index page
   return (
     <Page description={"We are focused on privacy, transparency and security and developing mostly open source software."} title="Slynite | Company for Privacy, Security and Transparency on the Internet" overrideTitle={true}>
@@ -18,7 +18,7 @@ export default function Home({projects, posts}) {
         </div>
         <Carousel type={"projects"} items={projects} />
         <About />
-        <News posts={posts} />
+        <News posts={posts} areThereMoreThenFourPosts={moreThenFourPosts}  />
       </div>
     </Page>
   )
@@ -30,7 +30,7 @@ export async function getStaticProps() {
   let posts = postsData.slice(0,4);
 
   return {
-    props: { projects, posts },
+    props: { projects, posts, moreThenFourPosts: postsData.length > 4 },
   }
 }
 
