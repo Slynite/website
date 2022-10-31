@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function PostPreview({post}) {
     return (
         <Link href={`/newsroom/${post.slug}`} passHref key={post}>
-            <div className="max-w-md lg:max-w-2xl bg-neutral-900 rounded-md shadow-md min-w-full hover:scale-102 duration-300 motion-reduce:transform-none cursor-pointer">
+            <div className="max-w-md lg:max-w-2xl bg-neutral-850 rounded-md shadow-md min-w-full hover:scale-102 duration-300 motion-reduce:transform-none cursor-pointer">
                 <Image className="rounded-t-lg"
                         src={post.image}
                         width={350}
