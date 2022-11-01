@@ -12,7 +12,7 @@ export default function TeamMember({ member }) {
   return (
     <Page description={member.description} title={member.name + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Team"} overrideTitle={true} >
       <article className='md:grid md:grid-cols-2'>
-        <div className='rounded-md bg-neutral-900'>
+        <div className='rounded-md bg-neutral-850'>
           <Image className='rounded-t-md' data-fallback-image="/content/not-found.png" src={member.image} alt={`${member.name}`} layout="responsive" width={1080} height={1080} placeholder="blur" blurDataURL={member.image} />
           <div className='p-2 text-gray-300'>
             <p className='text-transparent bg-clip-text bg-gradient-to-r from-gradient-primary to-gradient-secondary text-lg xl:text-2xl font-semibold inline-block'>{member.name}{volunteerBadge}</p>
