@@ -12,7 +12,7 @@ Flurstraße 4 \
 63825 Blankenbach \
 Germany \
 \
-E-Mail: [hello@sslnk.com](mailto:hello@sslnk.com)
+E-Mail: [hello@slynite.com](mailto:hello@slynite.com)
 
 ### Mediacredits
 
