@@ -1,5 +1,5 @@
 import path from 'path'
-import defaultApiHandler, {getAllByFields, getBySlug, Items} from './_base'
+import defaultApiHandler, {getAllByFields, getBySlug} from './_base'
 
 export default defaultApiHandler
 

@@ -4,14 +4,14 @@ import Footer from "./footer";
 import Header from "./header";
 import { ScrollToTop } from "./backToTop";
 
-type Page = {
+type PageContent = {
     children: React.ReactNode,
     description: string,
     title: string,
     overrideTitle?: boolean,
 }
 
-export default function Page({ children, description, title, overrideTitle }: Page) {
+export default function Page({ children, description, title, overrideTitle }: PageContent) {
     let pageTitle = title;
     if (overrideTitle === undefined || !overrideTitle) {
       pageTitle = pageTitle + ` | ${process.env.NEXT_PUBLIC_SITE_NAME}`

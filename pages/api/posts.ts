@@ -26,6 +26,5 @@ export function getAllPostsSortedByDate(): any {
 }
 
 export function getAuthorFromPost(slug: string): any {
-  //TODO: Test what happens if the author is not found
   return getTeamMemberBySlug(slug)
 }

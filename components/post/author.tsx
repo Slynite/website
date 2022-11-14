@@ -14,7 +14,7 @@ export default function PostAuthor({ author }: Props) {
                 <Link href={`/team/${author.slug}`} passHref key={author.slug}>
                     <div className="flex space-x-2 items-center">
                         <div className="w-[28px] h-[28px]">
-                            <Image className="rounded-full" width={28} height={28} alt={author.name} src={author.image} placeholder="blur" blurDataURL={author.image} />
+                            <Image className="rounded-full" width={40} height={40} alt={author.name} src={author.image} placeholder="blur" blurDataURL={author.image} />
                         </div>
                         <p className="text-xs md:text-sm text-gray-300">{author.name}</p>
                     </div>
