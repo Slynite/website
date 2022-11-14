@@ -3,8 +3,8 @@ name: "Emma Doe"
 position: "Designer"
 image: "/team/emma.doe/emma.doe.png"
 socialmedia:
-    - "website": "https://emmadoe.com"
-    - "cactuscloud": "https://cloud.slynite.com/u/emma.doe"
+    - {name: "twitter", url: "https://twitter.com/emma_doe"}
+    - {name: "cactuscloud", url: "https://cloud.slynite.com/u/emma.doe"}
 isVolunteerMember: true
 ---
 ## Here we are,
