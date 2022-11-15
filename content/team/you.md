@@ -3,10 +3,10 @@ name: "Join us"
 position: "and become a part of us"
 image: "/team/you/employee-add_1920_op100.png"
 socialmedia:
-    - "website": "https://slynite.com"
-    - "github": "https://github.com/slynite"
-    - "linkedin": "https://www.linkedin.com/company/slynite"
-    - "instagram": "https://instagram.com/slynite.official"
+    - { name: "website", url: "https://slynite.com" }
+    - { name: "github", url: "https://github.com/slynite" }
+    - { name: "linkedin", url: "https://www.linkedin.com/company/slynite" }
+    - { name: "instagram", url: "https://instagram.com/slynite.official" }
 isVolunteerMember: false
 ---
 ### Join us!
