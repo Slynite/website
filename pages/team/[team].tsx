@@ -2,7 +2,7 @@ import { getAllTeamMembers, getTeamMemberBySlug } from '../api/team'
 import Page from '../../components/structure/page'
 import SocialMediaButtons from '../../components/team/socialmedia'
 import Markdown from '../../components/utils/markdown'
-import Image from 'next/image'
+import Image from "next/image";
 import { TeamMember } from '../../interfaces/interfaces'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
@@ -19,7 +19,20 @@ export default function SingleTeamMember({ teammember }: Props) {
     <Page description={teammember.content} title={teammember.name + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Team"} overrideTitle={true} >
       <article className='md:grid md:grid-cols-2'>
         <div className='rounded-md bg-neutral-850'>
-          <Image className='rounded-t-md' data-fallback-image="/content/not-found.png" src={teammember.image} alt={`${teammember.name}`} layout="responsive" width={1080} height={1080} placeholder="blur" blurDataURL={teammember.image} />
+          <Image
+            className='rounded-t-md'
+            data-fallback-image="/content/not-found.png"
+            src={teammember.image}
+            alt={`${teammember.name}`}
+            width={1080}
+            height={1080}
+            placeholder="blur"
+            blurDataURL={teammember.image}
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
           <div className='p-2 text-gray-300'>
             <p className='text-transparent bg-clip-text bg-gradient-to-r from-gradient-primary to-gradient-secondary text-lg xl:text-2xl font-semibold inline-block'>{teammember.name}{volunteerBadge}</p>
             <p className='xl:text-lg'>{teammember.position}</p>
@@ -31,7 +44,7 @@ export default function SingleTeamMember({ teammember }: Props) {
         </div>
       </article>
     </Page>
-  )
+  );
 }
 
 function getVolunteerBadge() {

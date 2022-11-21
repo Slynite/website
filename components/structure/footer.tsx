@@ -24,12 +24,12 @@ export default function Footer() {
             <div className='p-1 pl-6'>
                 <div className='sm:flex sm:space-x-2 sm:justify-center'>
                     <p>© {year} {process.env.NEXT_PUBLIC_SITE_NAME} All rights reserved.</p>
-                    <p className='flex'>Built with <HeartIcon className="h-5 w-5 text-red-600 ml-1 mr-1"/> and <Link href="/legal/licenses" passHref><span className='ml-2 mr-2 cursor-pointer'><FontAwesomeIcon icon={faOsi}  width="18" /></span></Link></p>
+                    <p className='flex'>Built with <HeartIcon className="h-5 w-5 text-red-600 ml-1 mr-1"/> and <Link href="/legal/licenses" passHref legacyBehavior><span className='ml-2 mr-2 cursor-pointer'><FontAwesomeIcon icon={faOsi}  width="18" /></span></Link></p>
                 </div>
             </div>
             <div className='p-1 pl-6'>
                 <div className='sm:flex sm:space-x-2 sm:justify-center'>
-                    <p className='flex'><Link href="https://instagram.com/slynite.official" passHref><span className='ml-1 mr-1 cursor-pointer'><FontAwesomeIcon icon={faInstagram} width="16" /></span></Link> <Link href="https://linkedin.com/company/slynite" passHref><span className='ml-1 mr-1 cursor-pointer'><FontAwesomeIcon icon={faLinkedin}  width="16" /></span></Link> <Link href="https://github.com/slynite" passHref><span className='ml-1 mr-1 cursor-pointer'><FontAwesomeIcon icon={faGithub}  width="16" /></span></Link></p>
+                    <p className='flex'><Link href="https://instagram.com/slynite.official" passHref legacyBehavior><span className='ml-1 mr-1 cursor-pointer'><FontAwesomeIcon icon={faInstagram} width="16" /></span></Link> <Link href="https://linkedin.com/company/slynite" passHref legacyBehavior><span className='ml-1 mr-1 cursor-pointer'><FontAwesomeIcon icon={faLinkedin}  width="16" /></span></Link> <Link href="https://github.com/slynite" passHref legacyBehavior><span className='ml-1 mr-1 cursor-pointer'><FontAwesomeIcon icon={faGithub}  width="16" /></span></Link></p>
                 </div>
             </div>
             <div className='p-1 pl-6'>
@@ -38,5 +38,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )
+    );
 }

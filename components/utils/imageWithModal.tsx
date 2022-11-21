@@ -24,18 +24,20 @@ export default function ImageWithModal({ src, alt, width, height }: Props) {
     alt = "Image without alternate text";
   }
 
-  return (
-  <>
+  return <>
       <Image
         src={src}
         width={width}
         height={height}
-        layout="responsive"
         alt={alt}
         placeholder="blur"
         onClick={openModal}
         blurDataURL={src}
-      />
+        sizes="100vw"
+        style={{
+          width: "100%",
+          height: "auto"
+        }} />
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10 max-w-screen max-h-screen" onClose={closeModal}>
@@ -67,12 +69,15 @@ export default function ImageWithModal({ src, alt, width, height }: Props) {
                       src={src}
                       width={width}
                       height={height}
-                      layout="responsive"
                       alt={alt}
                       onClick={closeModal}
                       placeholder="blur"
                       blurDataURL={src}
-                    />
+                      sizes="100vw"
+                      style={{
+                        width: "100%",
+                        height: "auto"
+                      }} />
                     
                 </Dialog.Panel>
               </Transition.Child>
@@ -80,6 +85,5 @@ export default function ImageWithModal({ src, alt, width, height }: Props) {
           </div>
         </Dialog>
       </Transition>
-    </>
-  )
+    </>;
 }

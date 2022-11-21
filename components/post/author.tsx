@@ -11,16 +11,27 @@ export default function PostAuthor({ author }: Props) {
     if (author != null) {
         return (
             <div className="cursor-pointer">
-                <Link href={`/team/${author.slug}`} passHref key={author.slug}>
+                <Link href={`/team/${author.slug}`} passHref key={author.slug} legacyBehavior>
                     <div className="flex space-x-2 items-center">
                         <div className="w-[28px] h-[28px]">
-                            <Image className="rounded-full" width={40} height={40} alt={author.name} src={author.image} placeholder="blur" blurDataURL={author.image} />
+                            <Image
+                                className="rounded-full"
+                                width={40}
+                                height={40}
+                                alt={author.name}
+                                src={author.image}
+                                placeholder="blur"
+                                blurDataURL={author.image}
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
                         </div>
                         <p className="text-xs md:text-sm text-gray-300">{author.name}</p>
                     </div>
                 </Link>
             </div>
-        )
+        );
     } else {
         return (
             <div className="text-xs md:text-sm text-gray-300">
