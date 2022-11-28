@@ -25,15 +25,19 @@ export default function SocialMediaButtons({ socialMediaArray }: Props): JSX.Ele
             links.push(link)
         })
     
-        return(
+        return (
             <div className="flex">
                 {links.map((link) => (
-                    <Link key={link.socialMedia.name} href={link.socialMedia.url} passHref>
-                        <a className="p-1 cursor-pointer">{link.icon}</a>
+                    <Link
+                        key={link.socialMedia.name}
+                        href={link.socialMedia.url}
+                        passHref
+                        className="p-1 cursor-pointer">
+                        {link.icon}
                     </Link>
                 ))}
             </div>
-        )
+        );
     } else {
         return(<></>);
     }

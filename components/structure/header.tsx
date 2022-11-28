@@ -33,16 +33,20 @@ export default function Header() {
           <div className="max-w-10xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-20">
               <div className="flex items-center justify-center sm:items-stretch sm:justify-start">
-                <Link href="/" passHref>
+                <Link href="/" passHref legacyBehavior>
                   <div className="flex-shrink-0 -mt-10 sm:-mt-5 md:-mt-4 items-center">
                     <div className="block h-8 w-auto">
-                      <div className="w-[110px] h-[110px] items-start cursor-pointer">
-                        <Image 
-                            src="/company/slynite_logo.svg"
-                            layout="responsive"
-                            width={75}
-                            height={50}
-                            alt="Slynite Logo" />
+                      <div className="w-[110px]  items-start cursor-pointer">
+                        <Image
+                          src="/company/slynite_logo.svg"
+                          width={75}
+                          height={50}
+                          alt="Slynite Logo"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto"
+                          }} />
                       </div>
                     </div>
                   </div>
@@ -100,7 +104,7 @@ export default function Header() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }
 
 function isCurrentLinkActive(item: NavItem, router: NextRouter): boolean {
