@@ -3,19 +3,20 @@ import React from "react";
 import { Disclosure } from '@headlessui/react'
 import { XIcon, MenuIcon } from '@heroicons/react/outline'
 import Image from "next/image";
+import { NextRouter, useRouter } from "next/router";
 
 type NavItem = {
   name: string,
   href: string,
-  current: boolean
+  highlightSubpagesAsActive: boolean
 }
 
 const navigation: NavItem[] = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'Newsroom', href: '/newsroom', current: false },
-  { name: 'Projects', href: '/projects', current: false },
-  { name: 'Team', href: '/team', current: false },
-  { name: 'About', href: '/company/about-us', current: false },
+  { name: 'Home', href: '/', highlightSubpagesAsActive: false },
+  { name: 'Newsroom', href: '/newsroom', highlightSubpagesAsActive: true  },
+  { name: 'Projects', href: '/projects', highlightSubpagesAsActive: true },
+  { name: 'Team', href: '/team', highlightSubpagesAsActive: true },
+  { name: 'About', href: '/company/about-us', highlightSubpagesAsActive: false },
 ]
 
 function classNames(...classes: any[]) {
@@ -23,6 +24,8 @@ function classNames(...classes: any[]) {
 }
 
 export default function Header() {
+  const router: NextRouter = useRouter()
+
   return (
     <Disclosure as="nav" className="bg-background">
       {({ open }: { open: boolean}) => (
@@ -55,10 +58,10 @@ export default function Header() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          isCurrentLinkActive(item, router) ? 'text-white underline underline-offset-8' : 'text-gray-300 hover:text-white',
                           'px-3 py-2 rounded-md text-sm md:text-lg font-medium'
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={isCurrentLinkActive(item, router) ? 'page' : undefined}
                       >
                         {item.name}
                       </a>
@@ -88,10 +91,10 @@ export default function Header() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'text-transparent bg-clip-text bg-gradient-to-r from-gradient-primary to-gradient-secondary' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    isCurrentLinkActive(item, router) ? 'text-white underline underline-offset-4' : 'text-gray-300 hover:text-white',
                     'block px-3 py-1 rounded-md text-base font-medium'
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={isCurrentLinkActive(item, router) ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -102,4 +105,12 @@ export default function Header() {
       )}
     </Disclosure>
   );
+}
+
+function isCurrentLinkActive(item: NavItem, router: NextRouter): boolean {
+  if (item.highlightSubpagesAsActive) {
+    return router.asPath.startsWith(item.href)
+  } else {
+    return router.asPath === item.href
+  }
 }
