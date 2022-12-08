@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import Page from '../../components/structure/page';
 import TeamList from '../../components/team/list';
-import { TeamMember } from '../../interfaces/interfaces';
+import { ContentTypes, TeamMember } from '../../interfaces/interfaces';
 import { getAllTeamMembers } from '../api/team';
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 
 export default function Team({ teammembers }: Props) {
   return (
-    <Page description="Meet the team behind Slynite" title="Our Team">
+    <Page contentType={ContentTypes.Other} description="Meet the team behind Slynite" title="Our Team" allowIndexing={false}>
       <TeamList teammembers={teammembers} />
     </Page>
   )

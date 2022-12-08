@@ -3,7 +3,7 @@ import Page from '../../components/structure/page'
 import SocialMediaButtons from '../../components/team/socialmedia'
 import Markdown from '../../components/utils/markdown'
 import Image from "next/image";
-import { TeamMember } from '../../interfaces/interfaces'
+import { ContentTypes, TeamMember } from '../../interfaces/interfaces'
 import { GetStaticPaths, GetStaticProps } from 'next'
 
 type Props = {
@@ -16,7 +16,7 @@ export default function SingleTeamMember({ teammember }: Props) {
     volunteerBadge = getVolunteerBadge()
   }
   return (
-    <Page description={teammember.content} title={teammember.name + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Team"} overrideTitle={true} >
+    <Page contentType={ContentTypes.TeamMember} title={teammember.name + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Team"} overrideTitle={true}  description={teammember.content} teamMember={{name: teammember.name}}>
       <article className='md:grid md:grid-cols-2'>
         <div className='rounded-md bg-neutral-850'>
           <Image

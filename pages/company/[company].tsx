@@ -2,7 +2,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Page from '../../components/structure/page'
 import Markdown from '../../components/utils/markdown'
-import { PageData } from '../../interfaces/interfaces'
+import { ContentTypes, PageData } from '../../interfaces/interfaces'
 import { getAllFiles, getFileBySlug } from '../api/company'
 
 type Props = {
@@ -11,7 +11,7 @@ type Props = {
 
 export default function Company({ page }: Props) {
   return (
-    <Page description={page.name} title={page.name} >
+    <Page contentType={ContentTypes.Other} title={page.name} description={page.name}>
         <Markdown content={page.content} />
     </Page>
   )

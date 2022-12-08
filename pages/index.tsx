@@ -4,7 +4,7 @@ import Welcome from '../components/home/wecome'
 import Page from '../components/structure/page'
 import Carousel, { CarouselItemType } from '../components/utils/carousel'
 import TextHeader from '../components/utils/text-header'
-import { Post, Project } from '../interfaces/interfaces'
+import { ContentTypes, Post, Project } from '../interfaces/interfaces'
 import { getAllPostsSortedByDate } from './api/posts'
 import { getAllProjectsSortedByDate } from './api/projects'
 
@@ -16,7 +16,7 @@ type Props = {
 
 export default function Home({projects, posts, moreThenFourPosts}: Props) {
   return (
-    <Page description={"We are focused on privacy, transparency and security and developing mostly open source software."} title="Slynite | Company for Privacy, Security and Transparency on the Internet" overrideTitle={true}>
+    <Page contentType={ContentTypes.Other} title="Slynite | Company for Privacy, Security and Transparency on the Internet" overrideTitle={true} description={"We are focused on privacy, transparency and security and developing mostly open source software."}>
       <Welcome />
       <div className='space-y-10'>
         <div className='text-center'>

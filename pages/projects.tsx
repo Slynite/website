@@ -1,6 +1,6 @@
 import ProjectsList from '../components/project/list';
 import Page from '../components/structure/page'
-import { Project } from '../interfaces/interfaces';
+import { ContentTypes, Project } from '../interfaces/interfaces';
 import { getAllProjectsSortedByDate } from './api/projects'
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 export default function Projects({ projects }: Props) {
   return (
-    <Page description={"Learn more about the projects we are working on"} title={"Projects"} overrideTitle={false}>
+    <Page contentType={ContentTypes.Project} title={"Projects"} description={"Learn more about the projects we are working on"}>
       <ProjectsList projects={projects}/>
     </Page>
   )
