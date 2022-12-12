@@ -16,6 +16,7 @@ type PageContent = {
 	allowIndexing?: boolean
     article?: {
       publishedTime: string
+      updatedTime?: string
       author: string
       category: string
       tags: string[]

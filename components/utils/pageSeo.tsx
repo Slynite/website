@@ -48,6 +48,7 @@ function getOpenGraph({ data }: { data: Seo }): OpenGraph {
 			type: 'article',
 			article: {
 			publishedTime: data.article?.publishedTime,
+			modifiedTime: data.article?.updatedTime ? data.article?.updatedTime : data.article?.publishedTime,
 			authors: [
 				data.article?.author as string
 			],

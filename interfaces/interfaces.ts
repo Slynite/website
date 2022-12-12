@@ -24,9 +24,12 @@ export interface Project {
 export interface KnowledgeBaseEntry {
     slug: string
     title: string
+    excerpt: string
     image: string
     date: string
-    updated: string
+    updated?: string
+    category: string
+    tags: string[]
     content: string
 }
 
@@ -61,6 +64,7 @@ export interface Seo {
     allowIndexing: boolean
     article?: {
         publishedTime: string
+        updatedTime?: string
         author: string
         category: string
         tags: string[]

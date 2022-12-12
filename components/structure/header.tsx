@@ -15,6 +15,7 @@ const navigation: NavItem[] = [
   { name: 'Home', href: '/', highlightSubpagesAsActive: false },
   { name: 'Newsroom', href: '/newsroom', highlightSubpagesAsActive: true  },
   { name: 'Projects', href: '/projects', highlightSubpagesAsActive: true },
+  { name: 'Knowledge', href: '/knowledge', highlightSubpagesAsActive: true },
   { name: 'Team', href: '/team', highlightSubpagesAsActive: true },
   { name: 'About', href: '/company/about-us', highlightSubpagesAsActive: false },
 ]
@@ -36,7 +37,7 @@ export default function Header() {
                 <Link href="/" passHref legacyBehavior>
                   <div className="flex-shrink-0 -mt-10 sm:-mt-5 md:-mt-4 items-center">
                     <div className="block h-8 w-auto">
-                      <div className="w-[110px]  items-start cursor-pointer">
+                      <div className="w-[110px] mt-3 items-start cursor-pointer">
                         <Image
                           src="/company/slynite_logo.svg"
                           width={75}
