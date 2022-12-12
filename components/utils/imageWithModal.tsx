@@ -33,7 +33,6 @@ export default function ImageWithModal({ src, alt, width, height }: Props) {
         placeholder="blur"
         onClick={openModal}
         blurDataURL={src}
-        sizes="100vw"
         style={{
           width: "100%",
           height: "auto"
