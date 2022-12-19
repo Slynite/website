@@ -2,16 +2,16 @@ import { faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MailIcon } from '@heroicons/react/outline'
 import { useRouter } from 'next/router'
-import { Post } from '../../interfaces/interfaces';
+import { KnowledgeBaseEntry, Post } from '../../interfaces/interfaces';
 
 type Props = {
-    post: Post
+    entryToShare: Post | KnowledgeBaseEntry
 }
 
-export default function Share({ post }: Props) {
-    const url: string = GetPostUrl()
-    const shareText: string = GetShareText(post, url)
-    const tags: string = GetHashtagStringFromTags(post.tags)
+export default function Share({ entryToShare }: Props) {
+    const url: string = GetUrl()
+    const shareText: string = GetShareText(entryToShare, url)
+    const tags: string = GetHashtagStringFromTags(entryToShare.tags)
     return(
         <div>
             <p className='text-lg font-semibold mb-2'>Share this post</p>
@@ -24,15 +24,15 @@ export default function Share({ post }: Props) {
     )
 }
 
-function GetPostUrl(): string{
+function GetUrl(): string{
     const router = useRouter();
     return process.env.NEXT_PUBLIC_SITE_URL + router.asPath;
 }
 
-function GetShareText(post: Post, url: string): string {
-    return "I found a interesting post on #slynite newsroom: \n\n" +
-                post.title + "\n" +
-                post.excerpt + "...\n\n" +
+function GetShareText(entry: Post | KnowledgeBaseEntry, url: string): string {
+    return "Look what I just found on Slynite.com: \n\n" +
+                entry.title + "\n" +
+                entry.excerpt + "...\n\n" +
                 "Read more here: " + url
 }
 

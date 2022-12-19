@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import KnowledgeBaseEntryHeader from "../../components/knowledge-base/header";
-import Share from "../../components/knowledge-base/share";
+import Share from "../../components/utils/share";
 import Page from "../../components/structure/page";
 import Markdown from "../../components/utils/markdown";
 import { ContentTypes, KnowledgeBaseEntry } from "../../interfaces/interfaces";
@@ -16,7 +16,7 @@ export default function KnowledgeBaseEntryPage({ entry }: Props) {
                     <article>
                         <KnowledgeBaseEntryHeader entry={entry} />
                         <Markdown content={entry.content} />
-                        <Share entry={entry} />
+                        <Share entryToShare={entry} />
                     </article>
                 </Page>
         )
