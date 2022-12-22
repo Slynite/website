@@ -1,6 +1,6 @@
 import PostsList from '../../components/post/list';
 import Page from '../../components/structure/page';
-import { Post } from '../../interfaces/interfaces';
+import { ContentTypes, Post } from '../../interfaces/interfaces';
 import { getAllPostsSortedByDate } from '../api/posts';
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 export default function Newsroom({ posts }: Props) {
   return (
-    <Page description={"The offical newsroom from us"} title={"Newsroom"} overrideTitle={false}>
+    <Page contentType={ContentTypes.Other} title={"Newsroom"}  description={"The offical newsroom from us"} >
       <h1 className='text-2xl sm:text-4xl font-semibold ml-4'>Newsroom</h1>
       <PostsList posts={posts} />
     </Page>

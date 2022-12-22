@@ -1,53 +1,51 @@
-import { NextSeo } from "next-seo";
 import Banner from "./banner";
 import Footer from "./footer";
 import Header from "./header";
 import { ScrollToTop } from "./backToTop";
+import PageSeo from "../utils/pageSeo";
+import { ContentTypes, Seo } from "../../interfaces/interfaces";
+import { useRouter } from "next/router";
 
 type PageContent = {
-    children: React.ReactNode,
-    description: string,
-    title: string,
-    overrideTitle?: boolean,
+    children: React.ReactNode
+    contentType: ContentTypes
+    title: string
+    overrideTitle?: boolean
+    description: string
+    ogImage?: string
+	allowIndexing?: boolean
+    article?: {
+      publishedTime: string
+      updatedTime?: string
+      author: string
+      category: string
+      tags: string[]
+	}
+	teamMember?: {
+		name: string
+	}
 }
 
-export default function Page({ children, description, title, overrideTitle }: PageContent) {
-    let pageTitle = title;
-    if (overrideTitle === undefined || !overrideTitle) {
-      pageTitle = pageTitle + ` | ${process.env.NEXT_PUBLIC_SITE_NAME}`
+export default function Page({ children, contentType, title, overrideTitle = false, description, ogImage = '/company/slynite-banner-v2.png', allowIndexing = true, article, teamMember }: PageContent) {
+    const router = useRouter();
+
+    if (!overrideTitle) {
+      title = title + ` | ${process.env.NEXT_PUBLIC_SITE_NAME}`
+    }
+
+    const seo: Seo = {
+      title: title,
+      description: description,
+      url: process.env.NEXT_PUBLIC_SITE_URL + router.asPath,
+      type: contentType,
+      image: process.env.NEXT_PUBLIC_SITE_URL + ogImage,
+	  allowIndexing: allowIndexing,
+      article: article,
+      teamMember: teamMember
     }
     return(
         <div className="bg-primary text-secondary justify-between flex flex-col min-h-screen">
-            <NextSeo
-                title={pageTitle}
-                description={description}
-                additionalMetaTags={[{
-                    property: 'dc:creator',
-                    content: 'Danny Schapeit'
-                  }, {
-                    name: 'application-name',
-                    content: 'Slynite'
-                  }, {
-                    httpEquiv: 'x-ua-compatible',
-                    content: 'IE=edge; chrome=1'
-                }]}
-                additionalLinkTags={[
-                    {
-                      rel: 'icon',
-                      href: '/favicon/favicon.ico',
-                    },
-                    {
-                      rel: 'apple-touch-icon',
-                      href: '/favicon/apple-touch-icon.png',
-                      sizes: '76x76'
-                    },
-                    {
-                      rel: 'manifest',
-                      href: '/favicon/manifest.json'
-                    }
-                ]}
-            />
-
+            <PageSeo data={ seo } />
             <div className="p-5 pt-0 space-y-2">
                 <Header />
                 <main className="flex-grow sm:mx-14 md:mx-16 lg:mx-24 xl:mx-40 justify-center">

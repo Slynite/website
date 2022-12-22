@@ -12,33 +12,72 @@ export interface Post {
 
 export interface Project {
     slug: string
-    name: string;
-    date: string;
-    url: string;
-    logo: string;
-    image: string;
-    description: string;
-    content: string;
+    name: string
+    date: string
+    url: string
+    logo: string
+    image: string
+    description: string
+    content: string
+}
+
+export interface KnowledgeBaseEntry {
+    slug: string
+    title: string
+    excerpt: string
+    image: string
+    date: string
+    updated?: string
+    category: string
+    tags: string[]
+    content: string
 }
 
 export interface TeamMember {
     slug: string
-    name: string;
-    position: string;
-    image: string;
-    socialmedia: SocialMedia[];
-    isVolunteerMember: boolean;
-    content: string;
+    name: string
+    position: string
+    image: string
+    socialmedia: SocialMedia[]
+    isVolunteerMember: boolean
+    content: string
 }
 
 export interface SocialMedia {
-    name: string;
-    url: string;
+    name: string
+    url: string
 }
 
 export interface PageData {
     slug: string
-    name: string;
-    updated?: string;
-    content: string;
+    name: string
+    updated?: string
+    content: string
+}
+
+export interface Seo {
+    title: string
+    description: string
+    image: string
+    url: string
+    type: ContentTypes
+    allowIndexing: boolean
+    article?: {
+        publishedTime: string
+        updatedTime?: string
+        author: string
+        category: string
+        tags: string[]
+    }
+    teamMember?: {
+        name: string
+    }
+}
+
+export enum ContentTypes {
+    Post,
+    Project,
+    KnowledgeBaseEntry,
+    TeamMember,
+    Other,
 }

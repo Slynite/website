@@ -1,10 +1,11 @@
 import Page from "../components/structure/page"
 import Link from "next/link"
 import TextHeader from "../components/utils/text-header"
+import { ContentTypes } from "../interfaces/interfaces"
 
 export default function Custom404 () {
     return (
-        <Page description={"404 Not found"} title={"404 Page not found"} overrideTitle={false}>
+        <Page contentType={ContentTypes.Other} title={"404 Page not found"} description={"404 Not found"} allowIndexing={false}>
           <div className="min-h-screen 3xl:grid content-center 3xl:-mt-36">
             <div className="flex justify-center">
                 <div className="md:grid md:grid-cols-3 justify-items-center space-x-4">

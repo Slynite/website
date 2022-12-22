@@ -2,8 +2,8 @@ import PostHeader from '../../components/post/header'
 import { getPostBySlug, getAllPostsSortedByDate, getAuthorFromPost } from '../api/posts'
 import Page from '../../components/structure/page'
 import Markdown from '../../components/utils/markdown'
-import Share from '../../components/post/share'
-import { Post, TeamMember } from '../../interfaces/interfaces'
+import Share from '../../components/utils/share'
+import { ContentTypes, Post, TeamMember } from '../../interfaces/interfaces'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 type Props = {
@@ -13,11 +13,11 @@ type Props = {
 
 export default function NewsroomPost({ post, author }: Props) {
   return (
-    <Page description={post.excerpt} title={post.title + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Newsroom"} overrideTitle={true} >
+    <Page contentType={ContentTypes.Post} title={post.title + " | " + process.env.NEXT_PUBLIC_SITE_NAME + " Newsroom"} overrideTitle={true} description={post.excerpt} ogImage={post.image} article={{publishedTime: post.date, author: post.author, category: post.category, tags: post.tags}}>
         <article>
             <PostHeader post={post} author={author} />
             <Markdown content={post.content} />
-            <Share post={post} />
+            <Share entryToShare={post} />
         </article>
     </Page>
   )
