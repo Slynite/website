@@ -3,8 +3,8 @@ name: "John Doe"
 position: "CEO"
 image: "/team/john.doe/john.doe.png"
 socialmedia:
-    - "website": "https://johndoe.com"
-    - "cactuscloud": "https://cloud.slynite.com/u/john.doe"
+    - { name: "website", url: "https://johndoe.com" }
+    - { name: "cactuscloud", url: "https://cloud.slynite.com/u/john.doe" }
 isVolunteerMember: false
 ---
 ## Hey I'm John Doe,
