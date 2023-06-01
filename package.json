@@ -51,7 +51,7 @@
     "sharp": "^0.30.6"
   },
   "devDependencies": {
-    "@types/node": "^18.11.9",
+    "@types/node": "^20.2.5",
     "@types/react": "^18.0.25",
     "cssnano": "^5.1.10",
     "eslint": "8.26.0",
