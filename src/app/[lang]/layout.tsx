@@ -3,12 +3,6 @@ import { Roboto } from "next/font/google";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
-export const metadata = {
-	title: "Slynite - Company for Privacy, Security and Transparency on the Internet",
-	description:
-		"We are a company who focused on privacy, transparency and security on the internet.",
-};
-
 export default function RootLayout({
 	children,
 }: {
