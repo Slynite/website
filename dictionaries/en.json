@@ -1,7 +1,18 @@
 {
     "page": {
         "title": "Company for Privacy, Security and Transparency on the Internet",
-        "description": "We are a company who focused on privacy, transparency and security on the internet."
+        "description": "We are a company who focused on privacy, transparency and security on the internet.",
+        "privacy": "Privacy",
+        "legal_notice": "Legal Notice",
+        "licenses": "Licenses",
+        "contact": "Contact"
+    },
+
+    "footer": {
+        "build_with": "Build with",
+        "by_team_and": "by Slynite Team and",
+        "contributers": "contributers",
+        "rights_reserved": "All rights reserved."
     },
 
     "test": {
