@@ -1,0 +1,10 @@
+{
+    "page": {
+        "title": "Wir sind für Privatsphäre, Sicherheut und Transparenz im Internet",
+        "description": "Wir sind eine Firma mit Fokus auf Privatsppäre, Transparenz und Sicherheit im Internet."
+    },
+
+    "test": {
+        "helloworld": "Hallo Welt in Deutsch!"
+    }
+}
