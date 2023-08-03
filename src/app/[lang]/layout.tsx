@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 
@@ -8,10 +9,13 @@ export default function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	return (
+    return (
 		<html lang="en">
-			<body className={`${roboto.className} text-gray-200 min-h-screen container mx-auto px-4 lg:px-5 xl:px-36 2xl:px-64`}>
-				{children}
+			<body className={`${roboto.className} text-gray-200 flex flex-col min-h-screen h-screen container mx-auto text-sm px-6 lg:px-5 xl:px-36 2xl:px-64`}>
+				<div className="flex-grow">
+                    {children}
+                </div>
+                <Footer/>
 			</body>
 		</html>
 	);

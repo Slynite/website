@@ -1,7 +1,18 @@
 {
     "page": {
         "title": "Wir sind für Privatsphäre, Sicherheit und Transparenz im Internet",
-        "description": "Wir sind eine Firma mit Fokus auf Privatsphäre, Transparenz und Sicherheit im Internet."
+        "description": "Wir sind eine Firma mit Fokus auf Privatsphäre, Transparenz und Sicherheit im Internet.",
+        "privacy": "Datenschutz",
+        "legal_notice": "Impressum",
+        "licenses": "Lizensen",
+        "contact": "Kontakt aufnehmen"
+    },
+
+    "footer": {
+        "build_with": "Entwickelt mit",
+        "by_team_and": "vom Slynite Team und den",
+        "contributers": "Contributern",
+        "rights_reserved": "Alle Rechte vorbehalten."
     },
 
     "test": {
