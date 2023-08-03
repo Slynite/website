@@ -1,8 +1,6 @@
 import Footer from "@/components/footer";
 import "./globals.css";
 import { Roboto } from "next/font/google";
-import { getDictionary } from "./dictionaries";
-import { usePathname } from "next/navigation";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
