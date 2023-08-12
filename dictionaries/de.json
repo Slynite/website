@@ -8,6 +8,14 @@
         "contact": "Kontakt aufnehmen"
     },
 
+    "header": {
+        "home": "Startseite",
+        "about": "Über uns",
+        "projects": "Projekte",
+        "contact": "Kontakt",
+        "contact_us": "Kontaktiere uns"
+    },
+
     "footer": {
         "build_with": "Entwickelt mit",
         "by_team_and": "vom Slynite Team und den",
