@@ -23,6 +23,11 @@
         "rights_reserved": "All rights reserved."
     },
 
+    "homepage": {
+        "title": "Set privacy, transparency and security first",
+        "description": "Stop searching for excuses for not protecting your data"
+    },
+
     "test": {
         "helloworld": "Hello World!"
     }
