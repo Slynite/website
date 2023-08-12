@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default async function Header({ dict }: any) {
+export default function Header({ dict }: any) {
     const [menuOpen, setIsMenuOpen] = useState(false);
     return (
         <header className="pt-3 pb-3">
@@ -34,7 +34,7 @@ export default async function Header({ dict }: any) {
                         <Link href={"/projects"}>{dict.header.projects}</Link>
 
                         <Link href={"/contact"}>
-                            <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full py-0.5 px-5 text-center mr-2 mb-2">
+                            <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 text-sm rounded-full py-0.5 px-5 text-center mr-2 mb-2">
                             {dict.header.contact_us}
                             </button>
                         </Link>

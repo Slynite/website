@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default async function LanguageSwitcher() {
+export default function LanguageSwitcher() {
     const pathname = usePathname();
 
     let langKey = pathname.split("/")[1];

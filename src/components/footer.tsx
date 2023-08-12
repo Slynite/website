@@ -6,7 +6,7 @@ import LanguageSwitcher from "./language/switcher";
 
 const packageObj = require('../../package.json');
 
-export default async function Footer({dict}: any) {
+export default function Footer({dict}: any) {
     return (
         <footer className="mt-4 mb-6 text-zinc-400 md:space-y-2 bottom-0">
             <hr className="w-full h-0.5 border-t-0 bg-zinc-400 my-6" />
