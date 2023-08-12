@@ -3,15 +3,10 @@
 import Link from "next/link";
 import { HeartIcon } from "@heroicons/react/20/solid";
 import LanguageSwitcher from "./language/switcher";
-import { getDictionary } from "@/app/[lang]/dictionaries";
-import { usePathname } from "next/navigation";
 
 const packageObj = require('../../package.json');
 
-export default async function Footer() {
-    const currentLanguage = usePathname().split("/")[1];
-    const dict = await getDictionary(currentLanguage);
-
+export default function Footer({dict}: any) {
     return (
         <footer className="mt-4 mb-6 text-zinc-400 md:space-y-2 bottom-0">
             <hr className="w-full h-0.5 border-t-0 bg-zinc-400 my-6" />

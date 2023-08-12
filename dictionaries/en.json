@@ -8,6 +8,14 @@
         "contact": "Contact"
     },
 
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "contact_us": "Contact us"
+    },
+
     "footer": {
         "build_with": "Build with",
         "by_team_and": "by Slynite Team and",
