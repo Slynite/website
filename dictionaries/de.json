@@ -25,7 +25,25 @@
 
     "homepage": {
         "title": "Setze deine Privatsphäre, Transparenz und Sicherheit in den Vordergrund",
-        "description": "Höre auch nach ausreden zu suchen, um deine Daten nicht zu schützen"
+        "description": "Höre auch nach ausreden zu suchen, um deine Daten nicht zu schützen",
+        "core_values": {
+            "privacy": {
+                "title": "Privatsphäre",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            },
+            "transparency": {
+                "title": "Transparenz",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            },
+            "security": {
+                "title": "Sicherheit",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            },
+            "tracking": {
+                "title": "Kein unnötiges Tracking",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            }
+        }
     },
 
     "test": {
