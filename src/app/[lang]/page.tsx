@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { getDictionary } from './dictionaries';
+import TextHeader from '@/components/textHeader';
 
 type Props = {
     params: { lang: string };
@@ -18,6 +19,7 @@ export default async function Home({params: {lang}}: Props) {
 
   	return (
     	<main>
+        	<TextHeader text={dict.homepage.title} description={dict.homepage.description} />
       	    <p>{dict.test.helloworld}</p>
     	</main>
   	)

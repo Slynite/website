@@ -23,6 +23,11 @@
         "rights_reserved": "Alle Rechte vorbehalten."
     },
 
+    "homepage": {
+        "title": "Setze deine Privatsphäre, Transparenz und Sicherheit in den Vordergrund",
+        "description": "Höre auch nach ausreden zu suchen, um deine Daten nicht zu schützen"
+    },
+
     "test": {
         "helloworld": "Hallo Welt in Deutsch!"
     }
