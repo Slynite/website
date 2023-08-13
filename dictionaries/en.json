@@ -25,7 +25,25 @@
 
     "homepage": {
         "title": "Set privacy, transparency and security first",
-        "description": "Stop searching for excuses for not protecting your data"
+        "description": "Stop searching for excuses for not protecting your data",
+        "core_values": {
+            "privacy": {
+                "title": "Privacy",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            },
+            "transparency": {
+                "title": "Transparency",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            },
+            "security": {
+                "title": "Security",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            },
+            "tracking": {
+                "title": "No unnecessary tracking",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+            }
+        }
     },
 
     "test": {
