@@ -14,54 +14,62 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Slynite_website&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Slynite_website)
 
 # [Slynite.com](https://slynite.com)
+
 In this repository is the source code of the Slynite website. This project is build with [Next.js](https://nextjs.org/).
 
 ## Developer Environment
-- Run in terminal `git clone https://github.com/Slynite/website/`
-- Rename `.env.example` to `.env` and change environment variables
-- Run `npm install` in terminal
-- Run `npm run dev` in termianl to start the dev server.
-- Access site on `[IP]:3000`
+
+-   Run in terminal `git clone https://github.com/Slynite/website/`
+-   Rename `.env.example` to `.env` and change environment variables
+-   Run `npm install` in terminal
+-   Run `npm run dev` in termianl to start the dev server.
+-   Access site on `[IP]:3000`
+-   Run `npm run i18n-to-ts` to compile the default i18n-file (en.json) to an Typescript-Interface
 
 ## Production
 
 ### Using NPM
-- Run `npm install` in terminal
-- Run `npm run build && npm run start` in terminal
-- Access site on `[IP]:3000`
+
+-   Run `npm install` in terminal
+-   Run `npm run build && npm run start` in terminal
+-   Access site on `[IP]:3000`
 
 ### Using Docker
+
 [Install Docker]() on your machine.
 Build your container: `docker build -t slynite-web .`.
 
 Run your container: `docker run -p 3000:3000 slynite-web`.
 
-- Access site on `[IP]:3000`
-
+-   Access site on `[IP]:3000`
 
 ## Understand Versions
+
 You would wonder how a version is construct for this project, but actually it is very easy and simple to understand.
 
 For example the version 2022.04.1 has three parts.
-- 2022: Year when the version was released.
-- 04: Month when the version was released (in this example: April)
-- 1: The number of release in this month and year.
+
+-   2022: Year when the version was released.
+-   04: Month when the version was released (in this example: April)
+-   1: The number of release in this month and year.
 
 ## Development diagramm
 
 <details><summary>Click to reveal diagramm</summary>
   <img src = "./development-circle.drawio.png"/>
 
-  If there is a new version of this project, please change the version in `package.json` to the new one (Milestone) before merge.
+If there is a new version of this project, please change the version in `package.json` to the new one (Milestone) before merge.
+
 </details>
 
-
 ## Contributer
+
 <a href = "https://github.com/slynite/website/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=slynite/website"/>
 </a>
 
 ## License
+
 This project is licensed under [Slynite modified MIT](./LICENSE) and proudly created by the [Slynite Team](https://slynite.com/team).
 
 The Open soure Licenses we use can be found [here](https://slynite.com/legal/licenses).

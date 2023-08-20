@@ -1,52 +1,52 @@
 {
-    "page": {
-        "title": "Wir sind für Privatsphäre, Sicherheit und Transparenz im Internet",
-        "description": "Wir sind eine Firma mit Fokus auf Privatsphäre, Transparenz und Sicherheit im Internet.",
-        "privacy": "Datenschutz",
-        "legal_notice": "Impressum",
-        "licenses": "Lizensen",
-        "contact": "Kontakt aufnehmen"
-    },
+	"page": {
+		"title": "Wir sind für Privatsphäre, Sicherheit und Transparenz im Internet",
+		"description": "Wir sind eine Firma mit Fokus auf Privatsphäre, Transparenz und Sicherheit im Internet.",
+		"privacy": "Datenschutz",
+		"legal_notice": "Impressum",
+		"licenses": "Lizensen",
+		"contact": "Kontakt aufnehmen"
+	},
 
-    "header": {
-        "home": "Startseite",
-        "about": "Über uns",
-        "projects": "Projekte",
-        "contact": "Kontakt",
-        "contact_us": "Kontaktiere uns"
-    },
+	"header": {
+		"home": "Startseite",
+		"about": "Über uns",
+		"projects": "Projekte",
+		"contact": "Kontakt",
+		"contact_us": "Kontaktiere uns"
+	},
 
-    "footer": {
-        "build_with": "Entwickelt mit",
-        "by_team_and": "vom Slynite Team und den",
-        "contributers": "Contributern",
-        "rights_reserved": "Alle Rechte vorbehalten."
-    },
+	"footer": {
+		"build_with": "Entwickelt mit",
+		"by_team_and": "vom Slynite Team und den",
+		"contributers": "Contributern",
+		"rights_reserved": "Alle Rechte vorbehalten."
+	},
 
-    "homepage": {
-        "title": "Setze deine Privatsphäre, Transparenz und Sicherheit in den Vordergrund",
-        "description": "Höre auch nach ausreden zu suchen, um deine Daten nicht zu schützen",
-        "core_values": {
-            "privacy": {
-                "title": "Privatsphäre",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            },
-            "transparency": {
-                "title": "Transparenz",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            },
-            "security": {
-                "title": "Sicherheit",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            },
-            "tracking": {
-                "title": "Kein unnötiges Tracking",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            }
-        }
-    },
+	"homepage": {
+		"title": "Setze deine Privatsphäre, Transparenz und Sicherheit in den Vordergrund",
+		"description": "Höre auch nach ausreden zu suchen, um deine Daten nicht zu schützen",
+		"core_values": {
+			"privacy": {
+				"title": "Privatsphäre",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			},
+			"transparency": {
+				"title": "Transparenz",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			},
+			"security": {
+				"title": "Sicherheit",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			},
+			"tracking": {
+				"title": "Kein unnötiges Tracking",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			}
+		}
+	},
 
-    "test": {
-        "helloworld": "Hallo Welt in Deutsch!"
-    }
+	"test": {
+		"helloworld": "Hallo Welt in Deutsch!"
+	}
 }

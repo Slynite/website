@@ -1,52 +1,91 @@
 {
-    "page": {
-        "title": "Company for Privacy, Security and Transparency on the Internet",
-        "description": "We are a company who focused on privacy, transparency and security on the internet.",
-        "privacy": "Privacy",
-        "legal_notice": "Legal Notice",
-        "licenses": "Licenses",
-        "contact": "Contact"
-    },
+	"page": {
+		"title": "Company for Privacy, Security and Transparency on the Internet",
+		"description": "We are a company who focused on privacy, transparency and security on the internet.",
+		"privacy": "Privacy",
+		"legal_notice": "Legal Notice",
+		"licenses": "Licenses",
+		"contact": "Contact"
+	},
 
-    "header": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact",
-        "contact_us": "Contact us"
-    },
+	"header": {
+		"home": "Home",
+		"about": "About",
+		"projects": "Projects",
+		"contact": "Contact",
+		"contact_us": "Contact us"
+	},
 
-    "footer": {
-        "build_with": "Build with",
-        "by_team_and": "by Slynite Team and",
-        "contributers": "contributers",
-        "rights_reserved": "All rights reserved."
-    },
+	"footer": {
+		"build_with": "Build with",
+		"by_team_and": "by Slynite Team and",
+		"contributers": "contributers",
+		"rights_reserved": "All rights reserved."
+	},
 
-    "homepage": {
-        "title": "Set privacy, transparency and security first",
-        "description": "Stop searching for excuses for not protecting your data",
-        "core_values": {
-            "privacy": {
-                "title": "Privacy",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            },
-            "transparency": {
-                "title": "Transparency",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            },
-            "security": {
-                "title": "Security",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            },
-            "tracking": {
-                "title": "No unnecessary tracking",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-            }
-        }
-    },
+	"homepage": {
+		"title": "Set privacy, transparency and security first",
+		"description": "Stop searching for excuses for not protecting your data",
+		"core_values": {
+			"privacy": {
+				"title": "Privacy",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			},
+			"transparency": {
+				"title": "Transparency",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			},
+			"security": {
+				"title": "Security",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			},
+			"tracking": {
+				"title": "No unnecessary tracking",
+				"description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+			}
+		}
+	},
 
-    "test": {
-        "helloworld": "Hello World!"
-    }
+	"test": {
+		"helloworld": "Hello World!"
+	},
+
+	"aboutPage": {
+		"header": {
+			"title": "Our mission is simple:",
+			"highlitedTitle": "Privacy at the core",
+			"content1": "We want to change what is wrong with many products. ",
+			"content2": "We want to take users' data seriously and protect it."
+		},
+		"whoWeAre": {
+			"title": "Who we are",
+			"content": "One of our biggest issues in today's world is the integrity of personalized data. To achieve this aim we are optimizing data architectures and data models to deliver next level solutions requiring only the most necessary data for operations. With our transperency and strict data limitation it is possible to thrive on powerful applications with a minimal amount of data collections."
+		},
+		"history": {
+			"title": "Our history",
+			"history1": {
+				"title": "Foundation of Slynite",
+				"date": "Feb. 2020",
+				"description": "Our founder Danny starts developing projects under the name Slynite."
+			},
+			"history2": {
+				"title": "Foundation of Slynite",
+				"date": "Feb. 2020",
+				"description": "Our founder Danny starts developing projects under the name Slynite."
+			},
+			"history3": {
+				"title": "Foundation of Slynite",
+				"date": "Feb. 2020",
+				"description": "Our founder Danny starts developing projects under the name Slynite."
+			}
+		},
+		"card1": {
+			"title": "A Team of awesomeness",
+			"description": "Our team forms Slynite. Why not get to know the developers, thinkers, designers & philosophers to understand why you are at Slynite. Meet the Team"
+		},
+		"card2": {
+			"title": "We are Open Source",
+			"description": "We develop many of our projects and tools open source. With the help of the thousands of open-source developers active on the Internet, we can provide great programs to improve people's everyday lives."
+		}
+	}
 }
