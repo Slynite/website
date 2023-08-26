@@ -70,6 +70,38 @@
         }
     },
 
+    "contact": {
+        "page_title": "Contact us",
+        "page_description": "Contact us today and we will get back to you as soon as possible",
+        "title": "͘Stay in touch",
+        "title_highlighted": "with us",
+        "description": "Are there any problems? Do you want to give us feedback? Would you like to learn more about us? Just let us know",
+        "video_call": {
+            "title": "Remote Meeting",
+            "description": "We will be happy to answer all your questions in a personal video call.",
+            "form_subject": "Request for a personal remote meeting",
+            "form_message": "I would like to schedule a remote meeting. It is most convenient for me on {DATE} at {TIME}. From my side, {PERSONS NUMBER} people will attend."
+        },
+        "email": {
+            "title": "Mail",
+            "description": "Write us an email to hello@slynite.com. We will get back to you as soon as possible."
+        },
+        "form": {
+            "email": "Your email",
+            "email_placeholder": "danny@devi.to",
+            "subject": "Subject",
+            "subject_placeholder": "What do you want to share with us?",
+            "message": "Your message",
+            "message_placeholder": "Your message comes here...",
+            "privacy_notice": "By using this contact form, you allow us to store your email address and the content of this message for contact purposes. More about this in the",
+            "privacy_notice_link": "privacy policy",
+            "send": "Send message",
+            "success": "Sent. Thanks for your message!",
+            "success_description": "Your message has been successfully sent to us. You will receive a copy of your message in the next few minutes.",
+            "success_back_button": "Ok"
+        }
+    },
+
     "test": {
         "helloworld": "Hello World!"
     }

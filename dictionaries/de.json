@@ -70,6 +70,38 @@
         }
     },
 
+    "contact": {
+        "page_title": "Kontaktiere uns",
+        "page_description": "Kontaktiere uns noch heute und wir melden uns schnellstmöglich bei dir",
+        "title": "͘Bleib mit uns in",
+        "title_highlighted": "Kontakt",
+        "description": "Treten Probleme auf? Möchtest du uns Feedback geben? Möchtest du mehr über uns erfahren? Lassen es uns einfach wissen",
+        "video_call": {
+            "title": "Remote Meeting",
+            "description": "Gerne beantworten wir alle deine Fragen in einem persönlichen Video-Call.",
+            "form_subject": "Anfrage zu einem persönlichen Remote Meeting",
+            "form_message": "Ich möchte gerne ein Remote Meeting vereinbaren. Mir passt es am {DATUM} um {UHRZEIT} am besten. Von meiner Seite aus werden {PERSONEN ANZAHL} Personen teilnehmen."
+        },
+        "email": {
+            "title": "E-Mail",
+            "description": "Schreibe uns eine mail an hello@slynite.com. Wir melden uns schnellstmöglich bei dir."
+        },
+        "form": {
+            "email": "Deine E-Mail Adresse",
+            "email_placeholder": "hans@zimermann.de",
+            "subject": "Betreff",
+            "subject_placeholder": "Was möchtest du uns mitteilen?",
+            "message": "Deine Nachricht",
+            "message_placeholder": "Deine Nachricht kommt hier rein...",
+            "privacy_notice": "Mit dem benutzen dieses Kontaktformulares erlaubst du uns, deine E-Mail-Adresse und den Inhalt dieser Nachricht zu Kontaktzwecken zu speichern. Mehr dazu in der",
+            "privacy_notice_link": "Datenschutzerklärung",
+            "send": "Nachricht senden",
+            "success": "Versendet. Danke für deine Nachricht!",
+            "success_description": "Deine Nachricht wurde erfolgreich an uns gesendet. Du wirst in den kommenden Minuten eine Kopie deiner Nachricht erhalten.",
+            "success_back_button": "Alles klar"
+        }
+    },
+
     "test": {
         "helloworld": "Hallo Welt in Deutsch!"
     }
