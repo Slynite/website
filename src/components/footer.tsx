@@ -8,7 +8,7 @@ const packageObj = require('../../package.json');
 
 export default function Footer({dict}: any) {
     return (
-        <footer className="mt-4 mb-6 text-zinc-400 md:space-y-2 bottom-0">
+        <footer className="mt-4 pb-6 text-zinc-400 md:space-y-2 bottom-0">
             <hr className="w-full h-0.5 border-t-0 bg-zinc-400 my-6" />
             <div className="lg:grid lg:grid-cols-4 space-y-2 lg:space-y-0">
                 <div className="lg:col-span-3 space-y-2 lg:space-y-0">

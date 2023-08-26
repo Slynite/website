@@ -5,7 +5,8 @@
         "privacy": "Privacy",
         "legal_notice": "Legal Notice",
         "licenses": "Licenses",
-        "contact": "Contact"
+        "contact": "Contact",
+        "learn_more": "Learn more"
     },
 
     "header": {
@@ -26,7 +27,21 @@
     "homepage": {
         "title": "Set privacy, transparency and security first",
         "description": "Stop searching for excuses for not protecting your data",
+
+        "mission": {
+            "title_part1": "Our",
+            "title_highlighted": "mission",
+            "title_part2": "is clear",
+            "description_part1": "The goal of Slynite is to make the Internet better through privacy and security prioritized software. Also, the software is developed mostly open source, as we see transparency as an important point in today's world.",
+            "description_part2": "In the development and publication of our projects, a strict pipeline is worked through at the end to ensure our goals of security, privacy, and transparency are sustained.",
+            "learn_more": "Learn more about us",
+            "learn_more_link": "here"
+        },
+
         "core_values": {
+            "title_part1": "Our vales at",
+            "title_highlighted": "core",
+            "description": "Our projects are always developed from scratch with our main principles. Through the principles, our goals can never be missed.",
             "privacy": {
                 "title": "Privacy",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
@@ -43,6 +58,15 @@
                 "title": "No unnecessary tracking",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
             }
+        },
+
+        "open_source": {
+            "title_part1": "Many projects are",
+            "title_highlighted": "Open source",
+            "subtitle": "So everyone can be a part of the development",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.",
+            "learn_more": "Visit us on",
+            "learn_more_link": "GitHub"
         }
     },
 

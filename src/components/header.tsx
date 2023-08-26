@@ -28,16 +28,18 @@ export default function Header({ dict }: any) {
                 </div>
 
                 {menuOpen && (
-                    <div className="lg:hidden grid text-lg pt-2 space-y-2 animate-fade-down animate-once animate-duration-300 animate-ease-linear animate-normal animate-fill-forwards">
-                        <Link href={"/"}>{dict.header.home}</Link>
-                        <Link href={"/about"}>{dict.header.about}</Link>
-                        <Link href={"/projects"}>{dict.header.projects}</Link>
+                    <div className="lg:hidden grid text-center text-lg pt-2 pb-4 space-y-2 animate-fade-down">
+                        <Link className="animate-once animate-fade-up animate-ease-out" href={"/"}>{dict.header.home}</Link>
+                        <Link className="animate-once animate-fade-up animate-delay-[200ms] animate-ease-out" href={"/about"}>{dict.header.about}</Link>
+                        <Link className="animate-once animate-fade-up animate-delay-[400ms] animate-ease-out" href={"/projects"}>{dict.header.projects}</Link>
 
-                        <Link href={"/contact"}>
-                            <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 text-sm rounded-full py-0.5 px-5 text-center mr-2 mb-2">
+                        <Link className="animate-once animate-fade-up animate-delay-[600ms] animate-ease-out pb-6" href={"/contact"}>
+                            <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 text-sm rounded-full py-0.5 px-5 text-center">
                             {dict.header.contact_us}
                             </button>
                         </Link>
+
+                        <hr className="h-px border-0 dark:bg-zinc-600 animate-once animate-fade-down animate-ease-out" />
                     </div>
                 )}
             </nav>
