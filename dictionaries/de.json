@@ -5,7 +5,8 @@
         "privacy": "Datenschutz",
         "legal_notice": "Impressum",
         "licenses": "Lizensen",
-        "contact": "Kontakt aufnehmen"
+        "contact": "Kontakt aufnehmen",
+        "learn_more": "Mehr erfahren"
     },
 
     "header": {
@@ -24,9 +25,23 @@
     },
 
     "homepage": {
-        "title": "Setze deine Privatsphäre, Transparenz und Sicherheit in den Vordergrund",
-        "description": "Höre auch nach ausreden zu suchen, um deine Daten nicht zu schützen",
+        "title": "Privatsphäre, Transparenz und Sicherheit kommt bei uns zuerst",
+        "description": "Höre auch nach ausreden zu suchen, uns schütze deine Daten",
+
+        "mission": {
+            "title_part1": "Unsere",
+            "title_highlighted": "Mission",
+            "title_part2": "ist klar",
+            "description_part1": "Das Ziel von Slynite ist es, das Internet durch Software zu verbessern, bei der Datenschutz und Sicherheit im Vordergrund stehen. Außerdem wird die Software größtenteils Open Source entwickelt, da wir Transparenz als einen wichtigen Punkt in der heutigen Welt sehen.",
+            "description_part2": "Bei der Entwicklung und Veröffentlichung unserer Projekte wird am Ende eine strenge Pipeline abgearbeitet, um sicherzustellen, dass unsere Ziele der Sicherheit, des Datenschutzes und der Transparenz aufrechterhalten werden.",
+            "learn_more": "Erfahre mehr über uns",
+            "learn_more_link": "hier"
+        },
+
         "core_values": {
+            "title_part1": "Unsere Werte immer im",
+            "title_highlighted": "Mittelpunkt",
+            "description": "Unsere Projekte werden immer von Grund auf mit unseren Hauptprinzipien entwickelt. Durch die Grundsätze können unsere Ziele nie verfehlt werden.",
             "privacy": {
                 "title": "Privatsphäre",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
@@ -43,6 +58,15 @@
                 "title": "Kein unnötiges Tracking",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
             }
+        },
+
+        "open_source": {
+            "title_part1": "Viele unsere Projekte sind",
+            "title_highlighted": "Open source",
+            "subtitle": "Somit kann jeder ein Stück der Entwicklung beitragen.",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.",
+            "learn_more": "Besuche uns auf",
+            "learn_more_link": "GitHub"
         }
     },
 
