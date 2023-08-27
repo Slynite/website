@@ -97,6 +97,8 @@
             "privacy_notice_link": "privacy policy",
             "send": "Send message",
             "success": "Sent. Thanks for your message!",
+            "error": "An error occured. Please send us an email to hello@slynite.com. Details:",
+            "warning": "You're message was sent, but an error occured. Details:",
             "success_description": "Your message has been successfully sent to us. You will receive a copy of your message in the next few minutes.",
             "success_back_button": "Ok"
         }
