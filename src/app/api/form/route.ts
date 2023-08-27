@@ -10,13 +10,6 @@ var template_path = path.join(__dirname, '../../../../../public/mail-templates/'
 export async function POST(request: NextRequest) {
     let formData: any = request.body
 
-    //FIXME: remove
-    formData = {
-        email: "danny@schapeit.com",
-        subject: "TEST Mail",
-        message: "This is a test mail from development.",
-    }
-
     if (!formData || !formData.email || !formData.subject || !formData.message) {
         return NextResponse.json({ status: "error", message: "formdata missing" })
     }
