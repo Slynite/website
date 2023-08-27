@@ -102,6 +102,36 @@
         }
     },
 
+    "projects": {
+        "page_title": "Projects",
+        "page_description": "Explore our portfolio of projects that we develop and deliver.",
+        "title": "Our projects are",
+        "title_highlighted": "unique",
+        "description": "Explore our portfolio of projects that we develop and deliver",
+        "coming_soon": "Coming soon",
+        "launched_previously": "Launched previously",
+        "worktime_tracker": {
+            "title": "Worktime Tracker",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
+            "linkText": "Go to Worktime Tracker"
+        },
+        "activehq": {
+            "title": "ActiveHQ",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
+            "linkText": "Go to ActiveHQ"
+        },
+        "travelventures": {
+            "title": "Travelventures",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
+            "linkText": "Go to Travelventures"
+        },
+        "opensource": {
+            "title": "Open Source",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
+            "linkText": "Explore our repositories"
+        }
+    },
+
     "test": {
         "helloworld": "Hello World!"
     }

@@ -11,7 +11,9 @@ export default function Header({ dict }: any) {
         <header className="pt-3 pb-3">
             <nav>
                 <div className="flex lg:items-center">
-                    <Image src={"/logo.svg"} alt="Logo" width={100} height={100} className="w-10 h-10" />
+                    <Link href={"/"}>
+                        <Image src={"/logo.svg"} alt="Logo" width={1000} height={1000} className="w-10 h-10" />
+                    </Link>
 
                     <div className="hidden lg:block space-x-6 ml-6">
                         <Link href={"/"}>{dict.header.home}</Link>
@@ -29,13 +31,13 @@ export default function Header({ dict }: any) {
 
                 {menuOpen && (
                     <div className="lg:hidden grid text-center text-lg pt-2 pb-4 space-y-2 animate-fade-down">
-                        <Link className="animate-once animate-fade-up animate-ease-out" href={"/"}>{dict.header.home}</Link>
-                        <Link className="animate-once animate-fade-up animate-delay-[200ms] animate-ease-out" href={"/about"}>{dict.header.about}</Link>
-                        <Link className="animate-once animate-fade-up animate-delay-[400ms] animate-ease-out" href={"/projects"}>{dict.header.projects}</Link>
+                        <Link className="animate-once animate-fade-up animate-ease-out" href={"/"} onClick={() => setIsMenuOpen(false)}>{dict.header.home}</Link>
+                        <Link className="animate-once animate-fade-up animate-delay-[200ms] animate-ease-out" href={"/about"} onClick={() => setIsMenuOpen(false)}>{dict.header.about}</Link>
+                        <Link className="animate-once animate-fade-up animate-delay-[400ms] animate-ease-out" href={"/projects"} onClick={() => setIsMenuOpen(false)}>{dict.header.projects}</Link>
 
-                        <Link className="animate-once animate-fade-up animate-delay-[600ms] animate-ease-out pb-6" href={"/contact"}>
+                        <Link className="animate-once animate-fade-up animate-delay-[600ms] animate-ease-out pb-6" href={"/contact"} onClick={() => setIsMenuOpen(false)}>
                             <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 text-sm rounded-full py-0.5 px-5 text-center">
-                            {dict.header.contact_us}
+                                {dict.header.contact_us}
                             </button>
                         </Link>
 
