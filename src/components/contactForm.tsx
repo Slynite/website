@@ -76,10 +76,10 @@ export default function ContactForm({dict}: {dict: any}) {
                     <div className='transform hover:scale-102 duration-300 motion-reduce:transform-none'>
                         <div className='animate-once animate-fade-up animate-delay-[200ms] animate-ease-out transform hover:scale-102 duration-300 motion-reduce:transform-none'>
                             <Link href={'mailto:hello@slynite.com'}>
-                            <InfoCard 
-                                title={dict.contact.email.title}
-                                description={dict.contact.email.description}
-                                imagePath='/icons/envelope.png' />
+                                <InfoCard 
+                                    title={dict.contact.email.title}
+                                    description={dict.contact.email.description}
+                                    imagePath='/icons/envelope.png' />
                             </Link>
                         </div>
                     </div>
