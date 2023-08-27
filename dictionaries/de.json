@@ -98,6 +98,8 @@
             "send": "Nachricht senden",
             "success": "Versendet. Danke für deine Nachricht!",
             "success_description": "Deine Nachricht wurde erfolgreich an uns gesendet. Du wirst in den kommenden Minuten eine Kopie deiner Nachricht erhalten.",
+            "error": "Es trat ein Fehler auf. Bitte sende uns eine E-Mail an hello@slynite.com. Details:",
+            "warning": "Deine Nachricht wurde versendet, trotzdem trat ein Fehler auf. Details:",
             "success_back_button": "Alles klar"
         }
     },

@@ -1,25 +1,63 @@
 "use client"
 
 import Link from "next/link";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import InfoCard from "./infoCard";
 import Image from "next/image";
+
+interface ApiResponse {
+    status: string
+    message: string    
+} 
 
 export default function ContactForm({dict}: {dict: any}) {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const [success, setSuccess] = useState(false);
+    const [error, setError] = useState('');
+    const [warning, setWaring] = useState('');
 
-    function handleSubmit() {
-        //TODO: contact form processing
-        setSuccess(true);
+    async function onSubmit(event: FormEvent<HTMLFormElement>) {
+        event.preventDefault()     
+        const response = await fetch('/api/form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email,
+                subject,
+                message
+            }),
+        })
+        const data: ApiResponse = await response.json()
+
+        if (data.status == 'error') {
+            setError(data.message);
+        }
+
+        if (data.status == 'warning') {
+            setWaring(data.message);
+            setSuccess(true);
+        }
+
+        if (data.status == 'success') {
+            setSuccess(true);
+        }
+      }
+
+    function resetStates() {
+        setEmail('');
+        setSubject('');
+        setMessage('');
+        setSuccess(false);
+        setError('');
+        setWaring('');
     }
 
     function prefillFieldsWithMeetingRequest() {
-        if (success) {
-            setSuccess(false);
-        }
+        resetStates();
         setSubject(dict.contact.video_call.form_subject);
         setMessage(dict.contact.video_call.form_message);
     }
@@ -49,14 +87,18 @@ export default function ContactForm({dict}: {dict: any}) {
 
                 <div className='col-span-3 m-3 p-6 rounded-3xl bg-zinc-800 animate-once animate-fade-up animate-delay-[400ms]'>
                     {success ? (
-                        <div className='flex flex-col items-center justify-center text-center'>
+                        <>
+                            {warning && <p className="bg-orange-500 p-2.5 rounded-lg -mb-6">{dict.contact.form.warning} {warning}</p>}
+                            <div className='flex flex-col items-center justify-center text-center min-h-full'>
                                 <Image src={'/icons/check-circle-white.png'} alt='checkmark' width={100} height={100} />
                                 <h2 className="text-2xl">{dict.contact.form.success}</h2>
                                 <p className="text-base">{dict.contact.form.success_description}</p>
-                                <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center mt-4" onClick={() => setSuccess(false)}>{dict.contact.form.success_back_button}</button>
-                        </div>
+                                <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center mt-4" onClick={() => resetStates()}>{dict.contact.form.success_back_button}</button>
+                            </div>
+                        </>
                     ) : (
-                        <form className="space-y-3" onSubmit={() => handleSubmit()}>
+                        <form className="space-y-3" onSubmit={onSubmit}>
+                            {error && <p className="bg-red-500 p-2.5 rounded-lg">{dict.contact.form.error} {error}</p>}
                             <div>
                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-300">{dict.contact.form.email}</label>
                                 <input type="email" id="email" className="block p-3 w-full shadow-sm text-sm rounded-lg bg-zinc-600" placeholder={dict.contact.form.email_placeholder} value={email} onChange={(e) => setEmail(e.target.value)} required />

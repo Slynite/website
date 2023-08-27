@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse, userAgent } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 var fs = require('fs');
 const { promisify } = require('util');
 const readFile = promisify(fs.readFile);
@@ -8,7 +8,7 @@ const mailer = require("nodemailer");
 var template_path = path.join(__dirname, '../../../../../public/mail-templates/');
  
 export async function POST(request: NextRequest) {
-    let formData: any = request.body
+    let formData: any = await request.json();
 
     if (!formData || !formData.email || !formData.subject || !formData.message) {
         return NextResponse.json({ status: "error", message: "formdata missing" })
