@@ -134,6 +134,13 @@
         }
     },
 
+    "not_found": {
+        "page_title": "404",
+        "page_description": "Page not found",
+        "title": "Die gesuchte Seite konnte nicht gefunden werden",
+        "link": "Zurück zur Startseite"
+    },
+
     "test": {
         "helloworld": "Hallo Welt in Deutsch!"
     }

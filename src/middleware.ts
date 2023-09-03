@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import { availableLanguages } from '../lib/i18nHelper'
 
-let locales = ['en', 'de']
+let locales = availableLanguages();
 
 export function middleware(request: NextRequest) {
     let locale = "en"
@@ -24,4 +25,4 @@ export const config = {
     matcher: [
       '/((?!api|static|.*\\..*|_next).*)',
     ],
-  }
+}

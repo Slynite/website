@@ -134,6 +134,13 @@
         }
     },
 
+    "not_found": {
+        "page_title": "404",
+        "page_description": "Page not found",
+        "title": "The page you are looking for could not be found",
+        "link": "Return to home"
+    },
+
     "test": {
         "helloworld": "Hello World!"
     }
