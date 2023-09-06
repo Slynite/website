@@ -1,8 +1,8 @@
 import Footer from "@/components/footer";
-import "./globals.css";
+import "./[lang]/globals.css";
 import { Roboto } from "next/font/google";
 import Header from "@/components/header";
-import { getDictionary } from "./dictionaries";
+import { getDictionary } from "./[lang]/dictionaries";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
