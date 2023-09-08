@@ -1,0 +1,17 @@
+{
+  "name": "i18n-to-ts-interface-converter",
+  "version": "1.0.0",
+  "description": "Script to convert Slynite i18n files to typescript interface",
+  "main": "script.ts",
+  "scripts": {
+    "test": "node-ts script.js"
+  },
+  "type": "module",
+  "author": "Slynite",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "20.3.1",
+    "json-to-typescript": "^1.0.1",
+    "typescript": "^5.2.2"
+  }
+}
