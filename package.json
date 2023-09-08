@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "generate-i18n-interface": "node scripts/i18n-to-ts-interface-converter/script.js --input /dictionaries/en.json --output /src/types/i18n.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",

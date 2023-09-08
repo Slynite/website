@@ -25,7 +25,7 @@ export default async function Home({params: {lang}}: Props) {
         	<TextHeader text={dict.homepage.title} description={dict.homepage.description} />
 			<div className='flex justify-center mt-2 mb-10'>
 				<Link href={"/about"}>
-					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict.page.learn_more}</button>
+					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict?.page?.learn_more}</button>
 				</Link>
 			</div>
 			
