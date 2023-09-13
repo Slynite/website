@@ -15,7 +15,7 @@ export default async function NotFound() {
   const dict = await getDictionary(getCurrentLanguage());
   return (
     <div className='mt-6 md:mt-20 text-center'>
-      <h1 className="text-2xl lg:text-5xl font-bold mb-6 lg:mb-10">
+      <h1 className="text-2xl lg:text-4xl font-bold mb-6 lg:mb-10">
 					{dict.not_found.title}.
       </h1>
       <Link href="/" className='md:text-xl hover:underline'>{dict.not_found.link}.</Link>
