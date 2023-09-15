@@ -18,7 +18,7 @@ export default async function NotFound() {
       <h1 className="text-2xl lg:text-4xl font-bold mb-6 lg:mb-10">
 					{dict.not_found.title}.
       </h1>
-      <Link href="/" className='md:text-xl hover:underline'>{dict.not_found.link}.</Link>
+      <Link href={"/" + getCurrentLanguage()} className='md:text-xl hover:underline'>{dict.not_found.link}.</Link>
     </div>
   )
 }
