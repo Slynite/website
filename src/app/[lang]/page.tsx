@@ -24,7 +24,7 @@ export default async function Home({params: {lang}}: Props) {
     	<main className='mt-6 md:mt-20'>
         	<TextHeader text={dict.homepage.title} description={dict.homepage.description} />
 			<div className='flex justify-center mt-2 mb-10'>
-				<Link href={"/about"}>
+				<Link href={"about"}>
 					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict?.page?.learn_more}</button>
 				</Link>
 			</div>
@@ -38,7 +38,7 @@ export default async function Home({params: {lang}}: Props) {
 						{dict.homepage.mission.description_part1}
 						<br /><br />
 						{dict.homepage.mission.description_part2} <br />
-						{dict.homepage.mission.learn_more} <Link href="/about" className='underline'>{dict.homepage.mission.learn_more_link}</Link>.
+						{dict.homepage.mission.learn_more} <Link href="about" className='underline'>{dict.homepage.mission.learn_more_link}</Link>.
 					</p>
 					<Image className='md:hidden' src={'/slynite-mission-vertically.png'} alt={dict.homepage.mission.title_highlighted} width={600} height={180} />
 				</div>

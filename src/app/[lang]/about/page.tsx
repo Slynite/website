@@ -95,7 +95,7 @@ export default async function About({ params: { lang } }: Props) {
 				<h2 className='text-2xl lg:text-4xl font-bold'>{dict.about.get_in_touch.title}</h2>
 				<p className='text-lg text-gray-300'>{dict.about.get_in_touch.description}</p>
 				<div className='flex justify-center mt-2 mb-10'>
-				<Link href={"/contact"}>
+				<Link href={"contact"}>
 					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict.about.get_in_touch.button}</button>
 				</Link>
 			</div>
