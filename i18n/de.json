@@ -134,6 +134,57 @@
         }
     },
 
+    "about": {
+        "page_title": "Über uns",
+        "page_description": "Erfahre mehr was Slynite macht, und weshalb wir es machen.",
+        "title": "Unsere Mission ist simple",      
+        "title_highlighted": "Privatsphäre als Grundlage",
+        "description": "Wir möchten das ändern, was bei vielene Produkten fehlt, deshalb nehmen wir Nutzerdaten ernst und schützen diese.",
+        "who_we_are": {
+            "title": "Wer wir sind",
+            "description": "Eines der größten Probleme in der heutigen Welt ist die Integrität der personalisierten Daten. Um dieses Ziel zu erreichen, optimieren wir Datenarchitekturen und Datenmodelle, um Lösungen auf höchstem Niveau zu liefern, die nur die nötigsten Daten für den Betrieb benötigen. Mit unserer Transperenz und strikten Datenbeschränkung ist es möglich, leistungsstarke Anwendungen mit einer minimalen Menge an Datensammlungen zu betreiben."
+        },
+        "our_history": {
+            "title_part1": "Unsere",
+            "title_highlighted": "Vergangenheit",
+            "title_part2": "bisher",
+            "timeline": [
+                {
+                    "title": "Erschaffung und Idee von Slynite",
+                    "time": "February 2019",
+                    "description": "Unser Gründer Danny startet mit der Entwicklung von Projekten unter dem Namen Slynite."
+                },
+                {
+                    "title": "Title",
+                    "time": "Monat, Jahr",
+                    "description": "Beschreibung"
+                }
+            ]
+        },
+        "quote": {
+            "text": "Ich bin stolz darauf, ein Team von hochkompetenten, spannenden und hilfsbereiten Fachleuten zu haben, die sich für unsere Vision begeistern. Gemeinsam setzen wir Standards und schaffen Innovationen, die unsere Kunden begeistern.",
+            "author": {
+                "name": "Danny Schapeit",
+                "company": "CEO & Co-Founder of Slynite"
+            }
+        },
+        "values": {
+            "team": {
+                "title": "Team der Unglaublichkeit",
+                "description": "Unser Team macht Slynite aus. Lernen Sie die Entwickler, Denker, Designer und Philosophen kennen, um zu verstehen, warum Sie bei Slynite sind."
+            },
+            "open_source": {
+                "title": "Wir sind Open Source",
+                "description": "Wir entwickeln viele unserer Projekte und Tools als Open Source. Mit Hilfe der vielen von Open-Source-Entwicklern, die im Internet aktiv sind, können wir großartige Programme bereitstellen, die das tägliche Leben der Menschen verbessern."
+            }
+        },
+        "get_in_touch": {
+            "title": "Kontakt aufnehmen",
+            "description": "Wir würden uns freuen, von Ihnen zu hören. Sie haben Fragen zu uns oder unseren Projekten? Zögern Sie nicht, uns über unser Kontaktformular zu kontaktieren. Wir werden uns gerne mit Ihnen in Verbindung setzen.",
+            "button": "Kontaktieren"
+        }
+    },
+
     "not_found": {
         "page_title": "404",
         "page_description": "Page not found",

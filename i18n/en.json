@@ -134,6 +134,57 @@
         }
     },
 
+    "about": {
+        "page_title": "About us",
+        "page_description": "Learn more about what Slynite do and why we do it.",
+        "title": "Our mission is simple",      
+        "title_highlighted": "Privacy at the core",
+        "description": "We want to change whats wrong with many products, so we take user data seriously and protect them.",
+        "who_we_are": {
+            "title": "Who we are",
+            "description": "One of our biggest issues in today's world is the integrity of personalized data. To achieve this aim we are optimizing data architectures and data models to deliver next level solutions requiring only the most necessary data for operations. With our transperency and strict data limitation it is possible to thrive on powerful applications with a minimal amount of data collections."
+        },
+        "our_history": {
+            "title_part1": "Our",
+            "title_highlighted": "history",
+            "title_part2": "so far",
+            "timeline": [
+                {
+                    "title": "Foundation of Slynite",
+                    "time": "February 2019",
+                    "description": "Our founder Danny starts developing projects under the name Slynite."
+                },
+                {
+                    "title": "Title",
+                    "time": "Month, Year",
+                    "description": "Description"
+                }
+            ]
+        },
+        "quote": {
+            "text": "I am proud to have a team of highly competent, exciting and helpful professionals who are passionate about our vision. Together, we set standards and create innovations that delight our customers.",
+            "author": {
+                "name": "Danny Schapeit",
+                "company": "CEO & Co-Founder of Slynite"
+            }
+        },
+        "values": {
+            "team": {
+                "title": "Team of awesomness",
+                "description": "Our team forms Slynite. Why not get to know the developers, thinkers, designers & philosophers to understand why you are at Slynite."
+            },
+            "open_source": {
+                "title": "We are Open Source",
+                "description": "We develop many of our projects and tools open source. With the help of the thousands of open-source developers active on the Internet, we can provide great programs to improve people's everyday lives."
+            }
+        },
+        "get_in_touch": {
+            "title": "Get in touch",
+            "description": "We would love to hear from you. You have questions about us or our projects? Don't hesitate to contact us via our contact form. We will be happy to get in touch with you.",
+            "button": "Contact"
+        }
+    },
+
     "not_found": {
         "page_title": "404",
         "page_description": "Page not found",
