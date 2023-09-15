@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { getDictionaryByName } from "../../dictionaries";
+import { getDictionaryByName } from "@/app/[lang]/dictionaries";
 import { Metadata } from "next";
 
 export const generateMetadata = async ({ params }: { params: { lang:string, legal: string } }): Promise<Metadata> => {

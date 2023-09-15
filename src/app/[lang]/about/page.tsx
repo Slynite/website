@@ -1,4 +1,4 @@
-import { getMainDictionary } from "../dictionaries";
+import { getMainDictionary } from "@/app/[lang]/dictionaries";
 import Image from "next/image";
 import InfoCard from "@/components/infoCard";
 import TextHeader from "@/components/textHeader";
