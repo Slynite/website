@@ -25,7 +25,7 @@ export default async function Home({params: {lang}}: Props) {
         	<TextHeader text={dict.homepage.title} description={dict.homepage.description} />
 			<div className='flex justify-center mt-2 mb-10'>
 				<Link href={"/about"}>
-					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict.page.learn_more}</button>
+					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict?.page?.learn_more}</button>
 				</Link>
 			</div>
 			
@@ -33,7 +33,7 @@ export default async function Home({params: {lang}}: Props) {
 
 			<div id='our-mission' className='md:grid md:grid-cols-3 mt-20'>
 				<div className='md:col-span-2'>
-					<h2 className='text-2xl lg:text-5xl font-bold'>{dict.homepage.mission.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.mission.title_highlighted}</p> {dict.homepage.mission.title_part2}.</h2>
+					<h2 className='text-2xl lg:text-4xl font-bold'>{dict.homepage.mission.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.mission.title_highlighted}</p> {dict.homepage.mission.title_part2}.</h2>
 					<p className='text-lg text-gray-300'>
 						{dict.homepage.mission.description_part1}
 						<br /><br />
@@ -48,7 +48,7 @@ export default async function Home({params: {lang}}: Props) {
 			</div>
 
 			<div id='core-values' className='mt-10'>
-				<h2 className='text-2xl lg:text-5xl font-bold'>{dict.homepage.core_values.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.core_values.title_highlighted}</p>.</h2>
+				<h2 className='text-2xl lg:text-4xl font-bold'>{dict.homepage.core_values.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.core_values.title_highlighted}</p>.</h2>
 				<div className='mb-8'>
 					<p className='text-lg text-gray-300'>
 						{dict.homepage.core_values.description}
@@ -88,7 +88,7 @@ export default async function Home({params: {lang}}: Props) {
 
 			<div id='open-source'>
 				<div className='rounded-3xl m-3 p-10 pb-0 bg-zinc-800 animate-fade-up'>
-					<h2 className='text-2xl lg:text-5xl font-bold md:flex text-center justify-center'>{dict.homepage.open_source.title_part1} <p className="ml-3 text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.open_source.title_highlighted}</p>.</h2>
+					<h2 className='text-2xl lg:text-4xl font-bold md:flex text-center justify-center'>{dict.homepage.open_source.title_part1} <p className="ml-3 text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.open_source.title_highlighted}</p>.</h2>
 					<h3 className='text-lg lg:text-3xl font-bold text-gray-300 flex justify-center'>{dict.homepage.open_source.subtitle}</h3>
 					<div className='md:grid md:grid-cols-3 mt-0 md:mt-6'>
 						<p className='md:col-span-2 lg:text-lg mt-3 md:mt-20'>
