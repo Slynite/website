@@ -1,4 +1,5 @@
 {
+    "lang": "en",
     "page": {
         "title": "Company for Privacy, Security and Transparency on the Internet",
         "description": "We are a company who focused on privacy, transparency and security on the internet.",
@@ -190,9 +191,5 @@
         "page_description": "Page not found",
         "title": "The page you are looking for could not be found",
         "link": "Return to home"
-    },
-
-    "test": {
-        "helloworld": "Hello World!"
     }
 }

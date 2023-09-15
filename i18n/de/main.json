@@ -1,4 +1,5 @@
 {
+    "lang": "de",
     "page": {
         "title": "Wir sind für Privatsphäre, Sicherheit und Transparenz im Internet",
         "description": "Wir sind eine Firma mit Fokus auf Privatsphäre, Transparenz und Sicherheit im Internet.",
@@ -190,9 +191,5 @@
         "page_description": "Page not found",
         "title": "Die gesuchte Seite konnte nicht gefunden werden",
         "link": "Zurück zur Startseite"
-    },
-
-    "test": {
-        "helloworld": "Hallo Welt in Deutsch!"
     }
 }

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { getDictionary } from '../dictionaries';
+import { getMainDictionary } from '../dictionaries';
 import TextHeader from '@/components/textHeader';
 import Project from '@/components/project';
 
@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-    const dict = await getDictionary(params.lang) 
+    const dict = await getMainDictionary(params.lang) 
     return {
       	title: `Slynite - ${dict.projects.page_title}`,
       	description: dict.projects.page_description
@@ -16,7 +16,7 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
 };
 
 export default async function Projects({params: {lang}}: Props) {
-    const dict = await getDictionary(lang);
+    const dict = await getMainDictionary(lang);
 
   	return (
     	<main className='mt-6 md:mt-20'>

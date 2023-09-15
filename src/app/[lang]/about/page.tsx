@@ -1,4 +1,4 @@
-import { getDictionary } from "../dictionaries";
+import { getMainDictionary } from "../dictionaries";
 import Image from "next/image";
 import InfoCard from "@/components/infoCard";
 import TextHeader from "@/components/textHeader";
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-    const dict = await getDictionary(params.lang) 
+    const dict = await getMainDictionary(params.lang) 
     return {
       	title: `Slynite - ${dict.about.page_title}`,
       	description: dict.about.page_description
@@ -19,7 +19,7 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
 };
 
 export default async function About({ params: { lang } }: Props) {
-	const dict = await getDictionary(lang);
+	const dict = await getMainDictionary(lang);
 	return (
 		<main className='mt-6 md:mt-20'>
 			<div className="text-center">
@@ -95,7 +95,7 @@ export default async function About({ params: { lang } }: Props) {
 				<h2 className='text-2xl lg:text-4xl font-bold'>{dict.about.get_in_touch.title}</h2>
 				<p className='text-lg text-gray-300'>{dict.about.get_in_touch.description}</p>
 				<div className='flex justify-center mt-2 mb-10'>
-				<Link href={"contact"}>
+				<Link href={"/" + lang + "/contact"}>
 					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict.about.get_in_touch.button}</button>
 				</Link>
 			</div>

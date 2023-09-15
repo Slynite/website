@@ -6,7 +6,7 @@ import LanguageSwitcher from "./language/switcher";
 
 const packageObj = require('../../package.json');
 
-export default function Footer({dict}: any) {
+export default function Footer({dict}: {dict: any}) {
     return (
         <footer className="mt-4 pb-6 text-zinc-400 md:space-y-2 bottom-0">
             <hr className="w-full h-0.5 border-t-0 bg-zinc-400 my-6" />
@@ -16,10 +16,10 @@ export default function Footer({dict}: any) {
                     <div className="lg:flex space-y-2 lg:space-y-0">
                         <p>Copyright © 2022 Slynite {dict.footer.rights_reserved}</p>
                         <div className="lg:ml-6 gap-2 md:gap-0 md:space-x-6 flex md:block flex-wrap">
-                            <Link href={"legal/privacy"}>{dict.page.privacy}</Link>
-                            <Link href={"legal/legal_notice"}>{dict.page.legal_notice}</Link>
-                            <Link href={"legal/licenses"}>{dict.page.licenses}</Link>
-                            <Link href={"contact"}>{dict.page.contact}</Link>
+                            <Link href={"/" + dict.lang + "/legal/privacy"}>{dict.page.privacy}</Link>
+                            <Link href={"/" + dict.lang + "/legal"}>{dict.page.legal_notice}</Link>
+                            <Link href={"/" + dict.lang + "/legal/licenses"}>{dict.page.licenses}</Link>
+                            <Link href={"/" + dict.lang + "/contact"}>{dict.page.contact}</Link>
                         </div>
                     </div>
                 </div>
