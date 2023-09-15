@@ -1,5 +1,14 @@
 import { notFound } from "next/navigation"
 import { getDictionaryByName } from "../../dictionaries";
+import { Metadata } from "next";
+
+export const generateMetadata = async ({ params }: { params: { lang:string, legal: string } }): Promise<Metadata> => {
+    const dict = await getDictionaryByName(params.lang, params.legal);
+    return {
+        title: `Slynite - ${dict.page_title}`,
+        description: dict.page_description
+    };
+};
 
 export default async function Legal({ params }: { params: { lang:string, legal: string } }) {
     const availblePages = [
