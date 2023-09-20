@@ -27,7 +27,7 @@ export default async function Projects({params: {lang}}: Props) {
 						name={dict.projects.worktime_tracker.title}
 						description={dict.projects.worktime_tracker.description}
 						logo='/worktime-tracker-logo.png' 
-						link='https://activehq.works/worktime-tracker' 
+						link='https://github.com/slynite/worktime-tracker' 
 						linkName={dict.projects.worktime_tracker.linkText}
 						isUpcoming={true} 
 						dict={dict.projects} />

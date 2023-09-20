@@ -51,14 +51,19 @@ export default async function About({ params: { lang } }: Props) {
 							description={dict.about.our_history.timeline[1].description}
 						/>
 						<TimelineItem 
-							title={dict.about.our_history.timeline[1].title}
-							time={dict.about.our_history.timeline[1].time}
-							description={dict.about.our_history.timeline[1].description}
+							title={dict.about.our_history.timeline[2].title}
+							time={dict.about.our_history.timeline[2].time}
+							description={dict.about.our_history.timeline[2].description}
 						/>
 						<TimelineItem 
-							title={dict.about.our_history.timeline[1].title}
-							time={dict.about.our_history.timeline[1].time}
-							description={dict.about.our_history.timeline[1].description}
+							title={dict.about.our_history.timeline[3].title}
+							time={dict.about.our_history.timeline[3].time}
+							description={dict.about.our_history.timeline[3].description}
+						/>
+						<TimelineItem 
+							title={dict.about.our_history.timeline[4].title}
+							time={dict.about.our_history.timeline[4].time}
+							description={dict.about.our_history.timeline[4].description}
 						/>
 					</ol>
 				</div>
@@ -79,12 +84,12 @@ export default async function About({ params: { lang } }: Props) {
 			<div className="mt-10 md:mt-14">
 				<div className="grid md:grid-cols-2">
 					<InfoCard
-						imagePath="/icons/shield-with-lock-white.png"
+						imagePath="/icons/user-group.png"
 						title={dict.about.values.team.title}
 						description={dict.about.values.team.description}
 					/>
 					<InfoCard
-						imagePath="/icons/shield-with-lock-white.png"
+						imagePath="/icons/osi-logo-outlined-white.png"
 						title={dict.about.values.open_source.title}
 						description={dict.about.values.open_source.description}
 					/>
