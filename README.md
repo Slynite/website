@@ -8,13 +8,8 @@
 [![License](https://img.shields.io/badge/Slynite%20modified%20MIT%20License-131313?style=for-the-badge&logo=Open%20Source%20Initiative&logoColor=white)](./LICENSE)
 ![Release](https://img.shields.io/github/v/release/Slynite/website?style=for-the-badge&color=131313&logo=license&logoColor=white)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Slynite_website&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Slynite_website)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Slynite_website&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Slynite_website)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Slynite_website&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Slynite_website)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Slynite_website&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Slynite_website)
-
 # [Slynite.com](https://slynite.com)
-In this repository is the source code of the Slynite website. This project is build with [Next.js](https://nextjs.org/).
+In this repository is the source code of the current Slynite website. This project is build using [Next.js](https://nextjs.org/) and [Tailwindcss](https://tailwindcss.com).
 
 ## Developer Environment
 - Run in terminal `git clone https://github.com/Slynite/website/`
