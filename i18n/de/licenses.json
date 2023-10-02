@@ -1,0 +1,53 @@
+{
+    "lang": "de",
+    "updated": "02.10.2023",
+    "page": {
+        "page_title": "Lizensen",
+        "page_description": "Lizensen and Mediennachweise für Slynite",
+        "title": "͘Lizensen and Mediennachweise",
+        "thanks": "Danke ❤️ an alle",
+        "thanks_text": "Creator und Contributer der folgenden Projekte. Ohne euere fantastische Arbeit, wäre es uns nie möglich gewesen unsere Seite (slynite.com) zu erstellen wie wir es zur Zeit machen.",
+        "opensource": {
+            "title": "Open Source",
+            "licenses": [
+                {
+                    "name": "React.js",
+                    "description": "ist eine Open Source JavaScript Library um Benutzeroberflächen zu erstellen.",
+                    "url": "https://reactjs.org"
+                },
+                {
+                    "name": "Node.js",
+                    "description": "ist eine Open Source, Cross Platform JavaScript laufzeit Umgebung.",
+                    "url": "https://nodejs.org"
+                },
+                {
+                    "name": "Next.js",
+                    "description": "ist ein React framework für Server-rendered React Applikationen.",
+                    "url": "https://nextjs.org"
+                },
+                {
+                    "name": "Tailwindcss",
+                    "description": "ist ein nützliches CSS-Framework mit Klassen, die für jedes Design zusammengestellt werden können.",
+                    "url": "https://tailwindcss.com"
+                },
+                {
+                    "name": "HeroIcons",
+                    "description": "ist eine Sammlung von SVG-Icons für die Verwendung im Web und in mobilen Anwendungen.",
+                    "url": "https://heroicons.com"
+                },
+                {
+                    "name": "Nodemailer",
+                    "description": "ist eine Node.js-E-Mail-Client-Bibliothek.",
+                    "url": "https://nodemailer.com"
+                }
+            ]
+        },
+        "media_credits": {
+            "title": "Mediennachweise",
+            "text_1": "Die auf der Website Slynite.com gezeigten Medien dürfen von Slynite offiziell und legal gezeigt und verwendet werden.",
+            "text_2": "Für alle anderen Medien gilt die folgende Lizenz © Slynite. Fotograf:",
+            "photographer": "Danny-Tobias Schapeit",
+            "restriction": "Die Medien dürfen nicht ohne ausdrückliche Genehmigung von Slynite verwendet werden."
+        }
+    }
+}
