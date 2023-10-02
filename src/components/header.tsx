@@ -7,12 +7,13 @@ import { useState } from "react";
 
 export default function Header({ dict }: {dict: any}) {
     const [menuOpen, setIsMenuOpen] = useState(false);
+
     return (
         <header className="pt-3 pb-3">
             <nav>
                 <div className="flex lg:items-center">
                     <Link href={"/" + dict.lang}>
-                        <Image src={"/logo.svg"} alt="Logo" width={1000} height={1000} className="w-10 h-10" />
+                        <Image src={"/ressources/logo.svg"} alt="Logo" width={1000} height={1000} className="w-10 h-10" />
                     </Link>
 
                     <div className="hidden lg:block space-x-6 ml-6">

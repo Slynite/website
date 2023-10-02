@@ -1,15 +1,26 @@
-import { headers } from 'next/headers'
 
-export default function getCurrentLanguage() {
-    const headersList = headers();
-    const currentPath = headersList.get("referer");
-    const currentLang = currentPath?.split("/")[3] as string;
-    if (availableLanguages().includes(currentLang)) {
-        return currentLang;
-    }
-    return "en";
+import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
+export const locales = ["en", "de"];
+export const defaultLocale = "en";
+
+export default function getCurrentLanguage(path: string): string {
+	for (const locale of locales) {
+		if (path.includes(`/${locale}/`)) {
+		  return locale;
+		}
+	  }
+	  return defaultLocale;
 }
 
-export function availableLanguages(): string[] {
-    return ["en", "de"];
+export function checkIfPathnameHasLocale(pathname: string): boolean {
+	const pathnameHasLocale = locales.some(
+		(locale) =>
+			pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
+	);
+
+	return pathnameHasLocale
+}
+
+export function getLangFromCookie(cookie: RequestCookie | undefined): string {
+    return cookie?.value ?? defaultLocale
 }

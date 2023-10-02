@@ -33,7 +33,7 @@ export default async function About({ params: { lang } }: Props) {
 						<p className='text-lg text-gray-300 col-span-2'>{dict.about.who_we_are.description}</p>
 					</div>
 				</div>
-				<Image className="place-self-center" src={'/slynite-logo-gradient.svg'} alt="Slynite Logo" width={220} height={220} />
+				<Image className="place-self-center" src={'/ressources/slynite-logo-gradient.svg'} alt="Slynite Logo" width={220} height={220} />
 			</div>
 
 			<div className="mt-10">
@@ -70,10 +70,10 @@ export default async function About({ params: { lang } }: Props) {
 			</div>
 
 			<div className="flex flex-col items-center text-center md:mx-24 md:mt-14">
-				<Image src={'/icons/quote.png'} alt="Quote" width={80} height={80} />
+				<Image src={'/ressources/icons/quote.png'} alt="Quote" width={80} height={80} />
 				<p className="text-lg md:text-xl">&quot;{dict.about.quote.text}&quot;</p>
 				<div className="flex mt-4 text-lg items-center space-x-2">
-					<Image src={'/danny-schapeit.png'} alt={dict.about.quote.author.name} width={40} height={40} className="rounded-full" />
+					<Image src={'/ressources/danny-schapeit.png'} alt={dict.about.quote.author.name} width={40} height={40} className="rounded-full" />
 					<div className="text-left md:flex md:items-center md:space-x-2">
 						<p>{dict.about.quote.author.name}</p>
 						<p className="text-sm font-light">{dict.about.quote.author.company}</p>
@@ -84,12 +84,12 @@ export default async function About({ params: { lang } }: Props) {
 			<div className="mt-10 md:mt-14">
 				<div className="grid md:grid-cols-2">
 					<InfoCard
-						imagePath="/icons/user-group.png"
+						imagePath="/ressources/icons/user-group.png"
 						title={dict.about.values.team.title}
 						description={dict.about.values.team.description}
 					/>
 					<InfoCard
-						imagePath="/icons/osi-logo-outlined-white.png"
+						imagePath="/ressources/icons/osi-logo-outlined-white.png"
 						title={dict.about.values.open_source.title}
 						description={dict.about.values.open_source.description}
 					/>

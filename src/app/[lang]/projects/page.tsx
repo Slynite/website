@@ -26,7 +26,7 @@ export default async function Projects({params: {lang}}: Props) {
 					<Project 
 						name={dict.projects.worktime_tracker.title}
 						description={dict.projects.worktime_tracker.description}
-						logo='/worktime-tracker-logo.png' 
+						logo='/ressources/worktime-tracker-logo.png' 
 						link='https://github.com/slynite/worktime-tracker' 
 						linkName={dict.projects.worktime_tracker.linkText}
 						isUpcoming={true} 
@@ -36,7 +36,7 @@ export default async function Projects({params: {lang}}: Props) {
 					<Project 
 						name={dict.projects.activehq.title}
 						description={dict.projects.activehq.description}
-						logo='/icons/sparkles.png' 
+						logo='/ressources/icons/sparkles.png' 
 						link='https://activehq.works' 
 						linkName={dict.projects.activehq.linkText}
 						isUpcoming={true} 
@@ -46,7 +46,7 @@ export default async function Projects({params: {lang}}: Props) {
 					<Project 
 						name={dict.projects.travelventures.title}
 						description={dict.projects.travelventures.description}
-						logo='/travelventures-logo.png' 
+						logo='/ressources/travelventures-logo.png' 
 						link='https://travelventures.app' 
 						linkName={dict.projects.travelventures.linkText}
 						isUpcoming={true} 
@@ -56,7 +56,7 @@ export default async function Projects({params: {lang}}: Props) {
 					<Project 
 						name={dict.projects.opensource.title}
 						description={dict.projects.opensource.description}
-						logo='/github-mark-white.png' 
+						logo='/ressources/github-mark-white.png' 
 						link='https://github.com/slynite' 
 						linkName={dict.projects.opensource.linkText}
 						isUpcoming={false} 

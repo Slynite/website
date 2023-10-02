@@ -29,7 +29,7 @@ export default async function Home({params: {lang}}: Props) {
 				</Link>
 			</div>
 			
-			<Image src={'/placeholder-800x400.svg'} alt={dict.homepage.title} width={2200} height={600} />
+			<Image src={'/ressources/placeholder-800x400.svg'} alt={dict.homepage.title} width={2200} height={600} />
 
 			<div id='our-mission' className='md:grid md:grid-cols-3 mt-20'>
 				<div className='md:col-span-2'>
@@ -40,10 +40,10 @@ export default async function Home({params: {lang}}: Props) {
 						{dict.homepage.mission.description_part2} <br />
 						{dict.homepage.mission.learn_more} <Link href={"/" + lang + "/about"} className='underline'>{dict.homepage.mission.learn_more_link}</Link>.
 					</p>
-					<Image className='md:hidden' src={'/slynite-mission-vertically.png'} alt={dict.homepage.mission.title_highlighted} width={600} height={180} />
+					<Image className='md:hidden' src={'/ressources/slynite-mission-vertically.png'} alt={dict.homepage.mission.title_highlighted} width={600} height={180} />
 				</div>
 				<div className='hidden md:flex justify-center animate-once animate-fade-up animate-delay-[200ms] animate-ease-out'>
-					<Image src={'/slynite-mission.png'} alt={dict.homepage.mission.title_highlighted} width={180} height={600} />
+					<Image src={'/ressources/slynite-mission.png'} alt={dict.homepage.mission.title_highlighted} width={180} height={600} />
 				</div>
 			</div>
 
@@ -58,22 +58,22 @@ export default async function Home({params: {lang}}: Props) {
 					<InfoCard 
 							title={dict.homepage.core_values.privacy.title}
 							description={dict.homepage.core_values.privacy.description} 
-							imagePath='/icons/shield-with-lock-white.png'
+							imagePath='/ressources/icons/shield-with-lock-white.png'
 						/>
 					<InfoCard 
 							title={dict.homepage.core_values.transparency.title}
 							description={dict.homepage.core_values.transparency.description}
-							imagePath='/icons/codeblock-with-magnifier-white.png'
+							imagePath='/ressources/icons/codeblock-with-magnifier-white.png'
 						/>
 					<InfoCard 
 							title={dict.homepage.core_values.security.title}
 							description={dict.homepage.core_values.security.description}
-							imagePath='/icons/lock-closed-white.png'
+							imagePath='/ressources/icons/lock-closed-white.png'
 						/>
 					<InfoCard 
 							title={dict.homepage.core_values.tracking.title}
 							description={dict.homepage.core_values.tracking.description}
-							imagePath='/icons/signal-slash-white.png'
+							imagePath='/ressources/icons/signal-slash-white.png'
 						/>
 				</div>
 			</div>
@@ -88,7 +88,7 @@ export default async function Home({params: {lang}}: Props) {
 							{dict.homepage.open_source.learn_more} <Link href="https://github.com/Slynite" className='underline'>{dict.homepage.open_source.learn_more_link}</Link>
 						</p>
 						<div className='flex justify-center'>
-						<Image src={'/slynite-github-profile-iphone12-blue-half.png'} alt={dict.homepage.open_source.title_highlighted} width={300} height={600} /> 
+						<Image src={'/ressources/slynite-github-profile-iphone12-blue-half.png'} alt={dict.homepage.open_source.title_highlighted} width={300} height={600} /> 
 						</div>					
 					</div>
 				</div>
