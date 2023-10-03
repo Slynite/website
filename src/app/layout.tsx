@@ -5,8 +5,38 @@ import Header from "@/components/header";
 import { getMainDictionary } from "./[lang]/dictionaries";
 import { cookies } from "next/headers";
 import { getLangFromCookie } from "../../lib/i18nHelper";
+import { Metadata } from "next";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+
+export const metadata: Metadata = {
+	title: "Slynite",
+	applicationName: "Slynite",
+	referrer: "origin",
+	keywords: ["Slynite", "Travelventures", "ActiveHQ.works", "Open Source", "Privacy", "Privacy-focused", "Security", "Transparency", ],
+	robots: "index,follow",
+	authors: [
+		{
+			name: "Slynite",
+			url: "https://slynite.de"
+		},
+		{
+			name: "Contributors",
+			url: "https://github.com/slynite/website/graphs/contributors"
+		}
+	],
+	icons: [
+		{
+			rel: "apple-touch-icon",
+			url: "/ressources/favicon/apple-icon.png"
+		},
+		{
+			rel: "icon",
+			url: "/ressources/favicon/favicon.ico"
+		},
+	],
+	manifest: "/ressources/favicon/manifest.json",
+}
 
 export default async function RootLayout({
 	children
