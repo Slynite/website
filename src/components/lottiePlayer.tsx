@@ -7,7 +7,14 @@ import missionVertical from "../../public/ressources/lottie/slynite-mission-vert
 import banner from "../../public/ressources/lottie/banner.json";
 
 export default function LottiePlayer({src, width}: {src: 'slynite-mission' | 'slynite-mission-vertically' | 'banner', width: number}) {
-    const file = src === 'slynite-mission' ? missionHorizontal : src === 'slynite-mission-vertically' ? missionVertical : banner;
+    let file;
+    if (src === 'slynite-mission') {
+        file = missionHorizontal;
+    } else if (src === 'slynite-mission-vertically') {
+        file = missionVertical;
+    } else {
+        file = banner;
+    }
     
     return(
         <Lottie
