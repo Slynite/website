@@ -4,6 +4,7 @@ import TextHeader from '@/components/textHeader';
 import InfoCard from '@/components/infoCard';
 import Image from 'next/image';
 import Link from 'next/link';
+import LottiePlayer from '@/components/lottiePlayer';
 
 type Props = {
     params: { lang: string };
@@ -29,7 +30,9 @@ export default async function Home({params: {lang}}: Props) {
 				</Link>
 			</div>
 			
-			<Image src={'/ressources/placeholder-800x400.svg'} alt={dict.homepage.title} width={2200} height={600} />
+			<div className='block md:block'>
+				<LottiePlayer src={'banner'} width={1100} />
+			</div>
 
 			<div id='our-mission' className='md:grid md:grid-cols-3 mt-20'>
 				<div className='md:col-span-2'>
@@ -40,10 +43,12 @@ export default async function Home({params: {lang}}: Props) {
 						{dict.homepage.mission.description_part2} <br />
 						{dict.homepage.mission.learn_more} <Link href={"/" + lang + "/about"} className='underline'>{dict.homepage.mission.learn_more_link}</Link>.
 					</p>
-					<Image className='md:hidden' src={'/ressources/slynite-mission-vertically.png'} alt={dict.homepage.mission.title_highlighted} width={600} height={180} />
+					<div className='md:hidden'>
+						<LottiePlayer src={'slynite-mission-vertically'} width={600} />
+					</div>
 				</div>
 				<div className='hidden md:flex justify-center animate-once animate-fade-up animate-delay-[200ms] animate-ease-out'>
-					<Image src={'/ressources/slynite-mission.png'} alt={dict.homepage.mission.title_highlighted} width={180} height={600} />
+					<LottiePlayer src={'slynite-mission'} width={180} />
 				</div>
 			</div>
 
