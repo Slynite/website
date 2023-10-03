@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { getDictionaryByName } from "../../dictionaries";
-import Link from "next/link";
 import Changed from "@/components/change";
 
 export const generateMetadata = async ({ params }: { params: { lang: string }}): Promise<Metadata> => {
