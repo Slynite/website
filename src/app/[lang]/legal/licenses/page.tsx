@@ -11,9 +11,8 @@ export const generateMetadata = async ({ params }: { params: { lang: string }}):
     };
 };
 
-export default async function Legal({ params }: { params: { lang:string } }) {
+export default async function Licenses({ params }: { params: { lang:string } }) {
     const dict = await getDictionaryByName(params.lang, "licenses");
-    console.log(dict)
     return (
         <div className='mt-6 md:mt-20'>
             <h1 className="text-2xl lg:text-4xl font-bold mb-6 lg:mb-10 text-center">
@@ -38,7 +37,7 @@ export default async function Legal({ params }: { params: { lang:string } }) {
 
                 <h2 className="text-2xl mt-8">{dict.page.media_credits.title}</h2>
                 <p>{dict.page.media_credits.text_1}</p>
-                <p className="mt-2">{dict.page.media_credits.text_2} <Link href={"https://danny.schapeit.com"} target="_blank">{dict.page.media_credits.photographer}</Link>.</p>
+                <p>{dict.page.media_credits.text_2} <Link href={"https://danny.schapeit.com"} target="_blank">{dict.page.media_credits.photographer}</Link>.</p>
                 <p className="mt-2">{dict.page.media_credits.restriction}</p>
             </div>
         </div>
