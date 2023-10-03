@@ -6,11 +6,11 @@ export async function middleware(request: NextRequest) {
     const currentLanguage = getCurrentLanguage(pathname);
 
     if (hostname === "slynite.de" && pathname === "/") {
-        request.nextUrl.pathname = `/de/`
+        request.nextUrl.pathname = `de/`
     } else if (checkIfPathnameHasLocale(pathname)) {
-        request.nextUrl.pathname = `/${pathname}`;
+        request.nextUrl.pathname = `${pathname}`;
     } else {
-        request.nextUrl.pathname = `/${currentLanguage}${pathname}`;
+        request.nextUrl.pathname = `${currentLanguage}${pathname}`;
     }
 
     if (checkIfPathnameHasLocale(pathname) && currentLanguage === request.cookies.get("lang")?.value) {
