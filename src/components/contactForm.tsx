@@ -10,7 +10,7 @@ interface ApiResponse {
     message: string    
 } 
 
-export default function ContactForm({dict}: {dict: any}) {
+export default function ContactForm({dict, lang}: {dict: any, lang: string}) {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
@@ -70,7 +70,7 @@ export default function ContactForm({dict}: {dict: any}) {
                             <InfoCard 
                                 title={dict.contact.video_call.title}
                                 description={dict.contact.video_call.description}
-                                imagePath='/icons/video-camera.png' />
+                                imagePath='/ressources/icons/video-camera.png' />
                         </div>
                     </div>
                     <div className='transform hover:scale-102 duration-300 motion-reduce:transform-none'>
@@ -79,7 +79,7 @@ export default function ContactForm({dict}: {dict: any}) {
                                 <InfoCard 
                                     title={dict.contact.email.title}
                                     description={dict.contact.email.description}
-                                    imagePath='/icons/envelope.png' />
+                                    imagePath='/ressources/icons/envelope.png' />
                             </Link>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function ContactForm({dict}: {dict: any}) {
                         <>
                             {warning && <p className="bg-orange-500 p-2.5 rounded-lg -mb-6">{dict.contact.form.warning} {warning}</p>}
                             <div className='flex flex-col items-center justify-center text-center min-h-full'>
-                                <Image src={'/icons/check-circle-white.png'} alt='checkmark' width={100} height={100} />
+                                <Image src={'/ressources/icons/check-circle-white.png'} alt='checkmark' width={100} height={100} />
                                 <h2 className="text-2xl">{dict.contact.form.success}</h2>
                                 <p className="text-base">{dict.contact.form.success_description}</p>
                                 <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center mt-4" onClick={() => resetStates()}>{dict.contact.form.success_back_button}</button>
@@ -111,7 +111,7 @@ export default function ContactForm({dict}: {dict: any}) {
                                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-300">{dict.contact.form.message}</label>
                                 <textarea id="message" rows={6} className="block p-2.5 w-full text-sm rounded-lg shadow-sm bg-zinc-600" placeholder={dict.contact.form.message_placeholder} value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                             </div>
-                            <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{dict.contact.form.privacy_notice} <Link className='underline' href={'legal/privacy'} target="_blank">{dict.contact.form.privacy_notice_link}</Link>.</p>
+                            <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{dict.contact.form.privacy_notice} <Link className='underline' href={"/" + lang + "/legal/privacy"} target="_blank">{dict.contact.form.privacy_notice_link}</Link>.</p>
                             <button type="submit" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center mt-4">{dict.contact.form.send}</button>
                         </form>
                     )}

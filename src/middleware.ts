@@ -1,28 +1,29 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
-import { availableLanguages } from '../lib/i18nHelper'
+import { NextRequest, NextResponse } from "next/server";
+import getCurrentLanguage, { checkIfPathnameHasLocale } from "../lib/i18nHelper";
 
-let locales = availableLanguages();
+export async function middleware(request: NextRequest) {
+    const { pathname, hostname } = request.nextUrl;
+    const currentLanguage = getCurrentLanguage(pathname);
 
-export function middleware(request: NextRequest) {
-    let locale = "en"
-
-    const pathname = request.nextUrl.pathname
-    const pathnameIsMissingLocale = locales.every(
-        (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-    )
-
-    if (request.nextUrl.hostname === "slynite.de" && pathnameIsMissingLocale) {
-        locale = "de"
+    if (hostname === "slynite.de" && pathname === "/") {
+        request.nextUrl.pathname = `/de/`
+    } else if (checkIfPathnameHasLocale(pathname)) {
+        request.nextUrl.pathname = `/${pathname}`;
+    } else {
+        request.nextUrl.pathname = `/${currentLanguage}${pathname}`;
     }
 
-    if (pathnameIsMissingLocale){
-        return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.url))
+    if (checkIfPathnameHasLocale(pathname) && currentLanguage === request.cookies.get("lang")?.value) {
+        return NextResponse.next();
     }
+
+    const response = NextResponse.redirect(request.nextUrl);
+    response.cookies.set("lang", currentLanguage);
+    return response;
 }
 
 export const config = {
     matcher: [
-      '/((?!api|static|.*\\..*|_next).*)',
+      '/((?!api|_next/static|_next/image|ressources|favicon.ico).*)',
     ],
 }

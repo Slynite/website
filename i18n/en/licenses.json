@@ -1,0 +1,53 @@
+{
+    "lang": "en",
+    "updated": "02.10.2023",
+    "page": {
+        "page_title": "Licenses",
+        "page_description": "Licenses and Media credits for Slynite",
+        "title": "͘Licenses and Media credits",
+        "thanks": "Thanks ❤️ to all",
+        "thanks_text": "the creators and contributors of the following projects. Without your fantastic work we would never have been able to create our site (slynite.com) the way we are doing right now.",
+        "opensource": {
+            "title": "Open Source",
+            "licenses": [
+                {
+                    "name": "React.js",
+                    "description": "is an open-source JavaScript library for building user interfaces.",
+                    "url": "https://reactjs.org"
+                },
+                {
+                    "name": "Node.js",
+                    "description": "is an open-source, cross-platform JavaScript runtime environment.",
+                    "url": "https://nodejs.org"
+                },
+                {
+                    "name": "Next.js",
+                    "description": "is a React framework for server-rendered React applications.",
+                    "url": "https://nextjs.org"
+                },
+                {
+                    "name": "Tailwindcss",
+                    "description": "is a utility-first CSS framework packed with classes that can be composed to build any design.",
+                    "url": "https://tailwindcss.com"
+                },
+                {
+                    "name": "HeroIcons",
+                    "description": "is a collection of SVG icons for use in web and mobile apps.",
+                    "url": "https://heroicons.com"
+                },
+                {
+                    "name": "Nodemailer",
+                    "description": "is a Node.js email client library.",
+                    "url": "https://nodemailer.com"
+                }
+            ]
+        },
+        "media_credits": {
+            "title": "Media credits",
+            "text_1": "The media shown on the website Slynite.com may be officially and legally shown and used by Slynite.",
+            "text_2": "For all other media, the following license applies © Slynite. Photographer:",
+            "photographer": "Danny-Tobias Schapeit",
+            "restriction": "The media may not be used without explicit permission from Slynite."
+        }
+    }
+}

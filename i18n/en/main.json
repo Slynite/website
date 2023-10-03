@@ -1,4 +1,5 @@
 {
+    "lang": "en",
     "page": {
         "title": "Company for Privacy, Security and Transparency on the Internet",
         "description": "We are a company who focused on privacy, transparency and security on the internet.",
@@ -6,7 +7,8 @@
         "legal_notice": "Legal Notice",
         "licenses": "Licenses",
         "contact": "Contact",
-        "learn_more": "Learn more"
+        "learn_more": "Learn more",
+        "last_changed": "Last changed on"
     },
 
     "header": {
@@ -44,19 +46,19 @@
             "description": "Our projects are always developed from scratch with our main principles. Through the principles, our goals can never be missed.",
             "privacy": {
                 "title": "Privacy",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+                "description": "We value privacy as a fundamental principle in software to protect and trust our users' personal data and information."
             },
             "transparency": {
                 "title": "Transparency",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+                "description": "To foster trust and provide users with insight into processes and data, transparency is a top priority for us. We also publish many of our projects open source for transparency."
             },
             "security": {
                 "title": "Security",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+                "description": "From the ground up, security is integrated into our projects and continuously improved. We use both best-practice principles and modern security solutions to ensure the security of our software."
             },
             "tracking": {
                 "title": "No unnecessary tracking",
-                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
+                "description": "In our projects, we always make sure that no unnecessary data is collected from users. We also do not use tracking technologies."
             }
         },
 
@@ -64,7 +66,7 @@
             "title_part1": "Many projects are",
             "title_highlighted": "Open source",
             "subtitle": "So everyone can be a part of the development",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.",
+            "description": "We use Github as open source software to develop and publish our projects. We also use this to ensure transparency and provide an opportunity for everyone to get involved in the development.",
             "learn_more": "Visit us on",
             "learn_more_link": "GitHub"
         }
@@ -114,22 +116,22 @@
         "launched_previously": "Launched previously",
         "worktime_tracker": {
             "title": "Worktime Tracker",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
-            "linkText": "Go to Worktime Tracker"
+            "description": "Tracking working hours has never been so simple. With the Worktime Tracker from Slynite, it's easy to record, categorize and analyze working hours. Best of all, Worktime Tracker is and will always be free to use.",
+            "linkText": "Go to Worktime Tracker repository"
         },
         "activehq": {
             "title": "ActiveHQ",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
+            "description": "The HR department in the internal cloud. Take care of and manage everything that concerns employees in a single application. Self-service for employees and HR department.",
             "linkText": "Go to ActiveHQ"
         },
         "travelventures": {
             "title": "Travelventures",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
+            "description": "Find the closest locations and tips for your next adventure. Travelventures is the ultimate travel companion, planner and guide in your pocket.",
             "linkText": "Go to Travelventures"
         },
         "opensource": {
             "title": "Open Source",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...",
+            "description": "At Slynite we develop many projects open source. Have a look at what else we are doing.",
             "linkText": "Explore our repositories"
         }
     },
@@ -139,7 +141,7 @@
         "page_description": "Learn more about what Slynite do and why we do it.",
         "title": "Our mission is simple",      
         "title_highlighted": "Privacy at the core",
-        "description": "We want to change whats wrong with many products, so we take user data seriously and protect them.",
+        "description": "We want to change whats wrong with many products, so we take user data seriously and protect them",
         "who_we_are": {
             "title": "Who we are",
             "description": "One of our biggest issues in today's world is the integrity of personalized data. To achieve this aim we are optimizing data architectures and data models to deliver next level solutions requiring only the most necessary data for operations. With our transperency and strict data limitation it is possible to thrive on powerful applications with a minimal amount of data collections."
@@ -150,14 +152,30 @@
             "title_part2": "so far",
             "timeline": [
                 {
-                    "title": "Foundation of Slynite",
+                    "title": "First idea of Slynite",
                     "time": "February 2019",
-                    "description": "Our founder Danny starts developing projects under the name Slynite."
+                    "description": "Our founder Danny Schapeit starts developing projects under the name Slynite."
                 },
                 {
-                    "title": "Title",
-                    "time": "Month, Year",
-                    "description": "Description"
+                    "title": "Travelventures",
+                    "time": "June 2021",
+                    "description": "Idea and first prototype of Travelventures was born."
+                },
+                {
+                    "title": "New Co-Founder",
+                    "time": "January 2022",
+                    "description": "Jan Luca Sterta joins Slynite as Co-Founder to help build Slynite."
+                },
+                {
+                    "title": "Worktime Tracker",
+                    "time": "December 2022",
+                    "description": "As a school project by Danny Schapeit and Jonas Bott, Worktime Tracker will be further developed under Slynite after the end of the project."
+
+                },
+                {
+                    "title": "New Co-Founder",
+                    "time": "May 2023",
+                    "description": "Jonas Bott joins Slynite as Co-Founder to help build Slynite."
                 }
             ]
         },
@@ -190,9 +208,5 @@
         "page_description": "Page not found",
         "title": "The page you are looking for could not be found",
         "link": "Return to home"
-    },
-
-    "test": {
-        "helloworld": "Hello World!"
     }
 }

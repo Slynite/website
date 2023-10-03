@@ -3,28 +3,25 @@
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-export default function Header({ dict }: any) {
+export default function Header({ dict }: {dict: any}) {
     const [menuOpen, setIsMenuOpen] = useState(false);
 
-    const path = usePathname();
-    const currentLang = path?.split("/")[1];
     return (
         <header className="pt-3 pb-3">
             <nav>
                 <div className="flex lg:items-center">
-                    <Link href={"/" + currentLang}>
-                        <Image src={"/logo.svg"} alt="Logo" width={1000} height={1000} className="w-10 h-10" />
+                    <Link href={"/" + dict.lang}>
+                        <Image src={"/ressources/logo.svg"} alt="Logo" width={1000} height={1000} className="w-10 h-10" />
                     </Link>
 
                     <div className="hidden lg:block space-x-6 ml-6">
-                        <Link href={"/" + currentLang}>{dict.header.home}</Link>
-                        <Link href={"about"}>{dict.header.about}</Link>
-                        <Link href={"projects"}>{dict.header.projects}</Link>
+                        <Link href={"/" + dict.lang}>{dict.header.home}</Link>
+                        <Link href={"/" + dict.lang + "/about"}>{dict.header.about}</Link>
+                        <Link href={"/" + dict.lang + "/projects"}>{dict.header.projects}</Link>
                     </div>
-                    <Link className="hidden lg:block ml-auto" href={"/contact"}>
+                    <Link className="hidden lg:block ml-auto" href={"/" + dict.lang + "/contact"}>
                             <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 text-center">
                                 {dict.header.contact}
                             </button>
@@ -35,11 +32,11 @@ export default function Header({ dict }: any) {
 
                 {menuOpen && (
                     <div className="lg:hidden grid text-center text-lg pt-2 pb-4 space-y-2 animate-fade-down">
-                        <Link className="animate-once animate-fade-up animate-ease-out" href={"/" + currentLang} onClick={() => setIsMenuOpen(false)}>{dict.header.home}</Link>
-                        <Link className="animate-once animate-fade-up animate-delay-[200ms] animate-ease-out" href={"about"} onClick={() => setIsMenuOpen(false)}>{dict.header.about}</Link>
-                        <Link className="animate-once animate-fade-up animate-delay-[400ms] animate-ease-out" href={"projects"} onClick={() => setIsMenuOpen(false)}>{dict.header.projects}</Link>
+                        <Link className="animate-once animate-fade-up animate-ease-out" href={"/" + dict.lang} onClick={() => setIsMenuOpen(false)}>{dict.header.home}</Link>
+                        <Link className="animate-once animate-fade-up animate-delay-[200ms] animate-ease-out" href={"/" + dict.lang + "/about"} onClick={() => setIsMenuOpen(false)}>{dict.header.about}</Link>
+                        <Link className="animate-once animate-fade-up animate-delay-[400ms] animate-ease-out" href={"/" + dict.lang + "/projects"} onClick={() => setIsMenuOpen(false)}>{dict.header.projects}</Link>
 
-                        <Link className="animate-once animate-fade-up animate-delay-[600ms] animate-ease-out pb-6" href={"contact"} onClick={() => setIsMenuOpen(false)}>
+                        <Link className="animate-once animate-fade-up animate-delay-[600ms] animate-ease-out pb-6" href={"/" + dict.lang + "/contact"} onClick={() => setIsMenuOpen(false)}>
                             <button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 text-sm rounded-full py-0.5 px-5 text-center">
                                 {dict.header.contact_us}
                             </button>

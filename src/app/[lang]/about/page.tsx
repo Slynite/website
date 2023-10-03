@@ -1,4 +1,4 @@
-import { getDictionary } from "../dictionaries";
+import { getMainDictionary } from "@/app/[lang]/dictionaries";
 import Image from "next/image";
 import InfoCard from "@/components/infoCard";
 import TextHeader from "@/components/textHeader";
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-    const dict = await getDictionary(params.lang) 
+    const dict = await getMainDictionary(params.lang) 
     return {
       	title: `Slynite - ${dict.about.page_title}`,
       	description: dict.about.page_description
@@ -19,7 +19,7 @@ export const generateMetadata = async ({ params }: Props): Promise<Metadata> => 
 };
 
 export default async function About({ params: { lang } }: Props) {
-	const dict = await getDictionary(lang);
+	const dict = await getMainDictionary(lang);
 	return (
 		<main className='mt-6 md:mt-20'>
 			<div className="text-center">
@@ -33,7 +33,7 @@ export default async function About({ params: { lang } }: Props) {
 						<p className='text-lg text-gray-300 col-span-2'>{dict.about.who_we_are.description}</p>
 					</div>
 				</div>
-				<Image className="place-self-center" src={'/slynite-logo-gradient.svg'} alt="Slynite Logo" width={220} height={220} />
+				<Image className="place-self-center" src={'/ressources/slynite-logo-gradient.svg'} alt="Slynite Logo" width={220} height={220} />
 			</div>
 
 			<div className="mt-10">
@@ -51,24 +51,29 @@ export default async function About({ params: { lang } }: Props) {
 							description={dict.about.our_history.timeline[1].description}
 						/>
 						<TimelineItem 
-							title={dict.about.our_history.timeline[1].title}
-							time={dict.about.our_history.timeline[1].time}
-							description={dict.about.our_history.timeline[1].description}
+							title={dict.about.our_history.timeline[2].title}
+							time={dict.about.our_history.timeline[2].time}
+							description={dict.about.our_history.timeline[2].description}
 						/>
 						<TimelineItem 
-							title={dict.about.our_history.timeline[1].title}
-							time={dict.about.our_history.timeline[1].time}
-							description={dict.about.our_history.timeline[1].description}
+							title={dict.about.our_history.timeline[3].title}
+							time={dict.about.our_history.timeline[3].time}
+							description={dict.about.our_history.timeline[3].description}
+						/>
+						<TimelineItem 
+							title={dict.about.our_history.timeline[4].title}
+							time={dict.about.our_history.timeline[4].time}
+							description={dict.about.our_history.timeline[4].description}
 						/>
 					</ol>
 				</div>
 			</div>
 
 			<div className="flex flex-col items-center text-center md:mx-24 md:mt-14">
-				<Image src={'/icons/quote.png'} alt="Quote" width={80} height={80} />
+				<Image src={'/ressources/icons/quote.png'} alt="Quote" width={80} height={80} />
 				<p className="text-lg md:text-xl">&quot;{dict.about.quote.text}&quot;</p>
 				<div className="flex mt-4 text-lg items-center space-x-2">
-					<Image src={'/danny-schapeit.png'} alt={dict.about.quote.author.name} width={40} height={40} className="rounded-full" />
+					<Image src={'/ressources/danny-schapeit.png'} alt={dict.about.quote.author.name} width={40} height={40} className="rounded-full" />
 					<div className="text-left md:flex md:items-center md:space-x-2">
 						<p>{dict.about.quote.author.name}</p>
 						<p className="text-sm font-light">{dict.about.quote.author.company}</p>
@@ -79,12 +84,12 @@ export default async function About({ params: { lang } }: Props) {
 			<div className="mt-10 md:mt-14">
 				<div className="grid md:grid-cols-2">
 					<InfoCard
-						imagePath="/icons/shield-with-lock-white.png"
+						imagePath="/ressources/icons/user-group.png"
 						title={dict.about.values.team.title}
 						description={dict.about.values.team.description}
 					/>
 					<InfoCard
-						imagePath="/icons/shield-with-lock-white.png"
+						imagePath="/ressources/icons/osi-logo-outlined-white.png"
 						title={dict.about.values.open_source.title}
 						description={dict.about.values.open_source.description}
 					/>
@@ -95,7 +100,7 @@ export default async function About({ params: { lang } }: Props) {
 				<h2 className='text-2xl lg:text-4xl font-bold'>{dict.about.get_in_touch.title}</h2>
 				<p className='text-lg text-gray-300'>{dict.about.get_in_touch.description}</p>
 				<div className='flex justify-center mt-2 mb-10'>
-				<Link href={"contact"}>
+				<Link href={"/" + lang + "/contact"}>
 					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict.about.get_in_touch.button}</button>
 				</Link>
 			</div>
