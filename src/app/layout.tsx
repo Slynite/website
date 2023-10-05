@@ -10,6 +10,16 @@ export const metadata: Metadata = {
 	referrer: "origin",
 	keywords: ["Slynite", "Travelventures", "ActiveHQ.works", "Open Source", "Privacy", "Privacy-focused", "Security", "Transparency", ],
 	robots: "index,follow",
+	openGraph: {
+		type: "website",
+		url: "https://slynite.com",
+		title: "Slynite",
+		siteName: "Slynite",
+		description: "Slynite is a company who focuses on privacy, transparency and security on the internet.",
+		images: [{
+			url: "https://slynite.com/ressources/slynite-og-banner.jpg",
+		}],
+	},
 	authors: [
 		{
 			name: "Slynite",
