@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-	const dict = await getMainDictionary("en");
+	const dict = await getMainDictionary(params.lang);
   return {
       title: `Slynite - ${dict.not_found.page_title}`,
       description: dict.not_found.page_description
