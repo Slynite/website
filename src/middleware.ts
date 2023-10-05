@@ -8,18 +8,12 @@ export async function middleware(request: NextRequest) {
     if (hostname === "slynite.de" && pathname === "/") {
         request.nextUrl.pathname = `de/`
     } else if (checkIfPathnameHasLocale(pathname)) {
-        request.nextUrl.pathname = `${pathname}`;
+        return NextResponse.next();
     } else {
         request.nextUrl.pathname = `${currentLanguage}${pathname}`;
     }
 
-    if (checkIfPathnameHasLocale(pathname) && currentLanguage === request.cookies.get("lang")?.value) {
-        return NextResponse.next();
-    }
-
-    const response = NextResponse.redirect(request.nextUrl);
-    response.cookies.set("lang", currentLanguage);
-    return response;
+    return NextResponse.redirect(request.nextUrl);
 }
 
 export const config = {
