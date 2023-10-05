@@ -14,14 +14,14 @@ In this repository is the source code of the current Slynite website. This proje
 ## Developer Environment
 - Run in terminal `git clone https://github.com/Slynite/website/`
 - Rename `.env.example` to `.env` and change environment variables
-- Run `npm install` in terminal
+- Run `npm ci` in terminal
 - Run `npm run dev` in termianl to start the dev server.
 - Access site on `[IP]:3000`
 
 ## Production
 
 ### Using NPM
-- Run `npm install` in terminal
+- Run `npm ci` in terminal
 - Run `npm run build && npm run start` in terminal
 - Access site on `[IP]:3000`
 
