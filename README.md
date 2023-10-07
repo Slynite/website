@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./slynite-logo.png">
+    <img src="./slynite-new-look.jpg">
 </p>
 
 [![Next.js](https://img.shields.io/badge/Next.js-131313?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)

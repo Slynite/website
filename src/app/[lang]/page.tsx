@@ -24,7 +24,7 @@ export default async function Home({params: {lang}}: Props) {
   	return (
     	<main className='mt-6 md:mt-20'>
         	<TextHeader text={dict.homepage.title} description={dict.homepage.description} />
-			<div className='flex justify-center mt-2 mb-10'>
+			<div className='flex justify-center mt-4 mb-10'>
 				<Link href={"/" + lang + "/about"}>
 					<button type="button" className="text-black bg-zinc-200 hover:bg-zinc-300 font-medium rounded-full px-4 py-1.5 text-center">{dict?.page?.learn_more}</button>
 				</Link>
@@ -36,11 +36,15 @@ export default async function Home({params: {lang}}: Props) {
 
 			<div id='our-mission' className='md:grid md:grid-cols-3 mt-20'>
 				<div className='md:col-span-2'>
-					<h2 className='text-2xl lg:text-4xl font-bold'>{dict.homepage.mission.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.mission.title_highlighted}</p> {dict.homepage.mission.title_part2}.</h2>
+					<h2 className='text-2xl lg:text-4xl font-bold mb-2'>{dict.homepage.covered.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.covered.title_highlighted}</p></h2>
+					<p className='text-lg text-gray-300'>
+						{dict.homepage.covered.description}
+					</p>
+
+					<h2 className='text-2xl lg:text-4xl font-bold mt-10 md:mt-20 mb-2'>{dict.homepage.mission.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.mission.title_highlighted}</p> {dict.homepage.mission.title_part2}</h2>
 					<p className='text-lg text-gray-300'>
 						{dict.homepage.mission.description_part1}
-						<br /><br />
-						{dict.homepage.mission.description_part2} <br />
+						<br />
 						{dict.homepage.mission.learn_more} <Link href={"/" + lang + "/about"} className='underline'>{dict.homepage.mission.learn_more_link}</Link>.
 					</p>
 					<div className='md:hidden'>
@@ -53,12 +57,7 @@ export default async function Home({params: {lang}}: Props) {
 			</div>
 
 			<div id='core-values' className='mt-10'>
-				<h2 className='text-2xl lg:text-4xl font-bold'>{dict.homepage.core_values.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.core_values.title_highlighted}</p>.</h2>
-				<div className='mb-8'>
-					<p className='text-lg text-gray-300'>
-						{dict.homepage.core_values.description}
-					</p>
-				</div>
+				<h2 className='text-2xl lg:text-4xl font-bold'>{dict.homepage.core_values.title_part1} <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.core_values.title_highlighted}</p> {dict.homepage.core_values.title_part2}</h2>
 				<div className='grid md:grid-cols-2'>
 					<InfoCard 
 							title={dict.homepage.core_values.privacy.title}

@@ -1,7 +1,6 @@
 import { getMainDictionary } from "@/app/[lang]/dictionaries";
 import Image from "next/image";
 import InfoCard from "@/components/infoCard";
-import TextHeader from "@/components/textHeader";
 import { Metadata } from "next";
 import TimelineItem from "@/components/timelineItem";
 import Link from "next/link";
@@ -23,14 +22,22 @@ export default async function About({ params: { lang } }: Props) {
 	return (
 		<main className='mt-6 md:mt-20'>
 			<div className="text-center">
-				<TextHeader text={dict.about.title} hightlightText={dict.about.title_highlighted} description={dict.about.description} />
+				<h1 className="text-2xl lg:text-5xl font-bold mb-2">
+					<b className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green">{dict.about.title_highlighted}</b> {dict.about.title}
+				</h1>
+				<h2 className="text-base lg:text-2xl">{dict.about.description}.</h2>
 			</div>
 
 			<div className="grid md:grid-cols-3 mt-20">
 				<div className="md:col-span-2">
-					<h2 className='text-2xl lg:text-4xl font-bold'>{dict.about.who_we_are.title}</h2>
+					<h2 className='text-2xl lg:text-4xl font-bold mb-2'>
+						{dict.about.who_we_are.title_part1}
+						<b className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green ml-2 mr-2">{dict.about.who_we_are.title_highlighted}</b>
+						{dict.about.who_we_are.title_part2}
+					</h2>
 					<div className='mb-8'>
-						<p className='text-lg text-gray-300 col-span-2'>{dict.about.who_we_are.description}</p>
+						<p className='text-lg text-gray-300 col-span-2'>{dict.about.who_we_are.description_part1}</p>
+						<p className='text-lg text-gray-300 col-span-2 mt-2'>{dict.about.who_we_are.description_part2}</p>
 					</div>
 				</div>
 				<Image className="place-self-center" src={'/ressources/slynite-logo-gradient.svg'} alt="Slynite Logo" width={220} height={220} />
@@ -97,7 +104,7 @@ export default async function About({ params: { lang } }: Props) {
 			</div>
 
 			<div className="mt-10">
-				<h2 className='text-2xl lg:text-4xl font-bold'>{dict.about.get_in_touch.title}</h2>
+				<h2 className='text-2xl lg:text-4xl font-bold mb-2'>{dict.about.get_in_touch.title}</h2>
 				<p className='text-lg text-gray-300'>{dict.about.get_in_touch.description}</p>
 				<div className='flex justify-center mt-2 mb-10'>
 				<Link href={"/" + lang + "/contact"}>
