@@ -1,34 +1,28 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'media',
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
       screens: {
         '3xl': '1600px', 
       },
       colors: {
-        primary: '#131313',
-        secondary: '#f6f6f6',
-        customGray: '#353535',
-        'neutral-850': '#1a1a1a',
-        gradient: {
-          primary: "#23B4E8",
-          secondary: "#2AF598",
-        },
+        black: "#131313",
+        primary: {
+            blue: "#23B4E8",
+            green: "#2AF598",
+        }
       },
       scale: {
         '102': '1.02',
       }
     },
-    fontFamily: {
-      'sans': ['Poppins', ...defaultTheme.fontFamily.sans],
-    }
   },
-  variants: {
-    extend: {
-      animation: ['responsive', 'motion-safe', 'motion-reduce', 'hover']
-    },
-  },
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
