@@ -1,0 +1,27 @@
+{
+    "lang": "en",
+    "updated": "16.12.2023",
+    "page": {
+        "page_title": "Contributer",
+        "page_description": "These are the great people who are involved in Slynite.",
+        "title": "Contributer ❤️",
+        "description": "Without all the contributors, Slynite's projects would never have been possible.",
+        "website": {
+            "title": "This webpage",
+            "development": {
+                "title": "Development",
+                "description_part1": "The developers who helped to develop this website can be found on",
+                "description_link": "Github",
+                "description_part2": "."
+            },
+            "content": {
+                "title": "Content",
+                "description_part1": "The content of this website was created by the Slynite team with the help of",
+                "external_contributer1": "Tristan Bühler",
+                "description_part2": "and",
+                "external_contributer2": "Verena Becker",
+                "description_part3": "."
+            }
+        }
+    }
+}

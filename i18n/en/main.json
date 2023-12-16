@@ -134,6 +134,11 @@
             "description": "Find the closest locations and tips for your next adventure. Travelventures is the ultimate travel companion, planner and guide in your pocket.",
             "linkText": "Go to Travelventures"
         },
+        "sosa": {
+            "title": "Shared Office Amorbach",
+            "description": "Discover the future of office rental with what is probably the world's first fully automated solution. SOSA's management system developed by Slynite makes it possible.",
+            "linkText": "Go to SOSA"
+        },
         "opensource": {
             "title": "Open Source",
             "description": "At Slynite we develop many projects open source. Have a look at what we are doing.",

@@ -52,6 +52,15 @@ export default async function Projects({params: {lang}}: Props) {
 						isUpcoming={true} 
 						dict={dict.projects} />
 				</div>
+				<div className='animate-once animate-fade-up animate-delay-[400ms] animate-ease-out'>
+					<Project 
+						name={dict.projects.sosa.title}
+						description={dict.projects.sosa.description}
+						logo='/ressources/sosa-logo.png' 
+						link='https://sharedofficesolutions.de' 
+						linkName={dict.projects.sosa.linkText} 
+						dict={dict.projects} />
+				</div>
 				<div className='animate-once animate-fade-up animate-delay-[600ms] animate-ease-out'>
 					<Project 
 						name={dict.projects.opensource.title}
