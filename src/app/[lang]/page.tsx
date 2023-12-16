@@ -84,7 +84,7 @@ export default async function Home({params: {lang}}: Props) {
 
 			<div id='open-source'>
 				<div className='rounded-3xl m-3 p-10 pb-0 bg-zinc-800 animate-fade-up'>
-					<h2 className='text-2xl lg:text-4xl font-bold md:flex text-center justify-center'>{dict.homepage.open_source.title_part1} <p className="ml-3 text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.open_source.title_highlighted}</p>.</h2>
+					<h2 className='text-2xl lg:text-4xl font-bold md:flex text-center justify-center'>{dict.homepage.open_source.title_part1} <p className="ml-3 text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-primary-green inline-block">{dict.homepage.open_source.title_highlighted}</p></h2>
 					<h3 className='text-lg lg:text-3xl font-bold text-gray-300 flex justify-center'>{dict.homepage.open_source.subtitle}</h3>
 					<div className='md:grid md:grid-cols-3 mt-0 md:mt-6'>
 						<p className='md:col-span-2 lg:text-lg mt-3 md:mt-20'>

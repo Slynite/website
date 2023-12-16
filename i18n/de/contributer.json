@@ -1,0 +1,27 @@
+{
+    "lang": "de",
+    "updated": "16.12.2023",
+    "page": {
+        "page_title": "Mitwirkende",
+        "page_description": "Das sind die tollen Personen welche bei Slynite mitwirken.",
+        "title": "Mitwirkende ❤️",
+        "description": "Ohne die vielen Mitwirkenden wären die Projekte von Slynite nicht möglich gewesen.",
+        "website": {
+            "title": "Diese Webseite",
+            "development": {
+                "title": "Entwicklung",
+                "description_part1": "Die Entwickler welche geholfen haben, diese Website zu entwickeln können auf",
+                "description_link": "Github",
+                "description_part2": "gefunden werden."
+            },
+            "content": {
+                "title": "Inhalt",
+                "description_part1": "Die Inhalte dieser Webseite wurde vom Slynite Team mithilfe von",
+                "external_contributer1": "Tristan Bühler",
+                "description_part2": "und",
+                "external_contributer2": "Verena Becker",
+                "description_part3": "erstellt."
+            }
+        }
+    }
+}
