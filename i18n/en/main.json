@@ -1,225 +1,223 @@
 {
-    "lang": "en",
-    "page": {
-        "title": "Company for Privacy, Security and Transparency on the Internet",
-        "description": "We are a company who focused on privacy, transparency and security on the internet.",
-        "privacy": "Privacy",
-        "legal_notice": "Legal Notice",
-        "licenses": "Licenses",
-        "contact": "Contact",
-        "learn_more": "Learn more",
-        "last_changed": "Last changed on"
-    },
+	"lang": "en",
+	"page": {
+		"title": "Company for Privacy, Security and Transparency on the Internet",
+		"description": "We are a company who focused on privacy, transparency and security on the internet.",
+		"privacy": "Privacy",
+		"legal_notice": "Legal Notice",
+		"licenses": "Licenses",
+		"contact": "Contact",
+		"learn_more": "Learn more",
+		"last_changed": "Last changed on"
+	},
 
-    "header": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact",
-        "contact_us": "Contact"
-    },
+	"header": {
+		"home": "Home",
+		"about": "About",
+		"projects": "Projects",
+		"contact": "Contact",
+		"contact_us": "Contact"
+	},
 
-    "footer": {
-        "build_with": "Build with",
-        "by_team_and": "by Slynite Team and",
-        "contributers": "contributers",
-        "rights_reserved": "All rights reserved."
-    },
+	"footer": {
+		"build_with": "Build with",
+		"by_team_and": "by Slynite Team and",
+		"contributers": "contributers",
+		"rights_reserved": "All rights reserved."
+	},
 
-    "homepage": {
-        "title": "Protect your privacy",
-        "description": "Stop looking for excuses - take security into your own hands",
+	"homepage": {
+		"title": "Protect your privacy",
+		"description": "Stop looking for excuses - take security into your own hands",
 
-        "covered": {
-            "title_part1": "We got you",
-            "title_highlighted": "covered",
-            "description": "The software Slynite provides you is engineered with privacy, security and transparency in mind. We optimize data architectures and data models to deliver next level solutions, requiring only the most necessary data."
-        },
+		"covered": {
+			"title_part1": "We got you",
+			"title_highlighted": "covered",
+			"description": "The software Slynite provides you is engineered with privacy, security and transparency in mind. We optimize data architectures and data models to deliver next level solutions, requiring only the most necessary data."
+		},
 
-        "mission": {
-            "title_part1": "Our",
-            "title_highlighted": "goal",
-            "title_part2": "is to protect your data",
-            "description_part1": "We want to provide what others are lacking - privacy focused software. The software is developed mostly open source to guarantee transparency. Based on our core values, all projects are developed and build from scratch.",
-            "learn_more": "Learn more about us",
-            "learn_more_link": "here"
-        },
+		"mission": {
+			"title_part1": "Our",
+			"title_highlighted": "goal",
+			"title_part2": "is to protect your data",
+			"description_part1": "We want to provide what others are lacking - privacy focused software. The software is developed mostly open source to guarantee transparency. Based on our core values, all projects are developed and build from scratch.",
+			"learn_more": "Learn more about us",
+			"learn_more_link": "here"
+		},
 
-        "core_values": {
-            "title_part1": "Our",
-            "title_highlighted": "core",
-            "title_part2": "values",
-            "privacy": {
-                "title": "Privacy",
-                "description": "We regard privacy as an essential principle in software to protect and secure our users' personal data and information."
-            },
-            "transparency": {
-                "title": "Transparency",
-                "description": "To promote trust and give users insight into our development processes as well as data, we place great emphasis on transparency. We also publish many of our projects open source."
-            },
-            "security": {
-                "title": "Security",
-                "description": "We use both best-practice principles and modern security solutions to ensure and continuously improve the security of our software."
-            },
-            "tracking": {
-                "title": "No unnecessary tracking",
-                "description": "In our projects, we always make sure to only collect necessary data from our users. We also do not use any tracking technologies."
-            }
-        },
+		"core_values": {
+			"title_part1": "Our",
+			"title_highlighted": "core",
+			"title_part2": "values",
+			"privacy": {
+				"title": "Privacy",
+				"description": "We regard privacy as an essential principle in software to protect and secure our users' personal data and information."
+			},
+			"transparency": {
+				"title": "Transparency",
+				"description": "To promote trust and give users insight into our development processes as well as data, we place great emphasis on transparency. We also publish many of our projects open source."
+			},
+			"security": {
+				"title": "Security",
+				"description": "We use both best-practice principles and modern security solutions to ensure and continuously improve the security of our software."
+			},
+			"tracking": {
+				"title": "No unnecessary tracking",
+				"description": "In our projects, we always make sure to only collect necessary data from our users. We also do not use any tracking technologies."
+			}
+		},
 
-        "open_source": {
-            "title_part1": "Many projects are",
-            "title_highlighted": "Open source",
-            "subtitle": "So everyone can be a part of the development team",
-            "description": "We use GitHub to develop and publish our projects. We use this platform to ensure transparency and provide an opportunity for everyone to get involved in the development process.",
-            "learn_more": "Visit us on",
-            "learn_more_link": "GitHub"
-        }
-    },
+		"open_source": {
+			"title_part1": "Many projects are",
+			"title_highlighted": "Open source",
+			"subtitle": "So everyone can be a part of the development team",
+			"description": "We use GitHub to develop and publish our projects. We use this platform to ensure transparency and provide an opportunity for everyone to get involved in the development process.",
+			"learn_more": "Visit us on",
+			"learn_more_link": "GitHub"
+		}
+	},
 
-    "contact": {
-        "page_title": "Contact us",
-        "page_description": "Contact us today and we will get back to you as soon as possible",
-        "title": "͘Get in touch with",
-        "title_highlighted": "us",
-        "description": "Would you like to learn more about us? Just let us know! Any feedback is appreciated. Got any issues? Contact us.",
-        "video_call": {
-            "title": "Remote Meeting",
-            "description": "We will be happy to answer all your questions in a personal video call.",
-            "form_subject": "Request for a personal remote meeting",
-            "form_message": "I would like to schedule a remote meeting. It is most convenient for me on {DATE} at {TIME}. From my side, {PERSONS NUMBER} people will attend."
-        },
-        "email": {
-            "title": "Mail",
-            "description": "Write us an email to hello@slynite.com. We will get back to you as soon as possible."
-        },
-        "form": {
-            "email": "Your email",
-            "email_placeholder": "danny@devi.to",
-            "subject": "Subject",
-            "subject_placeholder": "What do you want to share with us?",
-            "message": "Your message",
-            "message_placeholder": "Your message comes here...",
-            "privacy_notice": "By using this contact form, you allow us to store your email address and the content of this message for contact purposes. More about this in the",
-            "privacy_notice_link": "privacy policy",
-            "send": "Send message",
-            "success": "Sent. Thanks for your message!",
-            "error": "An error occured. Please send us an email to hello@slynite.com. Details:",
-            "warning": "You're message was sent, but an error occured. Details:",
-            "success_description": "Your message has been successfully sent to us. You will receive a copy of your message in the next few minutes.",
-            "success_back_button": "Ok"
-        }
-    },
+	"contact": {
+		"page_title": "Contact us",
+		"page_description": "Contact us today and we will get back to you as soon as possible",
+		"title": "͘Get in touch with",
+		"title_highlighted": "us",
+		"description": "Would you like to learn more about us? Just let us know! Any feedback is appreciated. Got any issues? Contact us.",
+		"video_call": {
+			"title": "Remote Meeting",
+			"description": "We will be happy to answer all your questions in a personal video call.",
+			"form_subject": "Request for a personal remote meeting",
+			"form_message": "I would like to schedule a remote meeting. It is most convenient for me on {DATE} at {TIME}. From my side, {PERSONS NUMBER} people will attend."
+		},
+		"email": {
+			"title": "Mail",
+			"description": "Write us an email to hello@slynite.com. We will get back to you as soon as possible."
+		},
+		"form": {
+			"email": "Your email",
+			"email_placeholder": "danny@devi.to",
+			"subject": "Subject",
+			"subject_placeholder": "What do you want to share with us?",
+			"message": "Your message",
+			"message_placeholder": "Your message comes here...",
+			"privacy_notice": "By using this contact form, you allow us to store your email address and the content of this message for contact purposes. More about this in the",
+			"privacy_notice_link": "privacy policy",
+			"send": "Send message",
+			"success": "Sent. Thanks for your message!",
+			"error": "An error occured. Please send us an email to hello@slynite.com. Details:",
+			"warning": "You're message was sent, but an error occured. Details:",
+			"success_description": "Your message has been successfully sent to us. You will receive a copy of your message in the next few minutes.",
+			"success_back_button": "Ok"
+		}
+	},
 
-    "projects": {
-        "page_title": "Projects",
-        "page_description": "Explore our portfolio of projects that we develop and deliver",
-        "title": "Our projects are",
-        "title_highlighted": "unique",
-        "description": "Explore our portfolio of projects that we develop and deliver",
-        "coming_soon": "Coming soon",
-        "launched_previously": "Launched previously",
-        "worktime_tracker": {
-            "title": "Worktime Tracker",
-            "description": "Tracking working hours has never been so simple. With the Worktime Tracker from Slynite, it's easy to record, categorize and analyze working hours. Best of all, Worktime Tracker is and will always be free to use.",
-            "linkText": "Go to Worktime Tracker repository"
-        },
-        "activehq": {
-            "title": "ActiveHQ",
-            "description": "The HR department in your internal cloud. Take care of and manage everything that concerns employees in a single application. Self-service for employees and HR department.",
-            "linkText": "Go to ActiveHQ"
-        },
-        "travelventures": {
-            "title": "Travelventures",
-            "description": "Find the closest locations and tips for your next adventure. Travelventures is the ultimate travel companion, planner and guide in your pocket.",
-            "linkText": "Go to Travelventures"
-        },
-        "sosa": {
-            "title": "Shared Office Amorbach",
-            "description": "Discover the future of office rental with what is probably the world's first fully automated solution. SOSA's management system developed by Slynite makes it possible.",
-            "linkText": "Go to SOSA"
-        },
-        "opensource": {
-            "title": "Open Source",
-            "description": "At Slynite we develop many projects open source. Have a look at what we are doing.",
-            "linkText": "Explore our repositories"
-        }
-    },
+	"projects": {
+		"page_title": "Projects",
+		"page_description": "Explore our portfolio of projects that we develop and deliver",
+		"title": "Our projects are",
+		"title_highlighted": "unique",
+		"description": "Explore our portfolio of projects that we develop and deliver",
+		"coming_soon": "Coming soon",
+		"launched_previously": "Launched previously",
+		"worktime_tracker": {
+			"title": "Worktime Tracker",
+			"description": "Tracking working hours has never been so simple. With the Worktime Tracker from Slynite, it's easy to record, categorize and analyze working hours. Best of all, Worktime Tracker is and will always be free to use.",
+			"linkText": "Go to Worktime Tracker repository"
+		},
+		"activehq": {
+			"title": "ActiveHQ",
+			"description": "The HR department in your internal cloud. Take care of and manage everything that concerns employees in a single application. Self-service for employees and HR department.",
+			"linkText": "Go to ActiveHQ"
+		},
+		"travelventures": {
+			"title": "Travelventures",
+			"description": "Find the closest locations and tips for your next adventure. Travelventures is the ultimate travel companion, planner and guide in your pocket.",
+			"linkText": "Go to Travelventures"
+		},
+		"cmp": {
+			"title": "Coworking Management Platform",
+			"description": "The Coworking Management Platform (CMP for short) is a booking and management solution for coworking space providers."
+		},
+		"opensource": {
+			"title": "Open Source",
+			"description": "At Slynite we develop many projects open source. Have a look at what we are doing.",
+			"linkText": "Explore our repositories"
+		}
+	},
 
-    "about": {
-        "page_title": "About us",
-        "page_description": "Learn more about what Slynite do and why we do it.",   
-        "title_highlighted": "Privacy",
-        "title": "as foundation",   
-        "description": "We want to change what's wrong with many products, so we take user data seriously",
-        "who_we_are": {
-            "title_part1": "Who",
-            "title_highlighted": "we",
-            "title_part2": "are",
-            "description_part1": "One of our biggest security issues in today's world is the misuse of personalized data. We do, what many others deliberately do not - we optimize data architectures and data models to ensure the use of only the most necessary data.",
-            "description_part2": "Due to our privacy driven strict data limitations and transparency it's possible to thrive on powerful applications with a minimal amount of data collection."
-        },
-        "our_history": {
-            "title_part1": "Our",
-            "title_highlighted": "milestones",
-            "title_part2": "so far",
-            "timeline": [
-                {
-                    "title": "First vision of Slynite",
-                    "time": "February 2019",
-                    "description": "Our founder Danny Schapeit starts developing projects under the name Slynite."
-                },
-                {
-                    "title": "Travelventures",
-                    "time": "June 2021",
-                    "description": "Idea and first prototype of Travelventures was born."
-                },
-                {
-                    "title": "New Co-Founder",
-                    "time": "January 2022",
-                    "description": "Jan Luca Sterta joins Slynite as Co-Founder in management."
-                },
-                {
-                    "title": "Worktime Tracker",
-                    "time": "December 2022",
-                    "description": "Based on a side project by Danny Schapeit and Jonas Bott, “Worktime Tracker” will be further developed under Slynite."
+	"about": {
+		"page_title": "About us",
+		"page_description": "Learn more about what Slynite do and why we do it.",
+		"title_highlighted": "Privacy",
+		"title": "as foundation",
+		"description": "We want to change what's wrong with many products, so we take user data seriously",
+		"who_we_are": {
+			"title_part1": "Who",
+			"title_highlighted": "we",
+			"title_part2": "are",
+			"description_part1": "One of our biggest security issues in today's world is the misuse of personalized data. We do, what many others deliberately do not - we optimize data architectures and data models to ensure the use of only the most necessary data.",
+			"description_part2": "Due to our privacy driven strict data limitations and transparency it's possible to thrive on powerful applications with a minimal amount of data collection."
+		},
+		"our_history": {
+			"title_part1": "Our",
+			"title_highlighted": "milestones",
+			"title_part2": "so far",
+			"timeline": [
+				{
+					"title": "First vision of Slynite",
+					"time": "February 2019",
+					"description": "Our founder Danny Schapeit starts developing projects under the name Slynite."
+				},
+				{
+					"title": "Travelventures",
+					"time": "June 2021",
+					"description": "Idea and first prototype of Travelventures was born."
+				},
+				{
+					"title": "New Co-Founder",
+					"time": "January 2022",
+					"description": "Jan Luca Sterta joins Slynite as Co-Founder in management."
+				},
+				{
+					"title": "Worktime Tracker",
+					"time": "December 2022",
+					"description": "Based on a side project by Danny Schapeit and Jonas Bott, “Worktime Tracker” will be further developed under Slynite."
+				},
+				{
+					"title": "New Co-Founder",
+					"time": "May 2023",
+					"description": "Jonas Bott joins Slynite as Co-Founder in development."
+				}
+			]
+		},
+		"quote": {
+			"text": "I am proud to have a team of highly competent, excited and helpful professionals who are passionate about our vision. Together, we set new standards and create innovations that captivate our customers.",
+			"author": {
+				"name": "Danny Schapeit",
+				"company": "CEO & Co-Founder of Slynite"
+			}
+		},
+		"values": {
+			"team": {
+				"title": "Amazing Team",
+				"description": "Our team forms Slynite. Why not get to know the developers, thinkers, designers & philosophers to understand why you are here?"
+			},
+			"open_source": {
+				"title": "We are Open Source",
+				"description": "We develop many of our projects and tools open source. With the help of thousands of open-source developers all over the world, we can provide great software to improve people's everyday lives."
+			}
+		},
+		"get_in_touch": {
+			"title": "Get in touch",
+			"description": "We would love to hear from you. You have questions about us or our projects? Don't hesitate to contact us via our contact form. We will be happy to get in touch with you.",
+			"button": "Contact"
+		}
+	},
 
-                },
-                {
-                    "title": "New Co-Founder",
-                    "time": "May 2023",
-                    "description": "Jonas Bott joins Slynite as Co-Founder in development."
-                }
-            ]
-        },
-        "quote": {
-            "text": "I am proud to have a team of highly competent, excited and helpful professionals who are passionate about our vision. Together, we set new standards and create innovations that captivate our customers.",
-            "author": {
-                "name": "Danny Schapeit",
-                "company": "CEO & Co-Founder of Slynite"
-            }
-        },
-        "values": {
-            "team": {
-                "title": "Amazing Team",
-                "description": "Our team forms Slynite. Why not get to know the developers, thinkers, designers & philosophers to understand why you are here?"
-            },
-            "open_source": {
-                "title": "We are Open Source",
-                "description": "We develop many of our projects and tools open source. With the help of thousands of open-source developers all over the world, we can provide great software to improve people's everyday lives."
-            }
-        },
-        "get_in_touch": {
-            "title": "Get in touch",
-            "description": "We would love to hear from you. You have questions about us or our projects? Don't hesitate to contact us via our contact form. We will be happy to get in touch with you.",
-            "button": "Contact"
-        }
-    },
-
-    "not_found": {
-        "page_title": "404",
-        "page_description": "Page not found",
-        "title": "The page you are looking for could not be found",
-        "link": "Return to home"
-    }
+	"not_found": {
+		"page_title": "404",
+		"page_description": "Page not found",
+		"title": "The page you are looking for could not be found",
+		"link": "Return to home"
+	}
 }
