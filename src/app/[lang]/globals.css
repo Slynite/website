@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-3xl: 1600px;
+  --color-black: #131313;
+  --color-primary-blue: #23B4E8;
+  --color-primary-green: #2AF598;
+  --scale-102: 1.02;
+}
+
 body {
     background-color: #131313;
 }

@@ -3,18 +3,20 @@ import { getMainDictionary } from '../dictionaries';
 import { Metadata } from 'next';
 
 type Props = {
-    params: { lang: string };
+    params: Promise<{ lang: string }>;
 };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-	const dict = await getMainDictionary(params.lang);
+	const { lang } = await params;
+	const dict = await getMainDictionary(lang);
   return {
       title: `Slynite - ${dict.not_found.page_title}`,
       description: dict.not_found.page_description
   };
 };
  
-export default async function NotFound({params: {lang}}: Props) {
+export default async function NotFound({params}: Props) {
+	const { lang } = await params;
 	const dict = await getMainDictionary(lang);
     return (
         <div className='mt-6 md:mt-20 text-center'>

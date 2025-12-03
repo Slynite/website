@@ -7,9 +7,10 @@ export default async function RootLayout({
     params
 }: {
 	children: React.ReactNode,
-    params: {lang: string}
+    params: Promise<{lang: string}>
 }) {
-	const dict = await getMainDictionary(params.lang);
+	const { lang } = await params;
+	const dict = await getMainDictionary(lang);
 
     return (
 		<>

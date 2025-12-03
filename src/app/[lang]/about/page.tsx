@@ -6,18 +6,20 @@ import TimelineItem from "@/components/timelineItem";
 import Link from "next/link";
 
 type Props = {
-	params: { lang: string };
+	params: Promise<{ lang: string }>;
 };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-    const dict = await getMainDictionary(params.lang) 
+    const { lang } = await params;
+    const dict = await getMainDictionary(lang) 
     return {
       	title: `Slynite - ${dict.about.page_title}`,
       	description: dict.about.page_description
     };
 };
 
-export default async function About({ params: { lang } }: Props) {
+export default async function About({ params }: Props) {
+	const { lang } = await params;
 	const dict = await getMainDictionary(lang);
 	return (
 		<main className='mt-6 md:mt-20'>
