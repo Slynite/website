@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useEffect } from "react";
 import InfoCard from "./infoCard";
 import Image from "next/image";
 
@@ -17,9 +17,15 @@ export default function ContactForm({dict, lang}: {dict: any, lang: string}) {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState('');
     const [warning, setWaring] = useState('');
+    const [honeypot, setHoneypot] = useState('');
+    const [formLoadTime, setFormLoadTime] = useState<number>(0);
+
+    useEffect(() => {
+        setFormLoadTime(Date.now());
+    }, []);
 
     async function onSubmit(event: FormEvent<HTMLFormElement>) {
-        event.preventDefault()     
+        event.preventDefault()
         const response = await fetch('/api/form', {
             method: 'POST',
             headers: {
@@ -28,7 +34,9 @@ export default function ContactForm({dict, lang}: {dict: any, lang: string}) {
             body: JSON.stringify({
                 email,
                 subject,
-                message
+                message,
+                honeypot,
+                formLoadTime
             }),
         })
         const data: ApiResponse = await response.json()
@@ -54,6 +62,8 @@ export default function ContactForm({dict, lang}: {dict: any, lang: string}) {
         setSuccess(false);
         setError('');
         setWaring('');
+        setHoneypot('');
+        setFormLoadTime(Date.now());
     }
 
     function prefillFieldsWithMeetingRequest() {
@@ -99,6 +109,21 @@ export default function ContactForm({dict, lang}: {dict: any, lang: string}) {
                     ) : (
                         <form className="space-y-3" onSubmit={onSubmit}>
                             {error && <p className="bg-red-500 p-2.5 rounded-lg">{dict.contact.form.error} {error}</p>}
+
+                            {/* Honeypot field - hidden from humans, visible to bots */}
+                            <div className="absolute left-[-9999px]" aria-hidden="true">
+                                <label htmlFor="website">Website</label>
+                                <input
+                                    type="text"
+                                    id="website"
+                                    name="website"
+                                    tabIndex={-1}
+                                    autoComplete="off"
+                                    value={honeypot}
+                                    onChange={(e) => setHoneypot(e.target.value)}
+                                />
+                            </div>
+
                             <div>
                                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-300">{dict.contact.form.email}</label>
                                 <input type="email" id="email" className="block p-3 w-full shadow-sm text-sm rounded-lg bg-zinc-600" placeholder={dict.contact.form.email_placeholder} value={email} onChange={(e) => setEmail(e.target.value)} required />

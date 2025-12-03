@@ -10,9 +10,33 @@ const template_path = path.join(__dirname, '../../../../../public/mail-templates
 export async function POST(request: NextRequest) {
     try {
         const formData: any = await request.json();
-    
+
+        // Extract request metadata for logging and email
+        const ipAddress = request.headers.get('x-forwarded-for')?.split(',')[0] ||
+                         request.headers.get('x-real-ip') ||
+                         'unknown';
+        const userAgent = request.headers.get('user-agent') || 'unknown';
+        const submissionTimestamp = new Date().toISOString();
+
         if (!formData || !formData.email || !formData.subject || !formData.message) {
             return NextResponse.json({ status: "error", message: "formdata missing" })
+        }
+
+        // Bot protection: Honeypot field check
+        if (formData.honeypot && formData.honeypot.trim() !== '') {
+            console.log(`Bot detected: honeypot field filled | IP: ${ipAddress} | User-Agent: ${userAgent} | Time: ${submissionTimestamp}`);
+            return NextResponse.json({ status: "error", message: "invalid submission" })
+        }
+
+        // Bot protection: Time-based validation (minimum 3 seconds)
+        if (formData.formLoadTime) {
+            const submissionTime = Date.now();
+            const timeDiff = (submissionTime - formData.formLoadTime) / 1000; // Convert to seconds
+
+            if (timeDiff < 3) {
+                console.log(`Bot detected: form submitted too quickly (${timeDiff.toFixed(2)}s) | IP: ${ipAddress} | User-Agent: ${userAgent} | Time: ${submissionTimestamp}`);
+                return NextResponse.json({ status: "error", message: "invalid submission" })
+            }
         }
 
         const smtpHost = process.env.MAIL_SMTP_HOST
@@ -25,7 +49,15 @@ export async function POST(request: NextRequest) {
         }
     
         const clientMail = await rewriteMailContent({ file: template_path + "contact-form-user", email: formData.email, subject: formData.subject, message: formData.message });
-        const teamMail = await rewriteMailContent({ file: template_path + "contact-form-team", email: formData.email, subject: formData.subject, message: formData.message });
+        const teamMail = await rewriteMailContent({
+            file: template_path + "contact-form-team",
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            ipAddress,
+            userAgent,
+            timestamp: submissionTimestamp
+        });
 
         //create reuseable transporter for SMTP transporter
         const transporter = mailer.createTransport({
@@ -68,12 +100,26 @@ export async function POST(request: NextRequest) {
     
 }
 
-async function rewriteMailContent({ file, email, subject, message }: { file: string, email: string, subject: string, message: string }): Promise<any> {
+async function rewriteMailContent({ file, email, subject, message, ipAddress, userAgent, timestamp }: {
+    file: string,
+    email: string,
+    subject: string,
+    message: string,
+    ipAddress?: string,
+    userAgent?: string,
+    timestamp?: string
+}): Promise<any> {
     let content = await readFile(file + ".html", 'utf8');
     if (content !== null) {
         content = content.replace("{EMAIL-ADRESS}", email);
         content = content.replace("{SUBJECT}", subject);
         content = content.replace("{MESSAGE}", message);
+
+        // Replace optional metadata fields (for team email)
+        if (ipAddress) content = content.replace("{IP-ADDRESS}", ipAddress);
+        if (userAgent) content = content.replace("{USER-AGENT}", userAgent);
+        if (timestamp) content = content.replace("{TIMESTAMP}", timestamp);
+
         return content;
     }
 };
