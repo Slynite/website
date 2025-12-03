@@ -5,7 +5,8 @@ const readFile = promisify(fs.readFile);
 const path = require('path');
 
 const mailer = require("nodemailer");
-const template_path = path.join(__dirname, '../../../../../public/mail-templates/');
+// Use process.cwd() to get project root, works reliably in both dev and production
+const template_path = path.join(process.cwd(), 'public/mail-templates/');
  
 export async function POST(request: NextRequest) {
     try {
