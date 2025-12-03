@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-let fs = require('fs');
+const fs = require('fs');
 const { promisify } = require('util');
 const readFile = promisify(fs.readFile);
 const path = require('path');
@@ -9,16 +9,16 @@ const template_path = path.join(__dirname, '../../../../../public/mail-templates
  
 export async function POST(request: NextRequest) {
     try {
-        let formData: any = await request.json();
+        const formData: any = await request.json();
     
         if (!formData || !formData.email || !formData.subject || !formData.message) {
             return NextResponse.json({ status: "error", message: "formdata missing" })
         }
 
-        let smtpHost = process.env.MAIL_SMTP_HOST
-        let smtpPort = process.env.MAIL_SMTP_PORT
-        let smtpUser = process.env.MAIL_ADRESS
-        let smtpPassword =  process.env.MAIL_PASSWORD
+        const smtpHost = process.env.MAIL_SMTP_HOST
+        const smtpPort = process.env.MAIL_SMTP_PORT
+        const smtpUser = process.env.MAIL_ADRESS
+        const smtpPassword =  process.env.MAIL_PASSWORD
 
         if (smtpHost == undefined || smtpPort == undefined || smtpUser == undefined || smtpPassword == undefined) {
             throw Error("SMTP configuration not properly set. host=" + smtpHost + " port=" + smtpPort + " user=" + smtpUser + " password=" + smtpPassword)
@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
         const teamMail = await rewriteMailContent({ file: template_path + "contact-form-team", email: formData.email, subject: formData.subject, message: formData.message });
 
         //create reuseable transporter for SMTP transporter
-        let transporter = mailer.createTransport({
+        const transporter = mailer.createTransport({
             host: process.env.MAIL_SMTP_HOST,
             port: process.env.MAIL_SMTP_PORT,
             secure: true, // true for 465, false for other ports
@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
             },
         });
     
-        let sendMailToSlynite = await transporter.sendMail({
+        const sendMailToSlynite = await transporter.sendMail({
             from: process.env.MAIL_NAME + '<' + process.env.MAIL_ADRESS +'>',
             to: "hello@slynite.com",
             subject: "A new message from Slynite.com contact form",

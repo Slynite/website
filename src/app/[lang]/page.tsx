@@ -7,18 +7,20 @@ import Link from 'next/link';
 import LottiePlayer from '@/components/lottiePlayer';
 
 type Props = {
-    params: { lang: string };
+    params: Promise<{ lang: string }>;
 };
 
 export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
-    const dict = await getMainDictionary(params.lang) 
+    const { lang } = await params;
+    const dict = await getMainDictionary(lang) 
     return {
       	title: `Slynite - ${dict.page.title}`,
       	description: dict.page.description
     };
 };
 
-export default async function Home({params: {lang}}: Props) {
+export default async function Home({params}: Props) {
+    const { lang } = await params;
     const dict = await getMainDictionary(lang) 
 
   	return (
