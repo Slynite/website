@@ -74,6 +74,11 @@ export default async function About({ params }: Props) {
 							time={dict.about.our_history.timeline[4].time}
 							description={dict.about.our_history.timeline[4].description}
 						/>
+						<TimelineItem 
+							title={dict.about.our_history.timeline[5].title}
+							time={dict.about.our_history.timeline[5].time}
+							description={dict.about.our_history.timeline[5].description}
+						/>
 					</ol>
 				</div>
 			</div>

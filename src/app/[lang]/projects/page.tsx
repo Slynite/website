@@ -30,48 +30,18 @@ export default async function Projects({ params }: Props) {
 				description={dict.projects.description}
 			/>
 			<div className="md:grid md:grid-cols-2 md:gap-6 space-y-6 md:space-y-0 mt-8">
-				<div className="animate-once animate-fade-up animate-ease-out">
+				<div className="animate-once animate-fade-up animate-delay-[100ms] animate-ease-out">
 					<Project
-						name={dict.projects.worktime_tracker.title}
-						description={dict.projects.worktime_tracker.description}
-						logo="/ressources/worktime-tracker-logo.png"
-						link="https://github.com/slynite/worktime-tracker"
-						linkName={dict.projects.worktime_tracker.linkText}
-						isUpcoming={true}
-						dict={dict.projects}
-					/>
-				</div>
-				<div className="animate-once animate-fade-up animate-delay-[200ms] animate-ease-out">
-					<Project
-						name={dict.projects.activehq.title}
-						description={dict.projects.activehq.description}
+						name={dict.projects.mail.title}
+						description={dict.projects.mail.description}
 						logo="/ressources/icons/sparkles.png"
-						link="https://activehq.works"
-						linkName={dict.projects.activehq.linkText}
+						link="https://github.com/slynite/mail"
+						linkName={dict.projects.mail.linkText}
 						isUpcoming={true}
 						dict={dict.projects}
 					/>
 				</div>
-				<div className="animate-once animate-fade-up animate-delay-[400ms] animate-ease-out">
-					<Project
-						name={dict.projects.travelventures.title}
-						description={dict.projects.travelventures.description}
-						logo="/ressources/travelventures-logo.png"
-						link="https://travelventures.app"
-						linkName={dict.projects.travelventures.linkText}
-						isUpcoming={true}
-						dict={dict.projects}
-					/>
-				</div>
-				<div className="animate-once animate-fade-up animate-delay-[400ms] animate-ease-out">
-					<Project
-						name={dict.projects.cmp.title}
-						description={dict.projects.cmp.description}
-						logo="/ressources/coworking-space-management-logo.png"
-						dict={dict.projects}
-					/>
-				</div>
-				<div className="animate-once animate-fade-up animate-delay-[600ms] animate-ease-out">
+				<div className="animate-once animate-fade-up animate-delay-[300ms] animate-ease-out">
 					<Project
 						name={dict.projects.opensource.title}
 						description={dict.projects.opensource.description}
