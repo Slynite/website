@@ -119,24 +119,10 @@
 		"description": "Explore our portfolio of projects that we develop and deliver",
 		"coming_soon": "Coming soon",
 		"launched_previously": "Launched previously",
-		"worktime_tracker": {
-			"title": "Worktime Tracker",
-			"description": "Tracking working hours has never been so simple. With the Worktime Tracker from Slynite, it's easy to record, categorize and analyze working hours. Best of all, Worktime Tracker is and will always be free to use.",
-			"linkText": "Go to Worktime Tracker repository"
-		},
-		"activehq": {
-			"title": "ActiveHQ",
-			"description": "The HR department in your internal cloud. Take care of and manage everything that concerns employees in a single application. Self-service for employees and HR department.",
-			"linkText": "Go to ActiveHQ"
-		},
-		"travelventures": {
-			"title": "Travelventures",
-			"description": "Find the closest locations and tips for your next adventure. Travelventures is the ultimate travel companion, planner and guide in your pocket.",
-			"linkText": "Go to Travelventures"
-		},
-		"cmp": {
-			"title": "Coworking Management Platform",
-			"description": "The Coworking Management Platform (CMP for short) is a booking and management solution for coworking space providers."
+		"mail": {
+			"title": "Slynite/mail",
+			"description": "Mail is a JMAP Client to communicate more effectively with your emails.",
+			"linkText": "Github repository"
 		},
 		"opensource": {
 			"title": "Open Source",
@@ -187,6 +173,11 @@
 					"title": "New Co-Founder",
 					"time": "May 2023",
 					"description": "Jonas Bott joins Slynite as Co-Founder in development."
+				},
+				{
+					"title": "Development of Slynite/mail",
+					"time": "July 2026",
+					"description": "Danny Schapeit starts the development of Slynite/mail. A JMAP E-Mail Client."
 				}
 			]
 		},
