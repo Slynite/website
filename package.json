@@ -23,7 +23,7 @@
 		"react-dom": "^19.2.8",
 		"sharp": "^0.35.3",
 		"tailwindcss-animated": "^2.1.0",
-		"typescript": "^5.9.3"
+		"typescript": "^7.0.2"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.5.4",
