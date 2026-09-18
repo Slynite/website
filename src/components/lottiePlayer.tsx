@@ -1,6 +1,6 @@
 "use client";
 
-import Lottie from "lottie-react";
+import { Lottie } from "lottie-react";
 
 import missionHorizontal from "../../public/ressources/lottie/slynite-mission.json";
 import missionVertical from "../../public/ressources/lottie/slynite-mission-vertically.json";
@@ -18,8 +18,9 @@ export default function LottiePlayer({src, width}: {src: 'slynite-mission' | 'sl
     
     return(
         <Lottie
-            animationData={file}
-            loop={true}
+            src={file}
+            autoplay
+            loop
             style={{ width: width, maxWidth: '100%'}}
         />
     )
