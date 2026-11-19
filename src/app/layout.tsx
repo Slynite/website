@@ -1,8 +1,11 @@
 import "./[lang]/globals.css";
-import { Roboto } from "next/font/google";
+import localFont from "next/font/local";
 import { Metadata } from "next";
 
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+const roboto = localFont({
+	src: "../../node_modules/@fontsource/roboto/files/roboto-latin-400-normal.woff2",
+	weight: "400",
+});
 
 export const metadata: Metadata = {
 	title: "Slynite",
