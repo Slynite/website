@@ -1,4 +1,6 @@
-FROM node:18-alpine AS base
+FROM node:24.22.3-alpine AS base
+
+RUN apk upgrade --no-cache
 
 # Install dependencies only when needed
 FROM base AS deps
